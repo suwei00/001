@@ -1,0 +1,84 @@
+.cg-dialog-temp-header-title {
+  text-transform: uppercase;
+  width: 540px;
+  height: 80px;
+  font: var(--cg-font-text1);
+  color: var(--cg-color-black1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cg-dialog-temp-header-red-title {
+  width: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cg-color-red2);
+}
+
+.cg-dialog-temp-header-red-title-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.cg-dialog-temp-header-red-title-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+}
+
+.cg-dialog-temp-header-notice-bar {
+  padding-right: 70px;
+  padding-left: 50px;
+  width: 100%;
+
+  .cg-dialog-temp-header-notice-bar-content {
+    display: flex;
+    align-items: center;
+    color: var(--cg-color-red2);
+    font: var(--cg-font-text1);
+  }
+}
+
+.cg-dialog-temp-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+}
+
+.cg-dialog-temp-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+// 模板1
+.cg-dialog-temp1-content {
+  width: 100%;
+  text-align: center;
+  font: var(--cg-font-text2);
+  color: var(--cg-color-black1);
+  line-height: 32px;
+  margin: 0;
+}
+
+// 模板2
+.cg-dialog-temp2-content {
+  width: 100%;
+  margin: 0;
+}
+
+.footer_text {
+  width: 200px;
+  font-size: 24px;
+  scale: 0.9166;
+  line-height: 28px;
+  margin: 20px auto 0;
+  color: var(--cg-color-blue1);
+  text-align: center;
+  border-bottom: 2px solid var(--cg-color-blue1);
+}

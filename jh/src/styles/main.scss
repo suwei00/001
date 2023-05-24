@@ -1,0 +1,100 @@
+html,
+body,
+#app,
+#appMain {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #464B55;
+  font-family: PingFangSC-Regular, PingFang SC;
+  // 禁止选中文字
+  -webkit-user-select: none;
+  overflow: hidden;
+  background: #F3F6FF;
+  // 平滑滚动
+  scroll-behavior: smooth;
+}
+
+section,
+div,
+img,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+button,
+input,
+textarea,
+table,
+tr,
+td,
+th,
+tbody,
+thead,
+tfoot,
+iframe,
+pre,
+code,
+form,
+fieldset,
+legend,
+label,
+input,
+textarea,
+select,
+option,
+optgroup,
+nav,
+article,
+aside,
+footer,
+header,
+section,
+main,
+menu,
+hgroup,
+figure,
+figcaption,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  border: 0;
+  outline: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+// 无用处
+html.dark {
+  background: #121212;
+}
+

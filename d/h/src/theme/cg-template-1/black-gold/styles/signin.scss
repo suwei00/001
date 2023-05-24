@@ -1,0 +1,214 @@
+.sig {
+  overflow: scroll;
+  width: 100%;
+  background: #F3F9FE;
+  padding-bottom: rem(30rem);
+  section {
+    width: rem(690rem);
+    margin: rem(20rem) auto;
+  }
+  .banner-wrap {
+    height: rem(750rem);
+    width: rem(750rem);
+    margin: 0 auto;
+  }
+  &-boxshad {
+    box-shadow: 0 rem(4rem) rem(12rem) 0 rgba(0, 0, 0, 0.11);
+  }
+  &-wk {
+    padding: rem(8rem) rem(17rem) rem(26rem);
+    background-color: #ffffff;
+    border-radius: rem(20rem);
+  }
+  &-total {
+    margin: 0 auto;
+    width: rem(656rem);
+    height: rem(282rem);
+    p {
+      color: #ffffff;
+      top: rem(56rem);
+    }
+    span {
+      width: rem(69rem);
+      height: rem(96rem);
+      border-radius: rem(8rem);
+      background: #ffffff;
+      color: #E3A090;
+      font-size: rem(60rem);
+      font-weight: bold;
+      line-height: rem(96rem);
+      position: absolute;
+      bottom: rem(50rem);
+      left: rem(272rem);
+    }
+    i {
+      position: absolute;
+      bottom: rem(56rem);
+      right: rem(230rem);
+      color: #fffbf1;
+    }
+    img {
+      top: 0;
+      left: 0;
+    }
+  }
+  .wk-wp {
+    padding: 0 rem(30rem);
+    li {
+      width: rem(50rem);
+      padding-top: rem(50rem);
+      padding-bottom: rem(50rem);
+      .wk-top {
+        color: #767676;
+        top: rem(16rem);
+        width: rem(90rem);
+        text-align: center;
+      }
+      dl {
+        margin: rem(6rem) 0 rem(12rem);
+        color: #ffffff;
+        font-size: rem(24rem);
+        width: rem(50rem);
+        height: rem(60rem);
+        background: linear-gradient(138deg, #FBD2C4 0%, #DE9D89 100%);
+        border-radius: rem(8rem);
+      }
+      .wk-bot {
+        color: #9aa8b6;
+        font-size: rem(16rem);
+        width: rem(120rem);
+        text-align: center;
+        top: rem(134rem);
+      }
+    }
+  }
+  &-btn {
+    width: rem(306rem);
+    height: rem(102rem);
+    font-size: rem(28rem);
+    margin: rem(20rem) auto 0;
+    color: #ffffff;
+    background-color: #ffffff;
+    display: block;
+    img {
+      top: 0;
+      left: 0;
+    }
+    p {
+      top: rem(28rem);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .t3 {
+      top: rem(22rem);
+    }
+  }
+  .last-wk {
+    width: rem(690rem);
+    height: rem(312rem);
+    padding: rem(46rem) rem(22rem) rem(27rem);
+    background-color: #ffffff;
+    margin-bottom: rem(20rem);
+    border-radius: rem(16rem);
+    li {
+      color: #9aa8b6;
+      h4 {
+        font-weight: normal;
+      }
+      p {
+        color: #757b7e;
+      }
+    }
+  }
+  &-record {
+    margin-top: rem(40rem);
+    button {
+      width: rem(208rem);
+      height: rem(72rem);
+      border-radius: rem(36rem);
+      border: rem(3rem) solid #E3A090;
+      color: #E3A090;
+      font-size: rem(28rem);
+      background: #ffffff;
+      margin: 0 rem(29rem);
+      line-height: rem(30rem);
+    }
+    button.r-btn {
+      background: linear-gradient(138deg, #FBD2C4 0%, #DE9D89 100%);
+      box-shadow: 0 rem(46rem) rem(20rem) rem(-28rem) rgba(255, 244, 216, 1);
+      color: #997b55;
+
+      &[disabled] {
+        background: linear-gradient(180deg, #fafafa 0%, #dcdcdc 100%);
+        box-shadow: none;
+        color: #98a7b5;
+        border: none;
+      }
+    }
+  }
+  &-activity {
+    padding: rem(36rem) rem(30rem);
+    border-radius: rem(16rem);
+    background-color: #ffffff;
+    color: #6f6f6f;
+    dt {
+      margin-bottom: rem(8rem);
+      font-weight: 400;
+      color: #434757;
+    }
+    dd {
+      margin-bottom: rem(28rem);
+      font-weight: normal;
+    }
+    button {
+      width: rem(210rem);
+      height: rem(80rem);
+      background: #ffffff;
+      box-shadow: 0 rem(6rem) rem(12rem) 0 rgba(0, 0, 0, 0.06);
+      border-radius: rem(47rem);
+      margin: rem(56rem) auto rem(82rem);
+      display: block;
+      color: #98a7b5;
+    }
+  }
+  &-table {
+    overflow-x: auto;
+    font-size: rem(20rem);
+    table {
+      border-collapse: collapse;
+      vertical-align: middle;
+      th,
+      td {
+        border-top: rem(2rem) solid #dadbe6;
+        border-right: rem(2rem) solid #dadbe6;
+        border-bottom: rem(2rem) solid #dadbe6;
+      }
+      thead {
+        line-height: rem(52rem);
+        th {
+          font-weight: normal;
+          background-color: #f7faff;
+          &:first-of-type {
+            border-left: rem(2rem) solid #dadbe6;
+          }
+        }
+      }
+      tbody {
+        line-height: rem(60rem);
+        td {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &:first-of-type {
+            border-left: rem(2rem) solid #dadbe6;
+          }
+        }
+      }
+    }
+  }
+  &-explan {
+    margin-top: rem(30rem);
+    line-height: rem(40rem);
+    color: #676767;
+  }
+}

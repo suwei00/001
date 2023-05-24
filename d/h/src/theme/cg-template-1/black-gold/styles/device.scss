@@ -1,0 +1,24 @@
+.device-info {
+  padding: 0 rem(32rem);
+  font-size: rem(24rem);
+
+  p {
+    height: rem(88rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: rem(2rem) solid #9c9c9c;
+    span:first-child {
+      font-size: rem(26rem);
+      font-family: AppleSystemUIFontBold;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
+.device {
+  height: 100%;
+  // background-color: #1e1110;
+  color: #fff;
+}

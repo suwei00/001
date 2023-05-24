@@ -1,0 +1,79 @@
+.ipt-amount-wp {
+  height: rem(80rem);
+  border: rem(1rem) solid #ffffff99;
+  border-radius: rem(50rem);
+  padding: rem(10rem);
+  margin-bottom: rem(20rem);
+
+  .txt-c4 {
+    color: #8e8b8b;
+  }
+  .currency {
+    width: rem(60rem);
+    height: rem(60rem);
+    margin-right: rem(30rem);
+    border-radius: 50%;
+    @include webp($base-img-dir + '/home/dun-user.png');
+    background-size: rem(120rem) rem(60rem);
+  }
+  .fake-input-container {
+    position: relative;
+  }
+  .fake-input-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: left;
+    color: #6d6c6c !important;
+    transform: translateY(-50%);
+  }
+  .fake-input.focus::before {
+    content: ' ';
+  }
+  .fake-input.focus::after {
+    position: static;
+    content: ' ';
+    border-right: rem(1.5rem) solid #979006;
+    right: rem(1.5rem);
+    top: 10%;
+    height: 80%;
+    animation: keyboard-cursor infinite 1s step-start;
+  }
+  .fake-input {
+    font-size: 0.46rem;
+    font-family: DinPro;
+    font-weight: 700;
+    position: relative;
+  }
+  .clear-input {
+    width: rem(42rem);
+    height: rem(42rem);
+    border-radius: 50%;
+    overflow: hidden;
+    font-style: normal;
+    color: $bg-c1;
+    background-color: $bg-c8;
+    background-repeat: no-repeat;
+    background-image: url(link($base-img-dir + 'icon-input-clear.svg'));
+    background-size: rem(42rem) auto;
+    background-position: rem(4rem) rem(4rem);
+    margin-right: rem(30rem);
+    flex-shrink: 0;
+  }
+  @keyframes keyboard-cursor {
+    0%,
+    to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+.all-in {
+  display: block;
+  text-align: center;
+  color: #f5e8c4;
+  text-transform: uppercase;
+}

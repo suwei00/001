@@ -1,0 +1,31 @@
+.dw-wp {
+  margin-right: rem(20rem);
+  width: rem(200rem);
+  line-height: rem(68rem);
+  border-radius: rem(50rem);
+  background: $theme-bg-color21;
+  &:before {
+    position: absolute;
+    left: rem(168rem);
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: rem(10rem) solid $theme-txt-color2;
+    border-bottom: 0;
+    border-left: rem(8rem) solid transparent;
+    border-right: rem(8rem) solid transparent;
+  }
+  .date-dw {
+    line-height: rem(25rem);
+    margin: rem(10rem) 0 0 rem(32rem);
+  }
+}
+.is-up {
+  &:before {
+    border-top: 0;
+    border-bottom: rem(10rem) solid $theme-txt-color2;
+  }
+}

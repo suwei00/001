@@ -1,0 +1,241 @@
+.cmson {
+  background-color: #1e1110;
+
+  .main {
+    height: calc(100% - 1rem);
+
+    .mask {
+      height: 100%;
+      padding: rem(20rem) rem(25rem);
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow-y: scroll;
+    }
+  }
+
+  .user-info {
+    margin: 0 auto;
+    padding: rem(28rem);
+    margin-bottom: rem(90rem);
+    height: rem(176rem);
+    .icon-wallet {
+      width: rem(92rem);
+      height: rem(90rem);
+    }
+    .icon-eyes {
+      margin-left: rem(20rem);
+      width: rem(50rem);
+      height: rem(50rem);
+    }
+    .valid-amount {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: rem(26rem);
+    }
+    .amount {
+      height: rem(50rem);
+      font-weight: 600;
+      color: #fff;
+    }
+    .split-line {
+      width: rem(1rem);
+      height: rem(120rem);
+      background-color: #765c28;
+    }
+    .cmson-record {
+      color: #d7bc6e;
+      width: rem(120rem);
+    }
+  }
+  .title {
+    font-family: AppleSystemUIFontBold;
+    font-size: rem(26rem);
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: rem(16rem);
+    padding-left: rem(10rem);
+  }
+  .cmson-wp {
+    padding: rem(40rem) rem(26rem) rem(36rem);
+    color: #fff;
+    margin-bottom: rem(94rem);
+
+    .choose-wp {
+      height: rem(80rem);
+
+      .next-ipt {
+        flex: 1;
+        padding: 0 rem(38rem);
+        height: rem(80rem);
+        border: rem(1rem) solid #ffffff99;
+        border-radius: rem(40rem);
+        img {
+          width: rem(24rem);
+          height: rem(24rem);
+          transform: rotate(0deg);
+          transition: all 0.5s ease-out;
+          &.active {
+            transform: rotate(180deg);
+          }
+        }
+        .pld-color {
+          color: #8e8b8b;
+        }
+        input {
+          background: transparent;
+          color: #8e8b8b;
+        }
+      }
+    }
+  }
+  .top-flex {
+    height: rem(80rem);
+    justify-content: space-between;
+
+    p {
+      height: rem(80rem);
+      line-height: rem(80rem);
+      display: flex;
+      font-size: rem(26rem);
+
+      .icon {
+        width: rem(80rem);
+        height: rem(80rem);
+        background-size: cover;
+        display: inline-block;
+        margin-right: rem(6rem);
+      }
+      .icon1 {
+        @extend .icon;
+        @include webp($base-img-dir + 'personal/comission.png');
+      }
+
+      .icon2 {
+        @extend .icon;
+        @include webp($base-img-dir + 'personal/personal-icons.png');
+        background-size: rem(320rem) rem(320rem);
+        background-position: rem(-80rem) rem(-240rem);
+      }
+    }
+
+    div {
+      // flex: 100%;
+      width: rem(40rem);
+
+      img {
+        width: rem(40rem);
+        height: rem(40rem);
+      }
+    }
+  }
+  .cmson-ipt {
+    margin: rem(26rem) auto rem(45rem);
+    // padding: 0 rem(12rem) 0 rem(12rem);
+    // .ipt-amount-wp {
+    //   height: rem(64rem);
+    //   color: #737373;
+    // }
+  }
+  .ipt {
+    // height: rem(64rem);
+    border-radius: rem(12rem);
+    // border: rem(2rem) solid #9c9c9c;
+  }
+
+  .error-tip {
+    bottom: rem(-40rem);
+    color: red;
+  }
+  .option-wp {
+    left: rem(1rem);
+    top: rem(80rem);
+    max-height: rem(220rem);
+    padding: rem(20rem) 0;
+    background: #fff;
+    border-radius: rem(8rem);
+    box-shadow: 0 rem(4rem) rem(13rem) 0 rgba(0, 0, 0, 0.09);
+    overflow-y: scroll;
+    li {
+      line-height: rem(50rem);
+      text-align: center;
+      &.active {
+        color: #fff;
+        background: rgba(221, 186, 91, 0.5);
+      }
+    }
+  }
+  // button {
+  //   display: block;
+  //   margin: 0 auto;
+  //   width: rem(208rem);
+  //   height: rem(70rem);
+  //   background: linear-gradient(180deg, #f5e8c4 0%, #e3bb83 100%);
+  //   border-radius: rem(50rem);
+  //   color: #674837;
+  //   opacity: 1;
+  //   &:disabled {
+  //     opacity: 0.5;
+  //   }
+  // }
+  .pwd {
+    &-wp {
+      width: 90%;
+      background: #515151;
+      color: #fff;
+      border-radius: rem(16rem);
+      input {
+        margin: rem(60rem) auto rem(70rem);
+        display: block;
+        width: rem(560rem);
+        background: transparent;
+        border-bottom: rem(1rem) solid #dedede;
+      }
+      .tip-wp {
+        color: '#5d5d5d';
+      }
+      .commossion-tip {
+        width: 70%;
+        margin: rem(60rem) auto rem(60rem);
+      }
+    }
+
+    &-h {
+      width: 100%;
+      height: rem(79rem);
+
+      font-size: rem(32rem);
+      img {
+        margin-right: rem(30rem);
+        width: rem(36rem);
+        height: rem(36rem);
+      }
+    }
+    &-title {
+      margin-top: rem(20rem);
+      text-align: center;
+      color: #fff;
+    }
+
+    &-f {
+      height: rem(116rem);
+      padding-bottom: rem(46rem);
+      border-radius: 0 0 rem(16rem) rem(16rem);
+      button {
+        display: block;
+        width: rem(208rem);
+        height: rem(70rem);
+        border-radius: rem(16rem);
+        &.fl-btn {
+          padding: 0 0.2rem;
+          border: rem(2rem) solid #f6ea83;
+          color: #fff;
+          background: transparent;
+          margin-right: rem(34rem);
+        }
+        &.fr-btn {
+          background: linear-gradient(180deg, #e1d5b0 0%, #d7bc6e 100%);
+          padding: 0 0.4rem;
+        }
+      }
+    }
+  }
+}

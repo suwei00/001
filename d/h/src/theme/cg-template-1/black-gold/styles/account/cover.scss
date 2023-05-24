@@ -1,0 +1,190 @@
+.sel {
+  &-mask {
+    top: rem(0rem);
+    z-index: 1000;
+    background-color: rgba(51, 51, 51, 0.3);
+    touch-action: none;
+  }
+
+  &-show {
+    display: block;
+    // .sel-container{
+    // animation: select-down ease 0.5s;
+    // }
+  }
+
+  &-container {
+    display: block;
+    left: 0;
+    bottom: 0;
+    // min-height: 60%;
+    overflow-y: auto;
+    // background-color: #fff;
+    animation: select-up ease 0.5s;
+    z-index: 1001;
+    touch-action: none;
+    border-radius: rem(20rem) rem(20rem) 0 0;
+  }
+  &-wp {
+    border-top-left-radius: rem(16rem);
+    border-top-right-radius: rem(16rem);
+  }
+  &-header {
+    // margin-bottom: rem(20rem);
+    height: rem(86rem);
+    line-height: rem(86rem);
+    box-sizing: border-box;
+    background: linear-gradient(271deg, #472f22 0%, #674837 100%) 0% 0% no-repeat padding-box;
+    border-radius: rem(30rem) rem(30rem) 0 0 !important;
+    text-transform: uppercase;
+    // border-bottom: $theme-bd-color4 rem(1rem) solid;
+
+    span {
+      // display: block;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // left: rem(28rem);
+      display: inline-block;
+      padding-left: rem(30rem);
+      color: #d7bc6e;
+    }
+
+    h4 {
+      line-height: rem(96rem);
+      color: #fff;
+      font-weight: 600;
+      font-family: Myriad ProB;
+    }
+  }
+
+  &-list-wp {
+    background: transparent linear-gradient(90deg, #fcefd5 0%, #ddd1c5 100%) 0% 0% no-repeat padding-box;
+    padding-bottom: rem(50rem);
+    padding: rem(20rem) rem(58rem) rem(50rem);
+  }
+
+  &-list {
+    overflow-y: auto;
+
+    li {
+      position: relative;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      //height: rem(80rem);
+      line-height: rem(80rem);
+      font-size: rem(48rem);
+      border-bottom: rem(1rem) solid #707070;
+
+      span {
+        display: block;
+        width: rem(48rem);
+        height: rem(48rem);
+        background-position: center;
+        &.bank-icon {
+          margin-right: rem(30rem);
+          width: rem(130rem);
+          height: rem(64rem);
+        }
+      }
+
+      img {
+        width: rem(36rem);
+        height: rem(36rem);
+      }
+    }
+  }
+  &-scroll {
+    height: calc(100% - 90px);
+    overflow: auto;
+  }
+
+  &-list-title {
+    width: rem(569rem);
+    height: rem(80rem);
+    padding-left: rem(14rem);
+    color: #291717;
+    box-sizing: border-box;
+    font-size: rem(34rem);
+  }
+
+  &-top {
+    z-index: 5;
+    margin-bottom: rem(20rem);
+
+    .sel-right {
+      justify-content: flex-end;
+      border: none;
+    }
+
+    .sel-check {
+      display: block;
+      width: rem(48rem);
+      height: rem(48rem);
+      background-position: center;
+    }
+  }
+
+  &-title {
+    padding-left: rem(24rem);
+  }
+
+  &-money {
+    color: $theme-promotion-tab-txt-color;
+  }
+}
+.bank-list-wp {
+  height: rem(700rem);
+  overflow: scroll;
+  .sel-list {
+    overflow: initial;
+    li {
+      line-height: initial;
+    }
+  }
+  .sel-list-title {
+    height: initial;
+    padding: rem(20rem) 0 rem(20rem) 0;
+  }
+}
+
+@keyframes select-up {
+  from {
+    bottom: rem(-712rem);
+  }
+
+  to {
+    bottom: rem(0rem);
+  }
+}
+
+@keyframes select-up {
+  from {
+    bottom: rem(-712rem);
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes select-down {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: rem(-712rem);
+  }
+}
+
+@keyframes select-down {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: rem(-712rem);
+  }
+}

@@ -1,0 +1,275 @@
+.promotion-deposit-view {
+  padding-bottom: rem(120rem);
+  position: relative;
+  color: #000000;
+  background: #fffaec;
+  &.keybord-active {
+    .deposit-banner {
+      top: 4rem;
+    }
+  }
+  section {
+    width: rem(690rem);
+    margin-left: rem(30rem);
+    margin-right: rem(30rem);
+  }
+  .deposit-title {
+    position: absolute;
+    width: 100%;
+    height: rem(50rem);
+    left: 0;
+    top: rem(-12rem);
+    text-align: center;
+    color: #fff;
+    font-size: rem(24rem);
+    line-height: rem(50rem);
+    @include webp($base-img-dir + 'promotion/title.png');
+    background-position: center top;
+    background-size: auto 100%;
+  }
+  .deposit-introduce,
+  .deposit-rules {
+    padding: 0 rem(40rem) rem(32rem);
+    padding-top: rem(74rem);
+    text-align: justify;
+    position: relative;
+    font-size: rem(24rem);
+    line-height: rem(48rem);
+  }
+  .deposit-rules {
+    font-size: rem(20rem);
+    color: #afb0ba;
+    line-height: rem(28rem);
+    .tip {
+      color: #ff0000;
+      margin-bottom: rem(22rem);
+    }
+    .rules-content {
+      white-space: normal;
+      pre,
+      p {
+        white-space: normal;
+      }
+    }
+  }
+  .deposit-introduce {
+    .huodong {
+      font-size: rem(24rem);
+    }
+    dl {
+      color: #afb0ba;
+      font-size: rem(20rem);
+      line-height: rem(28rem);
+      dt {
+        margin-bottom: rem(8rem);
+      }
+    }
+  }
+  section {
+    min-height: rem(100rem);
+    background-color: #fff;
+    border-radius: rem(20rem);
+    box-shadow: rem(0rem) rem(8rem) rem(26rem) rem(0rem) rgba(0, 0, 0, 0.09);
+    position: relative;
+  }
+  section:not(:last-of-type) {
+    margin-bottom: rem(30rem);
+  }
+  section.deposit-introduce {
+    margin-bottom: rem(54rem);
+  }
+  .deposit-table {
+    margin: rem(24rem) auto;
+    text-align: center;
+    border: rem(2rem) solid #eeeeee;
+    border-radius: rem(20rem);
+    overflow: hidden;
+    li {
+      flex: 1;
+      font-size: rem(20rem);
+    }
+    li:not(:last-of-type) {
+      border-right: rem(2rem) solid #eeeeee;
+    }
+  }
+  .deposit-thead {
+    background: #E3A090;
+    li {
+      color: #ffffff;
+      height: rem(74rem);
+      line-height: rem(22rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .deposit-tbody {
+    li {
+      height: rem(74rem);
+      line-height: rem(74rem);
+      border-top: rem(2rem) solid #eeeeee;
+    }
+  }
+  .deposit-wallet {
+    min-height: rem(184rem);
+    padding: 0 rem(38rem) 0 rem(46rem);
+    .deposit-icon-wallet {
+      width: rem(80rem);
+      height: rem(80rem);
+      margin-right: rem(20rem);
+    }
+    dl {
+      color: #8290a8;
+    }
+    dt {
+      font-size: rem(28rem);
+      margin-bottom: rem(12rem);
+    }
+    dd {
+      .deposit-icon-rotate {
+        margin-left: rem(20rem);
+        width: rem(32rem);
+        transition: transform 2s ease;
+      }
+      text-align: justify;
+      font-size: rem(40rem);
+      line-height: rem(40rem);
+      word-break: break-all;
+      span {
+        font-weight: 400;
+        margin-left: rem(10rem);
+        font-size: rem(28rem);
+        line-height: rem(28rem);
+      }
+    }
+    > p {
+      width: rem(178rem);
+      height: rem(50rem);
+      background: linear-gradient(145deg, #F2CFC2 0%, #E1A28F 100%);
+      box-shadow: rem(0rem) rem(22rem) rem(12rem) rem(-16rem) rgba(242,207,194, 1);
+      border-radius: rem(23rem);
+      color: #ffffff;
+      text-align: center;
+      line-height: rem(22rem);
+      padding: 0 rem(34rem);
+      top: rem(38rem);
+      right: rem(46rem);
+    }
+  }
+  .deposit-form {
+    text-align: justify;
+    padding: 0 rem(40rem) rem(40rem);
+    .form-item {
+      padding-top: rem(30rem);
+    }
+    .form-title {
+      color: #000000;
+      font-size: rem(20rem);
+      height: rem(32rem);
+      line-height: rem(32rem);
+      font-weight: 500;
+    }
+    .form-cell {
+      margin-top: rem(20rem);
+      padding: 0 rem(14rem);
+      height: rem(54rem);
+      border-radius: rem(12rem);
+      border: rem(2rem) solid #d8dce7;
+      color: #8590a6;
+      font-size: rem(20rem);
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      img {
+        width: rem(36rem);
+        height: rem(36rem);
+      }
+    }
+    .van-cell {
+      margin-top: rem(20rem);
+      padding: 0 rem(14rem);
+      height: rem(54rem);
+      line-height: rem(54rem);
+      border-radius: rem(12rem);
+      font-size: rem(20rem);
+      border: rem(2rem) solid #d8dce7;
+      .van-field__body {
+        height: 100%;
+      }
+    }
+  }
+  .deposit-submit {
+    padding: rem(40rem);
+    ul:not(:last-of-type) {
+      margin-bottom: rem(28rem);
+    }
+    li {
+      height: rem(28rem);
+      line-height: rem(28rem);
+      font-size: rem(24rem);
+    }
+  }
+  button.bot {
+    width: rem(690rem);
+    height: rem(96rem);
+    margin-right: rem(30rem);
+    margin-left: rem(30rem);
+    background: linear-gradient(180deg, #F2CFC2 0%, #E1A28F 100%);
+    box-shadow: rem(0rem) rem(32rem) rem(12rem) rem(-16rem) rgba(255, 244, 216, 1);
+    border-radius: rem(16rem);
+    margin-top: rem(20rem);
+    font-size: rem(32rem);
+    color: #fff;
+    margin-bottom: rem(46rem);
+    &[disabled] {
+      opacity: 0.5;
+    }
+  }
+  .bottom-tip {
+    font-size: rem(20rem);
+    color: #8590a6;
+    img {
+      margin-right: rem(22rem);
+    }
+    p {
+      width: rem(400rem);
+    }
+  }
+  .ipt-amount-wp {
+    border: rem(1rem) solid #d8dce7;
+    padding: 0 rem(14rem);
+    border-radius: rem(11rem);
+    height: rem(54rem);
+    margin-top: rem(20rem);
+    .fake-input {
+      font-size: rem(20rem);
+    }
+    .fake-input-placeholder {
+      color: #8590a6;
+    }
+    .clear-input {
+      width: rem(21rem);
+      height: rem(21rem);
+      background-size: contain;
+      background-position: 0.02rem 0.02rem;
+      margin-right: rem(7.5rem);
+    }
+  }
+  @keyframes Rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .rotate {
+    animation: Rotate 0.2s ease-in;
+  }
+  .van-overlay {
+    background: rgba($color: #000000, $alpha: 0.5);
+  }
+}

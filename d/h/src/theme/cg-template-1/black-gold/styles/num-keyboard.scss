@@ -1,0 +1,56 @@
+.num-keyboard-view {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #f6f6f7;
+  border-top: solid rem(2rem) #c6a86c;
+  z-index: 1001;
+
+  .num-area {
+    width: 75%;
+  }
+  .oper-area {
+    width: 25%;
+  }
+  .key-item {
+    width: 33.33%;
+    height: rem(100rem);
+    border-right: solid rem(2rem) #c6a86c;
+    border-bottom: solid rem(2rem) #c6a86c;
+    font-size: rem(52rem);
+    color: #c6a86c;
+    background: transparent linear-gradient(118deg, #ffffff 0%, #f0f0f0 100%) 0% 0% no-repeat padding-box;
+  }
+  .key-item:active,
+  .key-delete:active {
+    color: #fff;
+    background: #c6a86c;
+  }
+  .key-delete {
+    height: rem(198rem);
+    color: #c6a86c;
+  }
+  .key-sure {
+    height: rem(202rem);
+    color: #fff;
+    border-top: solid rem(2rem) #c6a86c;
+    background: transparent linear-gradient(137deg, #f5e8c4 0%, #e3bb83 100%) 0% 0% no-repeat padding-box;
+    font-size: rem(32rem);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 3px 6px #67483780;
+  }
+  .key-sure:active {
+    background: #e6c985;
+    color: #fff;
+  }
+  .keyboard {
+    width: rem(65rem);
+    height: rem(57rem);
+  }
+  .clear {
+    width: rem(51rem);
+    height: rem(37rem);
+  }
+}

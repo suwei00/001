@@ -1,0 +1,120 @@
+.trs {
+  // padding-top: 1rem;
+  overflow: scroll;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  .txt-c4 {
+    color: #afb0ba;
+  }
+  .txt-c3 {
+    color: #000000;
+  }
+  &-item {
+    border-color: #f5e8c4;
+    padding: rem(33rem) rem(26rem);
+    width: rem(690rem);
+    // padding: rem(22rem) rem(18rem) rem(26rem) rem(32rem);
+    // background: #292828;
+    box-shadow: rem(0rem) rem(8rem) rem(26rem) rem(0rem) rgba(0, 0, 0, 0.09);
+    margin: rem(20rem) auto;
+    // border-radius: rem(16rem);
+    .amount {
+      font-size: rem(24rem);
+      line-height: rem(28rem);
+      color: #fce905;
+      font-family: AppleSystemUIFontBold;
+    }
+  }
+  &-icon {
+    margin-right: rem(16rem);
+    width: rem(60rem);
+    height: rem(60rem);
+    color: #ffffff;
+    @include webp($base-img-dir + 'transacton/transaction-icons.png');
+    background-size: rem(60rem) rem(240rem);
+    // $flagEnum: 1, 2, 3, 4, 5, 6, 7, 8;
+    // @each $n in $flagEnum {
+    //   &.icon-flag27#{$n} {
+    //     background: url(link($base-img-dir + 'transacton/flag27' + $n + '.svg')) no-repeat;
+    //     background-size: cover;
+    //   }
+    // }
+
+    &.icon-flag271 {
+      background-position: 0 0;
+    }
+
+    &.icon-flag272 {
+      background-position: 0 rem(-120rem);
+    }
+
+    &.icon-flag273 {
+      background-position: 0 rem(-60rem);
+    }
+
+    &.icon-flag274 {
+      background-position: 0 rem(-180rem);
+    }
+  }
+
+  // .van-pull-refresh {
+  // min-height: calc(100vh - 1rem - 1rem);
+  // }
+  &-d {
+    padding: rem(10rem) 0 rem(10rem) rem(28rem);
+    color: #fff;
+    font-weight: 700;
+  }
+  .c-top {
+    margin-bottom: rem(4rem);
+    font-size: rem(24rem);
+    line-height: rem(28rem);
+
+    .title {
+      color: #f5e8c4;
+      // margin-right: rem(2rem);
+      text-transform: uppercase;
+      font-weight: AppleSystemUIFontBold;
+      font-weight: bold;
+    }
+
+    span {
+      color: #afb0ba;
+    }
+    img {
+      width: rem(24rem);
+      height: rem(24rem);
+      transform: translateY(0.01rem);
+    }
+  }
+
+  .time {
+    color: #c4c3c2;
+  }
+  .state {
+    font-size: rem(20rem);
+    top: 0;
+    white-space: nowrap;
+  }
+  &-success {
+    color: #1acb17 !important;
+  }
+  &-failed {
+    color: #ff0000 !important;
+  }
+  &-ing {
+    color: #fff !important;
+  }
+  i.right-arrow {
+    display: block;
+    width: rem(20rem);
+    height: rem(35rem);
+    background: url(link($base-img-dir + 'arrow/right-arrow.svg')) no-repeat;
+    background-size: cover;
+  }
+  .transfer-line {
+    margin: rem(6rem) auto;
+  }
+}

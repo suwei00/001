@@ -1,0 +1,3 @@
+@mixin transrgba($color,$alpha) {
+    background-color: rgba($color: $color, $alpha: $alpha);
+}

@@ -1,0 +1,48 @@
+.help_guide {
+    overflow-y: scroll;
+    .helplist {
+        padding: 0 18px 20px 18px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+
+        .subtitle {
+            font-weight: 800;
+            color: #000000;
+            line-height: 17px;
+            margin-top: 5px;
+        }
+
+
+    }
+
+
+}
+
+.mgt-40 {
+    font-weight: 800;
+    color: #3366FE;
+    line-height: 19px;
+    margin-top: 20px;
+}
+.service{
+    color: #4F73F6;
+    text-decoration: underline;
+}
+
+.pd-l {
+    font-weight: 400;
+    color: #000000;
+    line-height: 17px;
+    font-size: 12px;
+    margin: 5px 0;
+    font-family: PingFangSC-Regular, PingFang SC;
+}
+.bold-24{
+    font-size: 12px;
+    color: #000000;
+    line-height: 14px;
+    font-weight: bold;
+}
+.suo {
+    padding-left: 14.5px;
+    text-indent: -14.5px;
+}

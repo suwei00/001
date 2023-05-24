@@ -1,0 +1,48 @@
+.zalo {
+    &-wp {
+      width: 77%;
+    }
+  
+    &-h {
+      width: 100%;
+      height: rem(79rem);
+      background: linear-gradient(146deg, #fcf1d1 0%, #d6ba69 100%);
+      border-radius: rem(16rem) rem(16rem) 0 0;
+      color: #431000;
+      font-size: rem(32rem);
+    }
+  
+    &-body {
+      height: rem(318rem);
+      padding: rem(48rem) rem(44rem);
+      width: 100%;
+      color: #f17777;
+      background: #fff;
+      p {
+        line-height: rem(40rem);
+      }
+    }
+  
+    &-f {
+      height: rem(116rem);
+      padding-bottom: rem(46rem);
+      border-radius: 0 0 rem(16rem) rem(16rem);
+      background: #fff;
+      button {
+        display: block;
+        width: rem(180rem);
+        height: rem(70rem);
+        border-radius: rem(16rem);
+        &.fl-btn {
+          border: rem(2rem) solid #e6c981;
+          color: #d6aa59;
+          background: #fff;
+          margin-right: rem(34rem);
+        }
+        &.fr-btn {
+          color: #8b644e;
+          background: #e6c981;
+        }
+      }
+    }
+  }

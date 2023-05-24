@@ -1,0 +1,32 @@
+:root {
+  // 色号分为 背景 字体 边框 阴影 4中类型，相同色号不同类型的变量不能共用  相同类型色号唯一
+  // 背景色
+  --cg-color-bg-1: #1B75F0;
+  --cg-color-bg-2: #0199FF;
+  --cg-color-bg-3: #07C160;
+  --cg-color-bg-4: #FA392F;
+  --cg-color-bg-5: #D7EFFB;
+  --cg-color-bg-6: #C8C9CC;
+  --cg-color-bg-7: #F9F9F9;
+  --cg-color-bg-8: #F7F8FA;
+  --cg-color-bg-8: #F3F7FC;
+  --cg-color-bg-9: #4c4c4c;
+  --cg-color-bg-10: #EBEDF0;
+  --cg-color-bg-white: #ffffff;
+  --cg-color-bg-black: #000000;
+  --cg-color-bg-black-4: rgba(0,0,0,0.4);
+
+  // 字体色
+  --cg-color-text-1: #1B75F0;
+  --cg-color-text-2: #0199ff;
+  --cg-color-text-3: #323233;
+  --cg-color-text-4: #7A7A7F;
+  --cg-color-text-5: #A3A3A5;
+  --cg-color-text-6: #FA392F;
+
+  --cg-color-text-white: #ffffff;
+
+  // border色
+  --cg-color-border-1: #EBEDF0;
+  --cg-color-border-2: #1B75F0;
+}

@@ -1,0 +1,125 @@
+.virt {
+  padding-bottom: rem(100rem);
+  background-position: center 0rem;
+  color: $theme-txt-color22;
+  ol {
+    list-style-type: none;
+  }
+  &-text {
+    padding: 0 rem(26rem) 0 rem(30rem);
+    li {
+      margin-bottom: rem(40rem);
+      line-height: rem(40rem);
+      color: #afb0ba;
+    }
+  }
+  .advant-item,
+  .usdt-item,
+  .coin-item {
+    margin: 0 auto rem(24rem);
+    border-radius: rem(4rem);
+    border: rem(2rem) solid $bd-c1;
+  }
+  h2 {
+    line-height: rem(28rem);
+    color: $txt-c3;
+  }
+  .advant-item {
+    padding: 0 rem(15rem);
+    width: rem(182rem);
+    height: rem(564rem);
+    background: none;
+    &:first-child {
+      div {
+        h2 {
+          line-height: rem(56rem);
+        }
+      }
+    }
+    &:last-child {
+      div {
+        h2 {
+          padding: 0 rem(20rem);
+        }
+      }
+    }
+    div {
+      line-height: rem(30rem);
+      color: #afb0ba;
+      img {
+        margin-top: rem(20rem);
+        width: rem(112rem);
+        height: rem(112rem);
+      }
+
+      h2 {
+        height: rem(56rem);
+        margin: 0 0 rem(10rem);
+      }
+    }
+  }
+  .usdt-p {
+    margin: rem(20rem) 0 rem(40rem);
+    padding: 0 rem(32rem);
+    line-height: rem(32rem);
+    color: #afb0ba;
+  }
+  .usdt-item {
+    margin: 0 rem(30rem);
+    width: rem(632rem);
+    height: rem(158rem);
+    background: none;
+    border: none;
+    border-bottom: rem(2rem) solid $bd-c1;
+    &:last-child {
+      border: none;
+    }
+    img {
+      width: rem(112rem);
+      height: rem(112rem);
+    }
+    div {
+      width: rem(492rem);
+      line-height: rem(28rem);
+      padding: 0 rem(10rem) 0 rem(16rem);
+      color: #afb0ba;
+      h2 {
+        margin: 0 0 rem(6rem);
+      }
+    }
+  }
+  &-coin {
+    padding: rem(56rem) rem(40rem) 0;
+  }
+  .coin-item {
+    margin: 0 0 rem(80rem) 0;
+    width: rem(292rem);
+    border-radius: rem(16rem);
+    padding: rem(30rem) rem(32rem);
+    border: none;
+    img {
+      width: rem(64rem);
+      height: rem(64rem);
+    }
+    h3 {
+      margin: rem(10rem) 0 rem(30rem);
+      line-height: rem(32rem);
+      color: $theme-txt-color;
+    }
+    ol {
+      margin-top: rem(32rem);
+      li {
+        padding: 0;
+        line-height: rem(36rem);
+        margin-bottom: rem(16rem);
+        color: #afb0ba;
+      }
+    }
+  }
+  &-bot {
+    margin: rem(34rem) 0 rem(50rem);
+    padding: 0 rem(30rem);
+    line-height: rem(24rem);
+    color: #afb0ba;
+  }
+}

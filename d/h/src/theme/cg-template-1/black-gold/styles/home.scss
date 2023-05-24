@@ -1,0 +1,305 @@
+.home-view {
+  height: 100%;
+  //background-position: 0 rem(-88rem);
+  padding-bottom: 1.2rem;
+  background-color: $bg-c9;
+  //  padding-top: rem(88rem);
+  overflow: scroll;
+  .banner-wp {
+    height: rem(552rem);
+  }
+  .banner-swipe {
+    //display: none;
+    height: rem(560rem);
+    .van-swipe__indicators {
+      // width: 20%;
+      // left: 85%;
+      left: inherit;
+      right: 0;
+      bottom: rem(204rem);
+      i {
+        width: rem(28rem);
+        height: rem(4rem);
+        background-color: $bg-c1;
+        box-shadow: 0 0 rem(40rem) 0 $bg-rgba1;
+        border-radius: rem(4rem);
+      }
+    }
+  }
+  //.home-logo {
+  //  top: rem(6rem);
+  //  left: rem(22rem);
+  //  width: rem(184rem);
+  //  height: rem(58rem);
+  //  @include webp($base-img-dir + 'home/logo.png');
+  //  background-size: 100% 100%;
+  //}
+  .notice-bar-wp {
+    left: rem(260rem);
+    top: rem(10rem);
+    border-radius: rem(8rem);
+  }
+  .van-notice-bar {
+    width: rem(460rem);
+    height: rem(48rem);
+    color: $bg-c1;
+    background: $bg-rgba3;
+    border: rem(2rem) solid $bg-rgba4;
+  }
+  //.icon-speak {
+  //  width: rem(32rem);
+  //  height: rem(32rem);
+  //}
+  .btn-hot-match {
+    width: rem(108rem);
+    height: rem(32rem);
+    border-radius: rem(16rem);
+    //color: $bg-c1;
+    //background-image: linear-gradient(to bottom, #bad5f3 5%, #3678fe);
+  }
+  .oper-panel {
+    left: rem(30rem);
+    bottom: rem(24rem);
+    width: rem(690rem);
+    height: rem(152rem);
+    border-radius: rem(16rem);
+    background: $bg-rgba5;
+    .balan {
+      span {
+        margin-right: rem(4rem);
+      }
+    }
+  }
+  .oper-panel-bg {
+    height: rem(140rem);
+    background: $bg-rgba5;
+    box-shadow: 0px rem(8rem) rem(26rem) 0px rgba(0, 0, 0, 0.09);
+    border-radius: rem(16rem);
+    border: rem(2rem) solid $bg-rgba1;
+  }
+  .u-info {
+    padding-left: rem(32rem);
+    span {
+      color: $txt-c7;
+      font-family: DINPro-Medium, DINPro;
+    }
+  }
+  .user-wp {
+    $icon: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10';
+    @each $item in $icon {
+      .vip-#{$item} {
+        display: inline-block;
+        margin-left: rem(6rem);
+        width: rem(70rem);
+        height: rem(20rem);
+        @include webp($base-img-dir + 'vip/vip' + $item + '.png');
+        background-size: 100% 100%;
+      }
+    }
+  }
+  $menus: 'deposit', 'transfer', 'withdraw', 'VIP';
+  .menu-item {
+    margin: 0 rem(30rem) 0 0;
+    color: $theme-txt-color4;
+    @each $item in $menus {
+      .icon-#{$item} {
+        width: rem(60rem);
+        height: rem(44rem);
+        @include webp($base-img-dir + 'icon-' + $item + '.png');
+        background-size: 100% 100%;
+      }
+    }
+    .menu-t {
+      color: $bg-rgba6;
+    }
+  }
+  .act-wp {
+    min-height: rem(1100rem);
+    padding: 0 rem(30rem);
+    // height: rem(818rem);
+    // height: calc(100% - 5.52rem);
+    background: $bg-c9 url(link($base-img-dir + 'home/menu-bg.png')) no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+  }
+  .act-bg {
+    margin-top: rem(6rem);
+    width: rem(690rem);
+    height: rem(126rem);
+    box-shadow: 0px rem(8rem) rem(26rem) 0px rgba(0, 0, 0, 0.09);
+    border-radius: rem(16rem);
+    border: rem(2rem) solid;
+    border-image: linear-gradient(225deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 2 2;
+  }
+  .act-icon {
+    margin-right: rem(60rem);
+    width: rem(64rem);
+    height: rem(56rem);
+    @include webp($base-img-dir + 'home/activity-text.png');
+    background-size: 100% 100%;
+  }
+  .act-content {
+    padding: 0 rem(30rem);
+    height: rem(114rem);
+    background-color: $bg-rgba5;
+    background: $bd-c5;
+    .act-title {
+      margin-bottom: rem(10rem);
+      color: $txt-c7;
+    }
+    .act-des {
+      color: $bg-rgba6;
+    }
+  }
+
+  .g-types-wp {
+    margin: rem(15rem) auto 0;
+    width: rem(694rem);
+  }
+  .g-type-item {
+    width: rem(72rem);
+    color: $txt-c9;
+    &:last-child {
+      margin: 0;
+    }
+    &.active {
+      color: $txt-c10;
+    }
+    .g-t-icon {
+      width: rem(72rem);
+      height: rem(72rem);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .g-t-name {
+      margin-top: rem(10rem);
+    }
+  }
+  .g-list-wp {
+    margin-top: rem(20rem);
+    // height: rem(550rem);
+    overflow: scroll;
+    padding: rem(30rem) 0 rem(30rem) 0;
+  }
+  @mixin gameItem($imgUrl) {
+    background: url($imgUrl) center no-repeat;
+    background-size: 100% 100%;
+  }
+  .g-list {
+    margin: 0;
+    color: $theme-txt-color10;
+    text-align: center;
+    .g-item {
+      width: rem(330rem);
+      height: rem(380rem);
+      margin: 0 rem(28rem) rem(40rem) 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .singin {
+    right: rem(4rem);
+    bottom: rem(160rem);
+    z-index: 9999;
+    transform: translate3d(rem(0rem), rem(0rem), rem(1rem));
+    &-wp {
+      span {
+        width: rem(36rem);
+        height: rem(36rem);
+        right: rem(2rem);
+        top: rem(2rem);
+        background: url(link($base-img-dir + 'home/icon-close.svg')) no-repeat;
+        background-size: 100% 100%;
+        z-index: 1;
+      }
+      img {
+        width: rem(160rem);
+        height: rem(160rem);
+      }
+    }
+  }
+  .atv-swipe {
+    .van-swipe__indicators {
+      width: rem(100rem);
+      left: 50%;
+      bottom: 0;
+      i {
+        margin-right: rem(30rem);
+        width: rem(16rem);
+        height: rem(16rem);
+        background-color: $bg-c4;
+        border-radius: rem(16rem);
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .platform-swipe {
+    .van-swipe__indicators {
+      display: none;
+    }
+  }
+  .activity {
+    &-wp {
+      width: 92%;
+      height: rem(922rem);
+      .atv-swipe {
+        height: rem(826rem);
+      }
+    }
+    &-swp {
+      img {
+        height: rem(658rem);
+      }
+    }
+    &-h {
+      width: 100%;
+      height: rem(104rem);
+      background: linear-gradient(314deg, $bg-c30 0%, $bg-c31 100%);
+      border-radius: rem(16rem) rem(16rem) 0 0;
+      span {
+        display: inline-block;
+        margin: rem(28rem) 0 0 rem(58rem);
+        width: rem(190rem);
+        height: rem(38rem);
+        @include webp($base-img-dir + 'home/icon-activity.png');
+        background-size: 100% 100%;
+      }
+    }
+    &-f {
+      top: rem(762rem);
+      height: rem(104rem);
+      padding: 0 0 0 rem(32rem);
+      background: $bg-c1;
+      border-radius: 0 0 rem(16rem) rem(16rem);
+      span {
+        color: $txt-c4;
+        font-size: rem(28rem);
+      }
+      .check-box {
+        display: inline-block;
+        margin-right: rem(24rem);
+        width: rem(28rem);
+        border: rem(2rem) solid $bd-c12;
+        border-radius: rem(28rem);
+        height: rem(28rem);
+        &.active {
+          background-color: $bg-c2;
+          border: rem(2rem) solid $bd-c3;
+        }
+      }
+    }
+    &-close {
+      right: rem(20rem);
+      top: rem(32rem);
+      width: rem(34rem);
+      height: rem(34rem);
+      background: url(link($base-img-dir + 'home/icon-dialog-close.svg')) no-repeat;
+      background-size: 100%;
+    }
+  }
+}

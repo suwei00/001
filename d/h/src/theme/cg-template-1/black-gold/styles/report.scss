@@ -1,0 +1,41 @@
+.report {
+  padding: rem(24rem) rem(48rem);
+
+  li {
+    float: left;
+    width: 50%;
+    padding: rem(16rem) rem(24rem) 0;
+
+    // height rem(304rem);
+    .report-box {
+      background: map.get($colors, white);
+      border-radius: rem(10rem);
+      text-align: center;
+      height: rem(360rem);
+      padding: 3.6vw 0;
+      box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.09);
+    }
+
+    .report-img {
+      height: rem(208rem);
+      text-align: center;
+
+      img {
+        height: 80%;
+      }
+    }
+
+    p {
+      line-height: rem(48rem);
+      font-size: rem(26rem);
+      color: $theme-txt-color23;
+
+      &:last-child {
+        line-height: rem(24rem);
+        font-size: rem(24rem);
+        color: #AFB0BA;
+        transform: scale(0.75);
+      }
+    }
+  }
+}

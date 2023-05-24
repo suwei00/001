@@ -1,0 +1,81 @@
+.bet-item {
+  // background: #5d5050;
+  border: rem(2rem) solid #f5e8c4;
+  border-radius: rem(30rem);
+  font-size: rem(20rem);
+  background: transparent linear-gradient(90deg, #3b2d2d 0%, #291717 100%) 0% 0% no-repeat padding-box;
+  overflow: hidden;
+  margin-bottom: rem(24rem);
+
+  h4 {
+    line-height: rem(86rem);
+    background: transparent linear-gradient(271deg, #472f22 0%, #674837 100%) 0% 0% no-repeat padding-box;
+    padding-left: rem(34rem);
+    color: #f5e8c4;
+    font-family: AppleSystemUIFontBold;
+  }
+  .bet-item-wp {
+    padding: 0 rem(34rem);
+    color: #fff;
+
+    .amout {
+      margin-left: rem(5rem);
+      font-family: AppleSystemUIFontBold;
+      color: #fce905;
+    }
+  }
+  .sec-t {
+    margin-top: rem(20rem);
+    i {
+      width: rem(4rem);
+      height: rem(24rem);
+      background: #d6aa59;
+      border-radius: rem(7rem);
+      margin-right: rem(8rem);
+    }
+  }
+
+  .f-money {
+    // color: #fff;
+    font-family: AppleSystemUIFontBold;
+    font-size: rem(24rem);
+  }
+  .item-line {
+    border-top: rem(2rem) solid #707070;
+    padding-top: rem(24rem);
+    margin: rem(24rem) 0;
+  }
+  .item-bot {
+    margin-top: rem(20rem);
+    margin-bottom: rem(16rem);
+  }
+  .itemCss2 {
+    margin-bottom: rem(36rem);
+  }
+  .f-red {
+    color: #ff0000;
+  }
+  .order-wp {
+    border-top: rem(2rem) solid #707070;
+    width: 100%;
+    padding-top: rem(10rem);
+    padding-right: rem(40rem);
+    color: #fff;
+    i.copy {
+      width: rem(24rem);
+      height: rem(24rem);
+    }
+
+    .bill-num {
+      position: relative;
+
+      .copy-btn {
+        position: absolute;
+        left: calc(100% + 0.13rem);
+        top: 0;
+        width: rem(27rem);
+        height: rem(27rem);
+      }
+    }
+  }
+}

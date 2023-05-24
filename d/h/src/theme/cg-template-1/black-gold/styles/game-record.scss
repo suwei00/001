@@ -1,0 +1,336 @@
+.member-list {
+  height: 100%;
+  background-color: #000;
+
+  .main {
+    height: calc(100% - 1rem);
+
+    .mask {
+      height: 100%;
+      padding: rem(20rem) rem(25rem);
+      background-color: rgba(0, 0, 0, 0.5);
+
+      overflow-y: scroll;
+    }
+  }
+
+  .top-ab {
+    top: rem(90rem);
+    z-index: 100;
+
+    .bg-style {
+      background: transparent linear-gradient(90deg, #3b2d2d99 0%, #190b0b99 100%) 0% 0% no-repeat padding-box;
+      border: rem(2rem) solid #f5e8c4;
+      border-radius: rem(30rem);
+      padding: rem(38rem) rem(25rem);
+    }
+
+    .query-box {
+      margin: 0 auto;
+    }
+  }
+
+  input {
+    color: #fff;
+  }
+
+  input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #8e8b8b;
+  }
+
+  .input-item {
+    margin-bottom: rem(24rem);
+
+    .label {
+      color: #fff;
+      font-family: Myriad Pro;
+      font-size: rem(26rem);
+      width: rem(150rem);
+    }
+
+    .pub-p {
+      border: rem(1rem) solid #ffffff99;
+      border-radius: rem(50rem);
+      padding: 0 rem(36rem);
+    }
+
+    .pub-p,
+    .time-picker {
+      font-size: rem(20rem);
+      height: rem(64rem);
+      line-height: rem(64rem);
+      background: transparent;
+
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .bold {
+      font-family: AppleSystemUIFontBold;
+    }
+
+    .time-picker {
+      justify-content: center;
+      color: #fff;
+    }
+
+    .bd-wp {
+      border: rem(1rem) solid #ffffff99;
+      color: #fff;
+    }
+
+    input,
+    div {
+      flex: 1;
+    }
+
+    >p {
+      width: rem(200rem);
+    }
+  }
+
+  .time-picker {
+    cursor: pointer;
+    width: 45%;
+    text-align: center;
+  }
+
+  .member-list {
+    height: 100%;
+    overflow: hidden;
+    font-size: rem(12rem);
+  }
+
+  .member-num {
+    margin: rem(28rem) rem(20rem);
+    padding: rem(22rem) rem(22rem) rem(22rem) rem(26rem);
+
+    p {
+      line-height: rem(50rem);
+      font-size: rem(26rem);
+    }
+  }
+
+  .list-content {
+    padding-top: rem(30rem);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .member-item {
+    margin: rem(20rem) 0;
+    padding: rem(28rem) rem(22rem) rem(28rem) rem(26rem);
+    color: #fff;
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      line-height: rem(50rem);
+      font-size: rem(24rem);
+      color: #fff;
+      text-transform: capitalize;
+    }
+
+    .member-name {
+      display: inline-block;
+      margin-left: rem(-28rem);
+      padding: 0 rem(20rem);
+      height: rem(50rem);
+      line-height: rem(50rem);
+      background: #eecf86;
+      border-radius: 0 rem(200rem) rem(200rem) 0;
+    }
+
+    .top-p {
+      padding-bottom: rem(20rem);
+      line-height: rem(46rem);
+      border-bottom: rem(1rem) solid #707070;
+    }
+
+    .member-info {
+      padding-top: rem(20rem);
+
+      p:last-child {
+        span:last-child {
+          color: #fce905;
+        }
+      }
+    }
+  }
+
+  .ipt-k {
+    position: relative;
+
+    .k {
+      position: absolute;
+      bottom: 0.12rem;
+      right: 0.1rem;
+      font-size: 0.1rem;
+      font-weight: normal;
+      color: #000;
+    }
+  }
+
+  .ipt-name {
+    position: relative;
+
+    input {
+      padding-left: 0.4rem;
+    }
+
+    .prefix {
+      position: absolute;
+      bottom: 0.06rem;
+      width: 0.3rem;
+      left: 0.01rem;
+      height: 0.28rem;
+      line-height: 0.28rem;
+      background: #f5f7fa;
+      font-size: 0.1rem;
+      border-top-left-radius: 0.06rem;
+      border-bottom-left-radius: 0.06rem;
+      font-weight: normal;
+      color: #000;
+    }
+  }
+
+  .agent-tip {
+    color: red;
+    font-weight: normal;
+  }
+
+  .btn-box {
+    margin-top: rem(24rem);
+  }
+
+  button {
+    margin: 0 0.11rem;
+    width: rem(208rem);
+    height: rem(76rem);
+    border-radius: rem(40rem);
+    font-size: rem(26rem);
+    color: #674837;
+    text-transform: uppercase;
+    font-family: AppleSystemUIFontBold;
+    text-shadow: 0px 3px 6px #472f2280;
+
+    &.query {
+      background: linear-gradient(to right, #f5e8c4 0%, #e3bb83 100%);
+    }
+
+    &.add {
+      background: linear-gradient(90deg, #a5d6f3 0%, #7fa1ed 100%);
+    }
+
+    &.reset {
+      background: linear-gradient(to right, #fff 0%, #fcefd5 100%);
+    }
+
+    &.edit {
+      margin: 0 auto;
+      display: block;
+      width: rem(136rem);
+      height: rem(52rem);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .color-blue {
+    color: #38a3ed;
+  }
+
+  .empty-free {
+    padding-top: 1.5rem;
+    text-align: center;
+
+    .empty-free-img {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: rem(26rem);
+      font-family: AppleSystemUIFontRegular;
+      margin-top: rem(-15rem);
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+
+    .edit-bg {
+      margin: 0 0.3rem;
+      padding: 0.15rem 0.15rem 0.2rem;
+      width: 100%;
+      border-radius: 0.14rem;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.09);
+    }
+
+    .edit-header {
+      height: 0.3rem;
+      border-bottom: 1px solid #e5e6eb;
+
+      img {
+        width: 0.16rem;
+        height: 0.16rem;
+      }
+    }
+
+    .icon-warn {
+      color: #d44646;
+    }
+
+    .top-sel,
+    input,
+    textarea {
+      width: 100%;
+      margin: 0.05rem 0;
+      height: 0.3rem;
+      // color: #CECECE;
+      font-weight: normal;
+      border: 0.01rem solid #e5e6eb;
+      border-radius: 0.06rem;
+    }
+
+    input {
+      &:disabled {
+        background-color: #f5f7fa;
+      }
+    }
+
+    textarea {
+      height: 0.75rem;
+      padding-left: 0.1rem;
+      resize: inherit;
+
+      &::-webkit-input-placeholder {
+        color: #cecece;
+        font-size: 0.12rem;
+      }
+    }
+
+    .textarea-wp {
+      span {
+        right: 0.1rem;
+        bottom: 0.08rem;
+        font-size: 0.12rem;
+        font-weight: 400;
+        color: #cecece;
+      }
+    }
+
+    .top-sel {
+      padding: 0 0.12rem;
+      color: #cecece;
+    }
+  }
+}

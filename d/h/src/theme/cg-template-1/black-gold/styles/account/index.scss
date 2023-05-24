@@ -1,0 +1,122 @@
+.account-main {
+  @include webp($base-img-dir + 'personal/personal-bg.png');
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+
+  .account {
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &-top {
+      height: rem(278rem);
+      img {
+        margin: rem(28rem) 0 0 rem(34rem);
+        height: rem(226rem);
+        width: rem(222rem);
+      }
+    }
+    &-tip {
+      margin: rem(64rem) 0 0 rem(30rem);
+      color: $theme-txt-color8;
+      p {
+        margin-bottom: rem(10rem);
+        &:first-child {
+          margin-bottom: rem(24rem);
+        }
+      }
+    }
+    .safety-tip {
+      margin: rem(20rem) 0 0 rem(30rem);
+      p {
+        height: rem(40rem);
+      }
+    }
+    &-content {
+      margin: 0 rem(32rem) 0 rem(28rem);
+      background: transparent linear-gradient(90deg, #3b2d2d 0%, #291717 100%) 0% 0% no-repeat padding-box;
+      border: rem(2rem) solid #674837;
+      border-radius: rem(30rem);
+      overflow-y: auto;
+      .van-cell {
+        padding: rem(6rem) rem(16rem);
+        line-height: rem(66rem);
+      }
+      .van-cell-group,
+      .van-cell:first-child {
+        border-radius: rem(8rem) rem(8rem) 0 0;
+      }
+      .van-cell__label {
+        margin-bottom: rem(10rem);
+        color: $theme-warning-color;
+      }
+      .cell-item {
+        display: block;
+        height: rem(166rem);
+        &-content {
+          margin: 0 rem(30rem);
+          border-bottom: rem(1rem) solid #707070;
+        }
+        &:last-child .cell-item-content {
+          border: none;
+        }
+
+        &-title {
+          font-size: rem(28rem);
+          line-height: rem(33rem);
+          margin: rem(34rem) 0 rem(14rem);
+          color: #f5e8c4;
+          height: rem(40rem);
+          text-transform: uppercase;
+        }
+        &-label {
+          font-size: rem(20rem);
+          line-height: rem(23rem);
+          padding-right: rem(84rem);
+          height: rem(34rem);
+          color: #c4c3c2;
+        }
+        &-icon {
+          width: rem(44rem);
+          height: rem(44rem);
+          margin-right: rem(10rem);
+          background: url(link($base-img-dir + 'account/warning.svg')) no-repeat;
+          background-size: cover;
+
+          &.done {
+            background: url(link($base-img-dir + 'account/done.svg')) no-repeat;
+            background-size: cover;
+          }
+        }
+
+        &-icon {
+          width: rem(44rem);
+          height: rem(44rem);
+          margin-right: rem(10rem);
+          background: url(link($base-img-dir + 'account/warning.svg')) no-repeat;
+          background-size: cover;
+        }
+        &-right {
+          width: rem(20rem);
+          height: rem(35rem);
+          background: url(link($base-img-dir + 'personal/left-arrow.svg')) no-repeat;
+          background-size: cover;
+          transform: rotate(180deg);
+        }
+        &-value {
+          display: block;
+          float: right;
+          // vertical-align: bottom;
+          color: #fff;
+          width: rem(200rem);
+          text-align: right;
+        }
+        .go-complete {
+          color: $txt-c14;
+          margin-right: rem(10rem);
+        }
+      }
+    }
+  }
+}

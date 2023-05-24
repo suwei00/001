@@ -1,0 +1,335 @@
+@use "~/styles/animation.scss" as *;
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $jl-font;
+  text-align: center;
+}
+
+html.dark {
+  background: #121212;
+}
+
+
+// jl-image模糊图样式
+.thumb-loading {
+  opacity: 1;
+  filter: blur(10px);
+  transform: scale(1);
+}
+
+// v-bg指令模糊图样式
+.v-bg-loading {
+  transform: scale(1);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: '';
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+}
+
+// 刷新旋转动画
+.refresh-loading {
+  animation: spin 1s infinite linear;
+}
+
+.el-select-dropdown__item {
+  text-align: left;
+}
+
+.el-table {
+  .el-table__inner-wrapper {
+    &::before {
+      display: none;
+    }
+
+    .row-class-name {
+      height: 60px;
+    }
+
+    .cell-class-name {
+      border-bottom: none;
+      font-size: 15px;
+      font-family: $jl-font;
+      color: #333333;
+
+      .cell {
+        padding: 0 5px;
+      }
+    }
+
+    .el-table__row--striped {
+      .cell-class-name {
+        background: #F8FAFB;
+      }
+
+    }
+
+    .header-row-class-name {
+      height: 60px;
+    }
+
+    .header-cell-class-name {
+      background: #F8FAFB;
+      font-size: 15px;
+      font-family: $jl-font;
+      font-weight: bold;
+      color: $color-black-primary;
+      border-bottom: none !important;
+    }
+
+  }
+
+}
+
+
+
+.el-input {
+  margin-top: 0 !important;
+
+  .el-input__wrapper {
+    border-color: $border-color;
+    box-shadow: 0 0 0 1px $border-color inset;
+    border-radius: 6px;
+
+    .el-input__inner {
+      height: 40px;
+      line-height: 42px;
+    }
+  }
+}
+
+.el-select {
+  .el-input__wrapper {
+    .el-input__inner {
+      height: 40px !important;
+      line-height: 42px;
+      color: $color-black-primary;
+    }
+  }
+
+  .el-input.is-focus {
+    .el-input__wrapper.is-focus {
+      box-shadow: 0 0 0 1px #3678FE inset !important;
+    }
+
+    .el-input__wrapper {
+      box-shadow: 0 0 0 1px #3678FE inset !important;
+    }
+  }
+
+  .el-input {
+    .el-input__wrapper.is-focus {
+      box-shadow: 0 0 0 1px #3678FE inset !important;
+    }
+  }
+
+}
+
+.el-select-dropdown__item.selected {
+  color: #3678FE !important;
+  font-weight: 700;
+}
+
+.el-dialog {
+  border-radius: 10px !important;
+  box-shadow: 0px 10px 80px 1px rgba(0, 0, 0, 0.05) !important;
+  transition: height 0.3s ease-in-out;
+
+  .el-dialog__header {
+    padding: 35px 35px 0 35px;
+    margin-right: 0;
+  }
+
+  .el-dialog__body {
+    padding: 0 35px
+  }
+
+  .el-dialog__footer {
+    padding: 0 35px 35px
+  }
+}
+
+.jl-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-size: 18px;
+    color: $color-black-primary;
+    font-family: $jl-font;
+    font-weight: bold;
+    line-height: 25px;
+  }
+}
+
+// 充值数字输入框样式
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition-delay: 111111s;
+  transition: color 11111s ease-out, background-color 111111s ease-out;
+  border: none !important;
+  outline: none !important;
+}
+
+// 隐藏Edge浏览器密码输入框自带眼睛
+input[type='password']::-ms-clear {
+  display: none !important;
+}
+
+input[type='password']::-ms-reveal {
+  display: none !important;
+}
+
+input[type='password']::-o-clear {
+  display: none !important;
+}
+
+// 暂无数据样式
+.el-table__empty-block {
+  height: 600px !important;
+}
+
+.el-message {
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+
+.icon-edit {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/images/header/edit.svg');
+  background-size: 100% 100%;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.jl-avatar:hover{
+  .icon-edit{
+    filter:none
+  }
+}
+
+.message-icon,.icon-logout{
+  filter:grayscale(80%)
+}
+
+.message-icon:hover,.icon-logout:hover{
+  filter:none
+}
+
+
+.scale12 {
+  transition: all 0.3s;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+.scale11 {
+  transition: all 0.3s;
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px #567AFE29 !important;
+  }
+}
+
+[jl-plain-btn=""]:hover{
+  border-color:#3678FF;
+  color: #3678FF;
+}
+
+.jl-button:not(:disabled):hover{
+  background-color: #3557DC !important;
+}
+
+button.btn:not(:disabled):hover{
+  background-color: #3557DC !important;
+}
+
+button.save:not(:disabled):hover{
+  background-color: #3557DC !important;
+}
+
+button.go-deposit:not(:disabled):hover{
+  background-color: #3557DC !important;
+}
+
+.create {
+  button:not(:disabled):hover{
+    background-color: #3557DC !important;
+  }
+}
+
+button.create:not(:disabled):hover{
+  background-color: #3557DC !important;
+}
+
+
+.user-list,.agency-list {
+  li:not(.active)>i{
+    filter:grayscale(80%)
+  }
+}
+.user-list,.agency-list{
+  li:hover{
+    i {
+      filter:none;
+    }
+    span{
+      color: #3678FF !important;
+      font-weight: bold;
+    }
+  }
+}
+.tabs {
+  .btn-group {
+    .btn:not(.active):hover{
+      border:1px solid #3678FF !important;
+      margin-left:0 !important;
+      margin-right: 1px !important;
+      font-weight: 600;
+    }
+  }
+}
+.switch{
+  .btn-group {
+    .btn:not(.active):hover{
+      border:1px solid #3678FF !important;
+      margin-right: 1px !important;
+      color:#3678FF;
+    }
+  }
+}

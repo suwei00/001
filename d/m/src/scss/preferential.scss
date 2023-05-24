@@ -1,0 +1,12 @@
+// 活动公用mixin
+
+// banner样式公用
+@mixin preferentialBanner {
+  min-width: 1200px;
+  max-width: 1920px;
+  background-size: cover;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+.all-sel {
+  padding: rem(20rem) 0 rem(20rem) rem(10rem);
+  div {
+    margin: rem(20rem) 0 0 rem(20rem);
+    width: rem(158rem);
+    line-height: rem(65rem);
+    border: rem(2rem) solid $theme-bd-color6;
+    border-radius: rem(8rem);
+    color: $theme-txt-color9;
+    text-align: center;
+    font-size: rem(24rem);
+    font-weight: 400;
+    &.active {
+      background: $theme-txt-color11;
+      color: map.get($colors, white);
+      border: 0;
+    }
+  }
+}

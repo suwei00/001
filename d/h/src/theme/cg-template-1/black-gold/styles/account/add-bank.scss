@@ -1,0 +1,202 @@
+.add-bank {
+  // border: none;
+  .phone-form-item {
+    height: rem(174rem);
+    margin: 0 auto;
+    // border: none;
+  }
+  &.pt-0 {
+    padding-top: 0;
+  }
+  &.bank-realname {
+    margin-bottom: rem(22rem);
+  }
+  .bank-error {
+    left: rem(30rem);
+    top: rem(40rem);
+    color: $txt-c16;
+  }
+  .bank-bod {
+    // border-bottom: rem(1rem) solid $theme-bd-color3;
+    // height: rem(74rem);
+    // border-radius: rem(40rem);
+    // border: rem(1rem) solid #ffffff99;
+    // padding: 0 rem(30rem);
+  }
+  .bank-name {
+    color: $theme-pld-color;
+  }
+  .bank-active {
+    color: #fff;
+  }
+  .phone-form-right {
+    width: rem(32rem);
+    height: rem(32rem);
+  }
+  .bank-tip {
+    padding: rem(10rem) rem(40rem) rem(20rem);
+    line-height: rem(40rem);
+    height: rem(120rem);
+    color: #fff;
+    font-family: AppleSystemUIFontRegular;
+    // background: $theme-bg-color1;
+  }
+  .bank-warning {
+    margin: rem(30rem) 0;
+    color: $theme-txt-color28;
+    line-height: rem(40rem);
+  }
+}
+.coin-form {
+  padding-bottom: rem(20rem);
+}
+.sel-list {
+  span {
+    @for $i from 1000 through 1200 {
+      &.icon-#{$i} {
+        @include webp($base-img-dir + 'bank/icon-' + $i + '.png');
+        background-size: 100%;
+      }
+    }
+    
+    // $icons: '101', '102', '103', '104', '1005', '106', '107', '108', '109', '110', '111', '112', '113', '114', '115', '116';
+    // @each $i in $icons {
+    //   &.icon-#{$i} {
+    //     @include webp($base-img-dir + 'bank/icon-' + $i + '.png');
+    //     background-size: 100%;
+    //   }
+    // }
+  }
+}
+.coin-bot {
+  margin: rem(20rem) rem(18rem) 0 rem(30rem);
+  line-height: rem(34rem);
+  color: #afb0ba;
+}
+.bc-wp {
+  // padding-top: rem(40rem);
+  .bc-total {
+    margin: 0 rem(20rem) rem(24rem);
+    line-height: rem(40rem);
+    color: $theme-txt-color25;
+    span {
+      color: $theme-txt-color19;
+    }
+  }
+  .bc-item {
+    margin-bottom: rem(24rem);
+    height: rem(260rem);
+    padding: rem(64rem) 0 0 0;
+    color: $txt-c2;
+    border-radius: rem(12rem);
+    @include webp($base-img-dir + 'wallet/bank-card-bg.png');
+    background-size: 100% 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.black-bg {
+      @include webp($base-img-dir + 'account/black-bg.png');
+      background-size: 100% 100%;
+    }
+    .del {
+      width: rem(36rem);
+      height: rem(36rem);
+      right: rem(58rem);
+      top: rem(112rem);
+    }
+  }
+
+  .back-item {
+    padding: rem(33rem) rem(40rem);
+    // flex-direction: column;
+    justify-content: space-between;
+    .bank-num {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #472f22;
+      text-shadow: 0px 3px 6px #00000029;
+      font-family: AppleSystemUIFontBold;
+      font-size: rem(28rem);
+      line-height: rem(34rem);
+    }
+  }
+  .cn-item {
+    height: rem(260rem);
+    padding: rem(40rem) rem(58rem) rem(44rem) rem(30rem);
+    p {
+      color: $theme-bg-color3;
+    }
+    div {
+      height: rem(50rem);
+      margin-bottom: rem(15rem);
+    }
+    .cn-pro {
+      line-height: rem(40rem);
+    }
+    .cn-num {
+      margin-top: rem(36rem);
+      line-height: rem(40rem);
+    }
+  }
+  .bc-icon-wp {
+    margin-top: rem(30rem);
+    .bc-icon {
+      width: rem(198rem);
+      height: rem(100rem);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .bc-info {
+    flex: 1;
+    color: #472f22;
+    text-shadow: 0px 3px 6px #00000029;
+    font-family: AppleSystemUIFontRegular;
+    font-size: rem(26rem);
+    line-height: rem(34rem);
+    h3 {
+      font-weight: 500;
+    }
+    .bs-num {
+      line-height: rem(40rem);
+
+      span {
+        display: inline-block;
+        vertical-align: sub;
+        margin-right: rem(30rem);
+        opacity: 0.5;
+      }
+    }
+    .bc-type {
+      font-size: rem(26rem);
+      line-height: rem(34rem);
+    }
+  }
+}
+.card-dismiss {
+  bottom: 0;
+  background: $bg-c10;
+}
+.dismiss-btn,
+.dismiss-cancel {
+  background: map.get($colors, white);
+}
+.dismiss-btn {
+  height: rem(108rem);
+  line-height: rem(108rem);
+  color: #db6372;
+}
+.dismiss-cancel {
+  margin-top: rem(16rem);
+  height: rem(108rem);
+  line-height: rem(108rem);
+  color: $theme-txt-color38;
+}
+.add-coin-footer {
+  margin-top: rem(26rem);
+}

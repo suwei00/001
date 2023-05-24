@@ -1,0 +1,225 @@
+@import './global_size.scss';
+@import './global_color.scss';
+.fw-b {
+    font-weight: bold;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .flex-middle-only {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fdr-r {
+    flex-direction: row;
+  }
+  
+  .fdr-c {
+    flex-direction: column;
+  }
+  
+  .fw-w {
+    flex-wrap: wrap;
+  }
+  
+  .jc-c {
+    justify-content: center;
+  }
+  
+  .jc-s {
+    justify-content: flex-start;
+  }
+  
+  .jc-e {
+    justify-content: flex-end;
+  }
+  
+  .jc-sb {
+    justify-content: space-between;
+  }
+  
+  .jc-sa {
+    justify-content: space-around;
+  }
+  
+  .ai-c {
+    align-items: center;
+  }
+  
+  .ai-s {
+    align-items: stretch;
+  }
+  
+  .ai-fe {
+    align-items: flex-end;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .ovhide {
+    overflow: hidden;
+  }
+  
+  .flt-r {
+    float: right;
+  }
+  
+  .flt-l {
+    float: left;
+  }
+  
+  .fg-1 {
+    flex-grow: 1;
+  }
+  
+  .flex1 {
+    flex: 1;
+  }
+  
+  .inlb {
+    display: inline-block;
+  }
+  
+  .va-m {
+    vertical-align: middle;
+  }
+  
+  .va-t {
+    vertical-align: top;
+  }
+  
+  .pos-r {
+    position: relative;
+  }
+  
+  .pos-a {
+    position: absolute;
+  }
+  
+  .pos-f {
+    position: fixed;
+  }
+  
+  .txt-c {
+    text-align: center;
+  }
+  
+  .txt-l {
+    text-align: left;
+  }
+  
+  .txt-r {
+    text-align: right;
+  }
+  
+  .txt-j {
+    text-align: justify;
+  }
+  
+  .w100 {
+    width: 100%;
+  }
+  
+  .h100 {
+    height: 100%;
+  }
+  
+  .nobd {
+    border: none;
+  }
+  
+  .pos-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  
+  .crs-p {
+    cursor: pointer;
+  }
+  
+  .clear {
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+  
+  .txt-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: keep-all;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+
+  
+  .opt-0 {
+    opacity: 0;
+  }
+  
+  .opt-1 {
+    opacity: 1;
+  }
+
+.cg-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} 
+.two_lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // div超过三行之后出现省略号
+  -webkit-box-orient: vertical;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mtb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.bg-white {
+  background-color: var(--cg-color-bg-white);
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--cg-color-border-1);
+}

@@ -1,0 +1,92 @@
+// 字体
+@font-face {
+  font-family: 'Arial';
+  src: url(../fonts/Arial.ttf) format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --cg-font-family: Arial, 'Arial', Helvetica, sans-serif;
+
+  --cg-font-1: 400 44px var(--cg-font-family);
+  --cg-font-2: 400 40px var(--cg-font-family);
+  --cg-font-3: 400 38px var(--cg-font-family);
+  --cg-font-4: 400 34px var(--cg-font-family);
+  --cg-font-5: 700 32px var(--cg-font-family);
+  --cg-font-6: 400 32px var(--cg-font-family);
+  --cg-font-7: 400 30px var(--cg-font-family);
+  // --cg-font-8: 700 28px var(--cg-font-family);
+  --cg-font-9: 400 28px var(--cg-font-family);
+  --cg-font-10: 400 26px var(--cg-font-family);
+  --cg-font-11: 400 24px var(--cg-font-family);
+  --cg-font-12: 400 22px var(--cg-font-family);
+
+
+  @for $i from 0 through 750 {
+    --cg-px-#{$i}: #{$i}px;
+    --cg-px-#{-$i}: #{-$i}px;
+  }
+}
+
+.font_44 {
+  font: var(--cg-font-1);
+}
+
+.font_40 {
+  font: var(--cg-font-2);
+}
+
+.font_38 {
+  font: var(--cg-font-3);
+}
+
+.font_34 {
+  font: var(--cg-font-4);
+}
+
+// .font_bold_32{
+//   font: var(--cg-font-5);
+// }
+
+.font_32 {
+  font: var(--cg-font-6);
+}
+
+.font_30 {
+  font: var(--cg-font-7);
+}
+
+// .font_bold_28{
+//   font: var(--cg-font-8);
+// }
+
+.font_28 {
+  font: var(--cg-font-9);
+}
+
+.font_26 {
+  font: var(--cg-font-10);
+}
+
+.font_24 {
+  font: var(--cg-font-11);
+}
+
+.font_22 {
+  display: block;
+  font: var(--cg-font-11);
+  transform: scale(0.9166);
+  transform-origin: 0 0;
+}
+
+.font_20 {
+  display: block;
+  font: var(--cg-font-11);
+  transform: scale(0.8333);
+  transform-origin: 0 0;
+}
+
+.font-bold {
+  font-weight: 700;
+}

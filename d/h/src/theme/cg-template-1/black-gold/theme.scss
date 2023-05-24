@@ -1,0 +1,356 @@
+@use "sass:map";
+
+$colors: (
+  white: #ffffff,
+  black: #000,
+  blue: #4080ff,
+  yellow: #fdaa22
+);
+
+/* 公共文字颜色 */
+$theme-txt-color: #333333;
+$theme-txt-color1: #929eb7;
+$theme-txt-color2: #697b8c;
+$theme-txt-color3: #1e252e;
+$theme-txt-color4: #8b9cbc;
+$theme-txt-color5: #ccc;
+$theme-txt-color6: #4c9cf5;
+$theme-txt-color7: #66799d;
+$theme-txt-color9: #a5a9b3;
+$theme-txt-color10: #fff;
+$theme-txt-color11: map.get($colors, blue);
+$theme-txt-color12: #414655;
+$theme-txt-color13: #868789;
+$theme-txt-color14: #3b424b;
+$theme-txt-color15: #bac2cc;
+$theme-txt-color16: #ec5343;
+$theme-txt-color17: #263440;
+$theme-txt-color18: #737a92;
+$theme-txt-color19: #999999;
+$theme-txt-color20: #6c7c9d;
+$theme-txt-color21: #3366ff;
+$theme-txt-color22: #666666;
+$theme-txt-color23: #444444;
+$theme-txt-color24: rgba(65, 70, 85, 0.5);
+$theme-txt-color25: #0d1a26;
+$theme-txt-color26: #414b55;
+$theme-txt-color27: #6a89ed;
+$theme-txt-color28: #98a7b5;
+$theme-txt-color29: #6d7278;
+$theme-txt-color30: #4885f2;
+$theme-txt-color31: #fdaa22;
+$theme-txt-color32: #9a9a9a;
+$theme-txt-color33: #aaaaaa;
+$theme-txt-color34: #ff7567;
+$theme-txt-color35: #597ef7;
+$theme-txt-color36: #6aaaf5;
+$theme-txt-color37: #98a5b3;
+$theme-txt-color38: #56576e;
+$theme-txt-color39: #db6372;
+$theme-txt-color40: #573d2b;
+$theme-txt-color41: #4a4f59;
+$theme-txt-color42: red;
+$theme-txt-color43: #656b72;
+$theme-txt-color44: #ff4634;
+$theme-txt-color45: #bbb;
+$theme-txt-color46: #1798ff;
+$theme-txt-color47: #464851;
+$theme-txt-color48: #ff4d4f;
+$txt-c1: #fdaa22;
+$txt-c2: #ffffff;
+$txt-c3: #000000;
+$txt-c4: #afb0ba;
+$txt-c5: red;
+$txt-c6: #444444;
+$txt-c7: #431000;
+$txt-c8: #ff5a00;
+$txt-c9: #989898;
+$txt-c10: #ff5a00;
+$txt-c11: #ee0000;
+$txt-c12: #999999;
+$txt-c13: #414655;
+$txt-c14: #ccced8;
+$txt-c15: #fe9d03;
+$txt-c16: #db6372;
+$txt-c17: #ccced8;
+$txt-c18: #a5a9b3;
+$txt-c19: #1acb17;
+$txt-c20: rgba(255, 255, 255, 0.6);
+$txt-c21: #999999;
+$txt-c22: #56576e;
+$txt-c23: #666666;
+$txt-c24: #313131;
+$txt-c25: #040404;
+$txt-c26: #ed0e0e;
+$txt-c27: #1b1b1b;
+$txt-c28: #ff3648;
+$txt-c29: #687a8c;
+$txt-c30: #969ca9;
+$txt-c31: #fed791;
+$txt-c32: #9ca4bf;
+$txt-c33: #424654;
+$txt-c34: #8695aa;
+$txt-c35: #747a90;
+$txt-c36: #333333;
+$txt-c37: #b3b4bd;
+$txt-c38: #16dc00;
+$txt-c39: #b1b2bc;
+$txt-c40: #ff7a05;
+$txt-c41: #9dabb8;
+$txt-c42: #6c6c6c;
+/* 公共背景颜色 */
+$theme-bg-color: #fff;
+$theme-bg-color1: #f5f5f9;
+$theme-bg-color2: rgba(0, 0, 0, 0);
+$theme-bg-color3: rgba(255, 255, 255, 0.5);
+$theme-bg-color4: map.get($colors, blue);
+$theme-bg-color5: #a5a9b3;
+$theme-bg-color6: #ebf3fc;
+$theme-bg-color7: #4080ff;
+$theme-bg-color8: #e9e9e9;
+$theme-bg-color9: rgba(51, 51, 51, 0.3);
+$theme-bg-color10: #f8f8f8;
+$theme-bg-color11: #ff4634;
+$theme-bg-color12: #7999ff;
+$theme-bg-color13: #f7b500;
+$theme-bg-color14: #7898ff;
+$theme-bg-color15: #4282f0;
+$theme-bg-color16: #fafafa;
+$theme-bg-color17: #dcdcdc;
+$theme-bg-color18: #108ee9;
+$theme-bg-color19: #0e80d2;
+$theme-bg-color20: rgba(21, 139, 244, 0.05);
+$theme-bg-color21: #f7f8fc;
+$theme-bg-color22: #f8fafa;
+$theme-bg-color23: #f6f6f7;
+$theme-bg-color24: #f8faff;
+$theme-bg-color25: rgba(64, 128, 255, 0.15);
+$theme-bg-color26: rgb(87, 61, 43);
+$theme-bg-color27: #429de6;
+$theme-bg-color28: #386fc3;
+$theme-bg-color29: #f5f5f5;
+$theme-bg-color30: #ccc;
+$theme-bg-color31: rgba(0, 0, 0, 0.5);
+$theme-bg-color32: rgba(255, 255, 255, 0.6);
+$theme-bg-color33: #f9fbfe;
+$theme-bg-color34: #e2f4ff;
+$theme-bg-color35: #beddff;
+$theme-bg-color36: #c5ac73;
+$theme-bg-color37: rgba(255, 255, 255, 0.3);
+$theme-bg-color38: #fcf8f0;
+
+$bg-c1: #ffffff;
+$bg-c2: #fdaa22;
+$bg-c3: #eeeeee;
+$bg-c4: #d8d8d8;
+$bg-c5: #ff8200;
+$bg-c6: #f6f6f7;
+$bg-c7: #dddddd;
+$bg-c8: #cccccc;
+$bg-c9: #f0f0f0;
+$bg-c10: #f8f8f8;
+$bg-c11: #ff0000;
+$bg-c12: #7f3600;
+$bg-c13: #fe8a09;
+$bg-c14: #fbb253;
+$bg-c15: #d38300;
+$bg-c16: #d48401;
+$bg-c17: #feb622;
+$bg-c18: #fe8809;
+$bg-c19: #f5f7ff;
+$bg-c20: #fe7b2d;
+$bg-c21: #fff9ee;
+$bg-c22: #fed791;
+$bg-c23: #ffe4af;
+$bg-c24: #fca31b;
+$bg-c25: #dbdde2;
+$bg-c26: #beb7c0;
+$bg-c27: #f7fafa;
+$bg-c28: #fff3dd;
+$bg-c29: #ffdfad;
+$bg-c30: #ff6a00;
+$bg-c31: #ffbe23;
+$bg-c32: #fff9ef;
+$bg-c33: #d2d4de;
+$bg-c34: #c0c4cc;
+$bg-c35: #727a92;
+$bg-c36: #ffeac8;
+$bg-c37: #b9c5e4;
+$bg-c38: #fffbf2;
+$bg-c39: #f8fbfe;
+$bg-c40: #fda921;
+$bg-c41: #fff5e5;
+$bg-rgba1: rgba(255, 255, 255, 0.5);
+$bg-rgba2: rgba(0, 0, 0, 0.5);
+$bg-rgba3: rgba(255, 255, 255, 0.1);
+$bg-rgba4: rgba(255, 255, 255, 0.25);
+$bg-rgba5: rgba(255, 255, 255, 0.7);
+$bg-rgba6: rgba(67, 16, 0, 0.5);
+$bg-rgba7: rgba(0, 0, 0, 0.09);
+$bg-rgba8: rgba(255, 255, 255, 0.6);
+$bg-rgba9: rgba(0, 0, 0, 0.3);
+$bg-rgba10: rgba(254, 105, 6, 1);
+$bg-rgba11: rgba(201, 133, 42, 0.38);
+$bg-rgba12: rgba(0, 0, 0, 0.06);
+$bg-rgba13: rgba(255, 239, 207, 1);
+
+/* 公共边框颜色 */
+$theme-bd-color: #eeeeee;
+$theme-bd-color1: map.get($colors, yellow);
+$theme-bd-color2: #e5e5e5;
+$theme-bd-color3: #e8ebf7;
+$theme-bd-color4: #dedede;
+$theme-bd-color5: #ebedf0;
+$theme-bd-color6: #cbced8;
+$theme-bd-color7: #f0f0f0;
+$theme-bd-color8: #628ff9;
+$theme-bd-color9: #ececec;
+$theme-bd-color10: #f9faff;
+$theme-bd-color11: #f2f2f2;
+$theme-bd-color12: #dddddd;
+$theme-bd-color13: #008cef;
+$theme-bd-color14: #dfdfdf;
+$theme-bd-color15: #d8d8d8;
+$theme-bd-color16: #f9fbfe;
+$theme-bd-color17: #158bff;
+$theme-bd-color18: #eceef2;
+$theme-bd-color19: rgba(232, 235, 247, 0.4);
+$theme-bd-color20: #f8fafa;
+$theme-bd-color21: #597ef7;
+$theme-bd-color22: rgba(230, 230, 231, 0.5);
+$theme-bd-color23: #ecebeb;
+$theme-bd-color24: #c5ac73;
+$bd-c1: #eeeeee;
+$bd-c2: #dddddd;
+$bd-c3: #fdaa22;
+$bd-c4: #f8f8f8;
+$bd-c5: #ffffff;
+$bd-c5: #ffffff;
+$bd-c6: #f2f2f2;
+$bd-c7: #efefef;
+$bd-c8: #d8d8d8;
+$bd-c9: #eaedf0;
+$bd-c10: #c0c4cc;
+$bd-c11: #e3ecf3;
+$bd-c12: #979797;
+$bd-c13: #cacaca;
+/* 公共阴影颜色 */
+$theme-shad-color: rgba(89, 126, 247, 0.1);
+$theme-shad-color1: rgba(0, 0, 0, 0.1);
+
+/* 公共白色0.8透明字体颜色 */
+$theme-txt-color8: rgba(255, 255, 255, 0.8);
+
+/* 公共红色警告字体颜色 */
+$theme-warning-color: $theme-bg-color11;
+
+/* 公共红色警告字体颜色 */
+$theme-warning-color75: rgba(255, 70, 52, 0.75);
+
+/* 公共验证码 */
+$theme-code-color: rgba(64, 128, 255, 0.5);
+
+/* 公共验证码 */
+$theme-codeActive-color: map.get($colors, yellow);
+
+/* 公共底部文字 */
+$theme-tabtxt-color: #a5a9b3;
+
+/* 添加银行卡文字 */
+$theme-banktxt-color: #a1a2a7;
+
+/* 添加银行卡底部文字 */
+$theme-bankbot-color: #6c6e82;
+
+/* 公共placeholder */
+$theme-pld-color: #ced4d9;
+
+/* 公共合营联系背景颜色 */
+$theme-agbg-color: #fdfdfd;
+
+/* 公共合营联系做边框颜色 */
+$theme-agbl-color: #fdfdfd;
+
+/* 公共合营h2颜色 */
+$theme-agh2-color: #808184;
+
+/* 公共合营swiper小点 */
+$theme-swpt-color: #008efc;
+
+/* 公共渐变色 */
+
+$theme-gradient-color: linear-gradient(to right, #87ccff, #3573ff);
+
+/** 相应功能 **/
+$theme-van-notice-bar-color: $theme-txt-color23;
+
+/** 公共navbar **/
+$theme-navbar-txt: $theme-txt-color;
+$theme-navbar-right-txt: $theme-txt-color17;
+
+/* views/promotion */
+$theme-promotion-tab-txt-active-color: $theme-txt-color11;
+$theme-promotion-tab-txt-color: $theme-txt-color9;
+
+/* views/promotion/luxury */
+$theme-luxury-tab-color: $theme-txt-color;
+$theme-luxury-tab-active-color: $theme-txt-color11;
+$theme-luxury-progress-title-color: $theme-txt-color10;
+$theme-luxury-gift-name-color: $theme-txt-color;
+$theme-luxury-gift-tip-color: $theme-txt-color22;
+$theme-luxury-gift-money-color: $theme-txt-color10;
+$theme-luxury-gift-btn-color: $theme-txt-color10;
+
+$theme-luxury-tab-bg: rgba(255, 255, 255, 0.4);
+$theme-luxury-tab-active-bg: $bg-c1;
+$theme-progress-container-bg: rgba(255, 255, 255, 0.9);
+$theme-luxury-progress-title-bg: #4080ff;
+$theme-luxury-progress-img-bg: #ebeef6;
+$theme-luxury-progress-wrapper-bg: #e5e5e5;
+$theme-luxury-progress-wrapper-active-bg: linear-gradient(89deg, #ff9559 6%, #ff5c2d 102%);
+$theme-luxury-gift-item-bg: rgba(255, 255, 255, 0.9);
+$theme-luxury-swiper-bullet-bg: rgb(0, 0, 0);
+$theme-luxury-swiper-bullet-active-bg: $bg-rgba2;
+$theme-luxury-gift-btn-bg: #4080ff;
+$theme-luxury-rules-bg: rgba(255, 255, 255, 0.9);
+
+$theme-luxury-progress-img-bd: #ebeef6;
+
+/* views/promotion/deposit */
+$theme-deposit-default-color: $theme-txt-color;
+$theme-deposit-introduce-color: $theme-txt-color22;
+$theme-deposit-form-color: $theme-txt-color22;
+$theme-deposit-picker-btn-color: #108ee9;
+$theme-deposit-money-color: $theme-txt-color11;
+$theme-deposit-default-white-color: $theme-txt-color10;
+$theme-deposit-tip-color: #919191;
+
+$theme-deposit-section-bg: $bg-c1;
+$theme-deposit-default-btn-bg: linear-gradient(to right, #5fabff 1%, #3678fe);
+$theme-deposit-default-bd: #d8dce7;
+$theme-deposit-section-boxshadow-color: rgba(0, 0, 0, 0.1);
+$theme-deposit-btn-shadow: rgba(60, 142, 254, 0.2);
+
+/* views-sponsor */
+$theme-sponsor-navbar-txt: $theme-txt-color;
+$theme-sponsor-item-h3-txt: #252525;
+$theme-sponsor-item-p-txt: #878c9b;
+$theme-sponsor-item-button-txt: $theme-txt-color10;
+
+/* views/entry */
+$theme-entry-sponsor-title: $theme-txt-color10;
+$theme-entry-right-left-button-txt: $theme-txt-color10;
+$theme-entry-title: $theme-txt-color10;
+$theme-entry-input-placeholder: $theme-txt-color10;
+$theme-entry-input-focus-placeholder: $theme-txt-color13;
+$theme-entry-forget-password: $theme-txt-color10;
+$theme-entry-button-txt: $theme-txt-color10;
+$theme-entry-visitor-btn-txt: $theme-txt-color10;
+$theme-entry-sponsor-line-bg: $bg-c1;
+$theme-entry-to-right-button-bg: rgba(0, 0, 0, 0.4);
+$theme-entry-to-left-button-bg: rgba(255, 255, 255, 0.3);
+$theme-entry-login-bg: rgba(216, 216, 216, 0.4);
+$theme-entry-login-input-bg: rgba(0, 0, 0, 0.3);
+$theme-entry-register-bg: $bg-rgba2;
+$theme-entry-register-input-bg: rgba(255, 255, 255, 0.2);
+$theme-entry-button-bg: $theme-gradient-color;

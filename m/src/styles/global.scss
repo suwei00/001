@@ -1,0 +1,40 @@
+
+* {
+  user-select: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+
+  &-start{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  &-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-1 {
+    flex: 1;
+  }
+}
