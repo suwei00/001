@@ -1,0 +1,283 @@
+// 公用
+.fw-b {
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.block {
+  display: block;
+}
+
+.flex-middle-only {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fdr-r {
+  flex-direction: row;
+}
+
+.fdr-c {
+  flex-direction: column;
+}
+
+.fw-w {
+  flex-wrap: wrap;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-s {
+  justify-content: start;
+}
+
+.jc-e {
+  justify-content: flex-end;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.ai-st {
+  align-items: flex-start;
+}
+
+.ai-s {
+  align-items: stretch;
+}
+
+.ai-bl {
+  align-items: baseline;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.hide {
+  display: none !important;
+}
+
+.ovhide {
+  overflow: hidden;
+}
+
+.flt-r {
+  float: right;
+}
+
+.flt-l {
+  float: left;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.inlb {
+  display: inline-block;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.pos-f {
+  position: fixed;
+}
+
+.txt-c {
+  text-align: center;
+}
+
+.txt-l {
+  text-align: left;
+}
+
+.txt-r {
+  text-align: right;
+}
+
+.txt-j {
+  text-align: justify;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.nobd {
+  border: none;
+}
+
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.crs-p {
+  cursor: pointer;
+}
+
+.clear {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.friends-item {
+  width: 375px;
+  height: 53px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6FB 65%, #EDF2FC 85%, #F0F3FC 100%);
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-bottom: 1px solid $color-gray-6;
+  font-size: $size14;
+  color: $color-gray-2;
+}
+
+.friends-sub-title {
+  width: 375px;
+  height: 35px;
+  line-height: 35px;
+  background: $color-gray-5;
+  font-size: $size14;
+  color: $color-gray-3;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-gray-6;
+}
+
+input::placeholder {
+  color: $color-gray-3;
+}
+textarea::placeholder {
+  color: $color-gray-3;
+}
+// vant 组件样式
+.van-pull-refresh {
+  overflow: unset !important;
+}
+.van-checkbox__icon .van-icon{
+  border-radius: 3px;
+}
+// 所有van搜索栏字体大小
+@for $i from 1 to 100{
+  #van-search-#{$i}-input {
+    font-size: 14px;
+  }
+}
+.van-index-anchor{
+  --van-index-anchor-padding:0;
+}
+.van-index-bar__index{
+  color: #597EF7;
+}
+
+//右边箭头>
+.righ_icon {
+  width: 10px;
+  height: 17px;
+}
+
+.three_lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; // div超过三行之后出现省略号
+  -webkit-box-orient: vertical;
+}
+
+// 列表渐变背景
+.list-bg {
+  background: linear-gradient(180deg, $color-white-1 0%, $color-white-3 65%, $color-white-4 85%, $color-white-5 100%);
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 0px 0px;
+  border-bottom: $size1 solid $color-blue-3;
+}
+
+.br-top {
+  border-top: 1px solid $color-blue-3;
+}
+
+.br-bottom {
+  border-bottom: 1px solid $color-blue-3;
+}
+// 长长长蓝色按钮
+
+.pub_btn{
+  :deep(.van-stepper) {
+    border: 1px solid $color-blue-3;
+    border-radius: 3px;
+
+    button {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F5F8FF 100%);
+      border-radius: 0px 3px 3px 0px;
+    }
+
+  }
+
+  :deep(.van-stepper__input) {
+    margin: 0;
+    background: #FFFFFF;
+    box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
+  }
+
+  :deep(.van-button) {
+    height: 40px;
+    background: $color-blue-1;
+    // border-radius: 6px 6px 6px 6px;
+    border: 1px solid $color-gray-5;
+
+  }
+}

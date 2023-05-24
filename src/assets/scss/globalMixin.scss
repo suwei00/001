@@ -1,0 +1,12 @@
+@mixin webp($url, $repeat: no-repeat, $important: null) {
+  background-image: url($url) $important;
+  background-repeat: $repeat;
+
+  @at-root .global_webp & {
+    background-image: url($url + '.webp');
+  }
+
+  @at-root .global_avif & {
+    background-image: url($url + '.avif');
+  }
+}
