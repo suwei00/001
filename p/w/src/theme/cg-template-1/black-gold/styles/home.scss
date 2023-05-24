@@ -1,0 +1,406 @@
+.home-view {
+  .topswiper {
+    height: 700px;
+    position: relative;
+
+    .el-carousel {
+      height: 700px;
+      min-width:1440px;
+      .el-carousel__container {
+        height: 700px;
+        
+        .el-carousel__arrow--left,
+        .el-carousel__arrow--right {
+          cursor: pointer;
+          z-index: 98;
+          content: '';
+          position: absolute;
+          top: 276px !important;
+          height: 72px;
+          width: 36px !important;
+          background: url(link('/blue/home/arrow-left-hover.webp'));
+          background-size: contain;
+          border-radius: inherit;
+          transition: opacity 0.3s linear;
+          transform: none;
+          opacity: 0.5;
+          display: block !important;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          .el-icon-arrow-left,
+          .el-icon-arrow-right {
+            display: none;
+          }
+        }
+
+        .el-carousel__arrow--left {
+          left: 0 !important;
+        }
+
+        .el-carousel__arrow--right {
+          transform: scaleX(-1);
+          right: 0;
+        }
+      }
+
+      .el-carousel__indicators {
+        &.el-carousel__indicators--horizontal {
+          bottom: 50px;
+        }
+
+        .el-carousel__indicator {
+          margin: 0 10px;
+
+          .el-carousel__button {
+            width: 50px;
+            height: 4px;
+            position: relative;
+            background: #c3ccd5;
+            opacity: 1;
+            overflow: hidden;
+
+            &::after {
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              display: inline-block;
+              content: '';
+              top: 0;
+              left: 0;
+              transform: translateX(-100%);
+              background: #158bf4;
+            }
+          }
+
+          &.is-active {
+            .el-carousel__button {
+              &::after {
+                animation: toright 4s ease;
+              }
+            }
+          }
+
+          &.stop.is-active {
+            .el-carousel__button {
+              &::after {
+                animation-play-state: paused;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner-maskBar {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    height: 50px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(81, 93, 105, 0.46);
+    text-align: center;
+
+    .banner-maskBarBox {
+      display: flex;
+      line-height: 50px;
+      height: 50px;
+      width: 1356px;
+      box-sizing: border-box;
+      margin: auto;
+      text-align: left;
+
+      &>img {
+        width: 16px;
+        height: 16px;
+        margin: auto 24px auto 0;
+      }
+
+      .banner-inner {
+        overflow: hidden;
+
+        &:hover {
+          .marquee {
+            animation-play-state: paused;
+          }
+        }
+
+        .marquee {
+          animation: banner-marquee 30s infinite linear;
+          display: inline-block;
+          height: 50px;
+          white-space: nowrap;
+
+          &>span {
+            color: #f9fbfc;
+            font-size: 14px;
+            margin-right: 100px;
+            user-select: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.style-contentWrapper {
+  width: 1356px;
+  margin: 0 auto;
+
+  .styles-Sponsorship {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .styles-box {
+      @include webp('/blue/kok/home/kuang-bg.png');
+      transition: all linear 0.15s;
+      transform: translateZ(0) scale(1);
+      width: 432px;
+      height: 174px;
+      background-size: 100%;
+      margin-right: 30px;
+      position: relative;
+      cursor: pointer;
+      border-radius: 20px;
+      box-shadow: 0 20px 20px -10px #cdd2dd;
+
+      &:hover {
+        transform: translateZ(0) scale(1.02);
+      }
+
+      .styles-logoBox {
+        position: absolute;
+        width: 74px;
+        height: 74px;
+        border-radius: 17px;
+        left: 20px;
+        top: 24px;
+        box-shadow: 0 -3px 18px 0 #e1e3e9, 0 10px 10px 0 rgba(225, 230, 240, 0.8);
+      }
+
+      .styles-logo {
+        height: 100%;
+      }
+
+      .styles-title,
+      .styles-title1 {
+        position: absolute;
+        width: 200px;
+        left: 105px;
+        top: 35px;
+        font-size: 18px;
+        color: #4c5d6f;
+        font-weight: 400;
+        object-fit: contain;
+        line-height: 1.11;
+        text-shadow: 1px 1px 0 rgba(134, 161, 197, 0.4), -1px -1px 0 #fff;
+      }
+
+      .styles-title1 {
+        top: 66px;
+        font-size: 16px;
+      }
+
+      .styles-button {
+        @include webp('/blue/kok/home/btn-120');
+        background-size: 100% 100%;
+        width: 120px;
+        height: 40px;
+        position: absolute;
+        left: 100px;
+        top: 107px;
+        text-align: center;
+        color: #fff;
+        line-height: 40px;
+        font-size: 12px;
+      }
+
+      .styles-person {
+        position: absolute;
+        width: 148px;
+        height: 163px;
+        right: 14px;
+        top: 0;
+      }
+    }
+  }
+}
+
+.qd {
+  width: 100px !important;
+  position: fixed;
+  z-index: 999;
+  right: 17px;
+  bottom: 40px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.fix {
+    transform: translateY(-400px);
+
+    .styles-contentArea,
+    .styles-topErea {
+      display: flex;
+    }
+  }
+
+  .styles-contentArea {
+    transform: translateY(-10px);
+    background: url(link('/blue/home/pendant-bg-withsign.webp'));
+    background-position: 0 0;
+    background-size: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    flex-direction: column;
+    text-shadow: 1px 1px 0 rgba(134, 161, 197, 0.4), -1px -1px 0 #fff;
+    font-size: 12px;
+    color: #4b5e6f;
+    cursor: pointer;
+    width: 74px;
+    height: 200px;
+
+    .styles-service,
+    .styles-app,
+    .styles-help {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &:hover {
+      background: url(link('/blue/home/service-bg-hover.webp'));
+
+      }
+
+      &>span {
+        background: url(link('/blue/home/service.webp'));
+        margin-top: 18px;
+        position: relative;
+        z-index: 3;
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: 10px 0 2px;
+        background-position: 0 0;
+        background-size: contain;
+       
+      }
+    }
+
+    .styles-service {
+      &:hover {
+        background: url(link('/blue/home/service-bg-hover.webp'));
+
+      }
+
+      &:hover {
+        &>span {
+          background: url(link('/blue/kok/home/service-hover.webp'));
+          background-position: 0 0;
+          background-size: contain;
+        }
+      }
+    }
+
+    .styles-app {
+      height: 62px;
+
+      &:hover {
+        transform: translateY(1px);
+      }
+
+      &>span {
+        background: url(link('/blue/kok/home/app.webp'));
+        background-size: contain;
+      }
+    }
+
+    .styles-help {
+      height: 60px;
+
+      &>span {
+        background: url(link('/blue/kok/home/help.webp'));
+        background-size: contain;
+      }
+    }
+  }
+
+  .styles-topErea {
+    background: url(link('/blue/kok/home/up-bg.webp'));
+    background-size: contain;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 62px;
+    border-radius: 10px;
+    &>span {
+      background: url(link('/blue/kok/home/up.webp'));
+      background-position: 0 0;
+      background-size: 100%;
+      position: relative;
+      width: 28px;
+      height: 28px;
+    }
+
+    &:hover {
+      background: url(link('/blue/kok/home/up-bg-hover.webp'));
+      background-size: contain;
+
+      &>span {
+        background: url(link('/blue/kok/home/up-hover.webp'));
+        background-position: 0 0;
+        background-size: 100%;
+      }
+    }
+  }
+}
+.el-carousel__item{
+ display: inline-block;
+ width: 100%;
+}
+.el-carousel__item img {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 700px;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  display: block;
+}
+
+@keyframes toright {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes banner-marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,175 @@
+.find-pwd-view {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 130px;
+  padding-bottom: 37px;
+  background: #fff;
+  box-shadow: 0 12px 27px 19px rgb(0 0 0 / 4%);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  .icon-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 2px $theme-bd-color8;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    @mixin icon {
+      width: 20px;
+      display: block;
+      content: '';
+      border-top: solid 2px $theme-bd-color8;
+      position: absolute;
+      top: 50%;
+      left: 8px;
+    }
+
+    &::before {
+      @include icon;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      @include icon;
+      transform: rotate(-45deg);
+    }
+  }
+
+  nav {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    position: relative;
+  }
+
+  .tab {
+    margin: 0 auto;
+  }
+
+  .tab-item {
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    border-bottom: solid 2px transparent;
+    position: relative;
+    bottom: -2px;
+    color: $theme-txt-color8;
+    margin: 0 20px;
+
+    &.active {
+      color: #D7B95E;
+      border-bottom: solid 2px $theme-bd-color8;
+    }
+  }
+
+  .step-wp {
+    width: 420px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      width: 350px;
+      display: block;
+      content: '';
+      position: absolute;
+      border-bottom: dashed 2px $theme-bd-color11;
+      z-index: 0;
+      left: 50px;
+      top: 30px;
+    }
+  }
+
+  .step-item {
+    &.active .step-num {
+      background-color: #DFA847;
+      border: none;
+      color: $theme-txt-color;
+    }
+
+    &.active .step-name {
+      color: #D7B95E;
+    }
+  }
+
+  .step-name {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .form-wp {
+    width: 420px;
+    margin: 0 auto;
+    margin-top: 48px;
+    position: relative;
+  }
+
+  .form-row {
+    line-height: 30px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+
+    .label {
+      width: 100px;
+      color: #333;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  .step-wp {
+    margin-top: 70px;
+  }
+
+  .step-num {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #6c6c6c;
+    border: 2px solid #6c6c6c;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-size: 24px;
+    position: relative;
+    z-index: 2;
+    background-color: $theme-bg-color;
+  }
+
+  .el-button--primary {
+    width: 100%;
+  }
+
+  .btn-get-mail-code {
+    width: 80px;
+    height: 30px;
+    padding: 0 5px;
+  }
+
+  .form-err-tip {
+    color: $theme-txt-color9;
+    position: absolute;
+    top: 60px;
+  }
+  .send-to-mail-tip {
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+    padding: 0 5px;
+    border: 1px solid rgba(64, 128, 255, .5);
+    background: rgba(21, 139, 244, .05);
+    color: #4089ec;
+    border-radius: 4px;
+    border: solid 1px rgba(21, 139, 244, .12);
+    font-size: 13px;
+  }
+  .icon-concat-service {
+    margin-top: 70px;
+    &>span {
+      @include webp($base-img-dir + '/common/servicer.png');
+      background-size: 22px 21px;
+      padding-left: 27px;
+    }
+  }
+}

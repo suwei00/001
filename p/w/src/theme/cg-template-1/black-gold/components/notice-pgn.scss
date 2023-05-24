@@ -1,0 +1,28 @@
+.pagination {
+  text-align: right;
+  margin: 20px 0;
+  padding-left: 15px;
+
+  .pg-box-info div {
+    display: inline-block;
+    align-items: start;
+    font-size: 14px;
+    color: #333;
+
+    &:nth-child(1) {
+      width: 45px;
+    }
+
+    &:nth-child(2) {
+      width: 94px;
+    }
+
+    &:nth-child(3) {
+      width: 65px;
+    }
+
+    &:nth-child(4) {
+      width: 114px;
+    }
+  }
+}

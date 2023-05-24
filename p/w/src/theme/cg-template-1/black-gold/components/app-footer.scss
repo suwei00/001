@@ -1,0 +1,51 @@
+.app-footer-view {
+  min-height: 400px;
+  background-color: #353f4b;
+  color: #7c8797;
+  .logo-list {
+    height: 85px;
+    width: 1200px;
+    margin: auto;
+    @include webp($base-img-dir + 'footer/logo-list.png');
+    background-size: 1200px 25px;
+    background-position: center center;
+  }
+  .line {
+    width: 1207px;
+    height: 2px;
+    @include webp($base-img-dir + 'footer/line.png');
+    margin: auto;
+    background-size: 100%;
+  }
+  .footer-content {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .rz-list {
+    height: 80px;
+    width: 929px;
+    margin: 30px auto 0;
+    @include webp($base-img-dir + 'footer/rz-list.png');
+    background-size: 100%;
+  }
+  .route-list {
+    margin: 30px auto 0;
+    width: 1200px;
+    span {
+      margin: 0 20px;
+    }
+    a {
+      transition: all 0.3s ease;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  .b-content {
+    width: 1200px;
+    text-align: center;
+    margin: 30px auto 0;
+  }
+}

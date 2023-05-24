@@ -1,0 +1,176 @@
+.icon-1p-deposit-acitve,
+.icon-1p-transfer-active,
+.icon-1p-withdrawal,
+.icon-bet,
+.icon-com-record,
+.icon-commission,
+.icon-computer,
+.icon-cygn,
+.icon-dlbb,
+.icon-fk,
+.icon-game,
+.icon-info,
+.icon-link,
+.icon-member,
+.icon-msg,
+.icon-p-deposit,
+.icon-p-transfer,
+.icon-p-withdrawal,
+.icon-record,
+.icon-transaction,
+.icon-withdraw,
+.icon-xjgl {
+  display: inline-block;
+  @include webp($base-img-dir + 'sprite/sprite05.png');
+  background-size: 182px 141.5px;
+}
+
+.icon-1p-deposit-acitve {
+  width: 40px;
+  height: 40px;
+  background-position: 0px 0px;
+}
+
+.icon-1p-transfer-active {
+  width: 40px;
+  height: 40px;
+  background-position: -40.5px 0px;
+}
+
+.icon-1p-withdrawal {
+  width: 40px;
+  height: 40px;
+  background-position: 0px -40.5px;
+}
+
+.icon-bet {
+  width: 30px;
+  height: 30px;
+  background-position: 0px -81px;
+}
+
+.icon-com-record {
+  width: 20px;
+  height: 20px;
+  background-position: -91.5px -81px;
+}
+
+.icon-commission {
+  width: 20px;
+  height: 20px;
+  background-position: -122px -111.5px;
+}
+
+.icon-computer {
+  width: 30px;
+  height: 30px;
+  background-position: -30.5px -81px;
+}
+
+.icon-cygn {
+  width: 30px;
+  height: 30px;
+  background-position: -61px -81px;
+}
+
+.icon-dlbb {
+  width: 30px;
+  height: 30px;
+  background-position: -121.5px 0px;
+}
+
+.icon-fk {
+  width: 30px;
+  height: 30px;
+  background-position: -121.5px -30.5px;
+}
+
+.icon-game {
+  width: 30px;
+  height: 30px;
+  background-position: -121.5px -61px;
+}
+
+.icon-info {
+  width: 30px;
+  height: 30px;
+  background-position: 0px -111.5px;
+}
+
+.icon-link {
+  width: 30px;
+  height: 30px;
+  background-position: -30.5px -111.5px;
+}
+
+.icon-member {
+  width: 30px;
+  height: 30px;
+  background-position: -61px -111.5px;
+}
+
+.icon-msg {
+  width: 30px;
+  height: 30px;
+  background-position: -91.5px -111.5px;
+}
+
+.icon-p-deposit {
+  width: 40px;
+  height: 40px;
+  background-position: -40.5px -40.5px;
+}
+
+.icon-p-transfer {
+  width: 40px;
+  height: 40px;
+  background-position: -81px 0px;
+}
+
+.icon-p-withdrawal {
+  width: 40px;
+  height: 40px;
+  background-position: -81px -40.5px;
+}
+
+.icon-record {
+  width: 30px;
+  height: 30px;
+  background-position: -152px 0px;
+}
+
+.icon-transaction {
+  width: 30px;
+  height: 30px;
+  background-position: -152px -30.5px;
+}
+
+.icon-withdraw {
+  width: 30px;
+  height: 30px;
+  background-position: -152px -61px;
+}
+
+.icon-xjgl {
+  width: 30px;
+  height: 30px;
+  background-position: -152px -91.5px;
+}
+
+// .icon-xiaji {
+//   display: inline-block;
+//   @include webp($base-img-dir + 'sprite/xiaji.png');
+//   background-size: 30px 30px;
+
+//   width: 30px;
+//   height: 30px;
+// }
+
+// .icon-jiaoyi {
+//   display: inline-block;
+//   @include webp($base-img-dir + 'sprite/jiaoyi.png');
+//   background-size: 30px 30px;
+
+//   width: 30px;
+//   height: 30px;
+// }

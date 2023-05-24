@@ -1,0 +1,43 @@
+.cs {
+  &-wp {
+    .el-dialog {
+      border-radius: 8px;
+      background-color: #504439;
+      border: 1px solid #D7BC6E;
+    }
+    .el-dialog__headerbtn:hover .el-dialog__close {
+      color: #D7BC6E;
+    }
+    .el-dialog__body {
+      padding: 40px 0 43px 0;
+      .cs-t {
+        color: white;
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &-list {
+    li {
+      width: 140px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      text-shadow: 0px 3px 6px rgb(71 47 34 / 50%);
+      border-radius: 100px;
+      color: #674837;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 30px;
+        background-image: linear-gradient(to right, #f5e8c4, #e3bb83);
+      }
+      &:last-child {
+        background-image: linear-gradient(to right, #ffffff, #f5e8c4);
+      }
+      
+    }
+  }
+}

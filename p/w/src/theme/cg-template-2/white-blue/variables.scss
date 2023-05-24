@@ -1,0 +1,159 @@
+// 字体
+@font-face {
+  font-family: 'Arial';
+  src: url(../../fonts/Arial.ttf) format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --cg-font-family: Arial, 'Arial', Helvetica, sans-serif;
+  font-family: var(--cg-font-family);
+  --cg-color-blue: #1e88e5;
+  --cg-color-blue1: #1b84f0;
+  --cg-color-blue2: #0477BD;
+  --cg-color-blue3: #61ceff;
+  --cg-color-blue5: #1B74F0;
+  --cg-color-blue6: #61CFFF;
+  --cg-color-blue7: rgba(97, 206, 255, 0.102);
+  --cg-color-blue8: #9BD1FD;
+  --cg-color-blue9: #DEEEFB;
+  --cg-color-blue10: #BEDCEF;
+  --cg-color-blue11: #EEF7FF;
+  --cg-color-blue12: #1B75F0; //个人中心标题
+  --cg-color-blue13: #DEEBFB;
+  --cg-color-blue14: var(--cg-color-blue3);
+  --cg-color-blue15: #597ef7;
+  --cg-color-blue16: #1DB4F7;
+  --cg-color-blue17: #0B65DF;
+  --cg-color-blue18: rgba(246, 250, 255, .5);
+
+
+
+  --cg-color-grey: #2f3742;
+  --cg-color-grey1: #4D595E; // 文字
+  --cg-color-grey2: #caddee;
+  --cg-color-grey4: rgba(190, 215, 239, 0.6);
+  --cg-color-grey5: #8297A5;
+  --cg-color-grey6: rgba(238, 247, 255, 0.502);
+  --cg-color-grey7: #47515F;
+  --cg-color-grey10: #515b7d;
+  --cg-color-grey11: rgba(130, 151, 165, 0.4);
+  --cg-color-grey12: rgba(222, 222, 222, 0.8); // 维护
+  --cg-color-grey13: rgba(255, 255, 255, 0.5); // 维护
+
+
+
+  --cg-color-white: #fff;
+  --cg-color-white1: #DEEDFB;
+  --cg-color-white2: rgba(255, 255, 255, 0.8); //0.8
+  --cg-color-white3: rgba(255, 255, 255, 0.4); //0.4
+  --cg-color-white4: #EDF6FF;
+  --cg-color-white5: #F6FBFF;
+  --cg-color-white6: #DAE8F2;
+  --cg-color-white7: #C8DCEC;
+  --cg-color-white8: #F6FAFF;
+  --cg-color-white9: rgba(97, 206, 255, 0.024);
+  --cg-color-white10: rgba(255, 255, 255, 0.2);
+  --cg-color-white11: #e0dddd;
+  --cg-color-white12: #D9D9D9;
+  --cg-color-white13: rgba(246, 251, 255, 0.5);
+  --cg-color-white14: #F1F8FF;
+  --cg-color-white15: #CCE6FF;
+  --cg-color-white16: #deedfb;
+  --cg-color-white17: rgba(222, 222, 222, 0.8);
+
+
+
+  --cg-color-red: #DC2326; // 文字
+  --cg-color-red1: #EE5533;
+  --cg-color-red2: #FC0505;
+  --cg-color-red3: #EA6000;
+
+
+
+  --cg-color-black: #000;
+  --cg-color-black2: rgba(118, 171, 214, 0.4);
+  --cg-color-black3: rgba(0, 0, 0, 0.6);
+  --cg-color-black4: rgba(0, 0, 0, 0.5);
+  --cg-color-black5: rgba(155, 209, 253, 0.4);
+  --cg-color-black6: rgba(97, 206, 255, 0.4);
+  --cg-color-black7: #00000033;
+
+
+
+  --cg-color-orange: #F09B1B; // 文字
+  --cg-color-orang1: #FE9E0D; // 文字
+  --cg-color-orang2: #FF7A00; // 文字
+  --cg-color-green: #25A859; // 绿色文字
+
+  // 蓝色按钮背景
+  --cg-gradient-blue-button: linear-gradient(92.79deg, var(--cg-color-blue6) 1.31%, var(--cg-color-blue5) 100%);
+  --cg-gradient-blue1-button: linear-gradient(0deg, var(--cg-color-white) 0%, var(--cg-color-blue9) 100%);
+  --cg-gradient-blue2-button: linear-gradient(180deg, var(--cg-color-blue6) 1.31%, var(--cg-color-blue5) 100%);
+
+  // 按钮移入效果
+  --cg-hover-blue-button: linear-gradient(92.79deg, var(--cg-color-blue16) 1.31%, var(--cg-color-blue17) 100%);
+  --cg-hover-white-button: linear-gradient(137.93deg, var(--cg-color-white14) 7.21%, var(--cg-color-white15) 49.31%, var(--cg-color-black6) 96.05%);
+
+  // 白色按钮背景
+  --cg-gradient-white-button: linear-gradient(137.93deg, var(--cg-color-white) 7.21%, var(--cg-color-white1) 49.31%, var(--cg-color-blue7) 96.05%);
+  --cg-gradient-white-blue-login: linear-gradient(185.23deg, var(--cg-color-white5) -22%, var(--cg-color-blue9) 62.2%, var(--cg-color-blue9) 95.94%), linear-gradient(180deg, var(--cg-color-white) 0%, var(--cg-color-white) 0.01%, var(--cg-color-white6) 100%);
+  --cg-gradient-white-blue-head: linear-gradient(180deg, var(--cg-color-white) 0%, var(--cg-color-blue9) 100%), var(--cg-color-white);
+  --cg-white-blue-login: linear-gradient(137.93deg, var(--cg-color-white9) 7.21%, var(--cg-color-white8) 49.31%, var(--cg-color-white9) 96.05%), var(--cg-color-white);
+
+  // 维护框阴影
+  --cg-box-shadow-maintainBox: 0px 6px 12px var(--cg-color-black2);
+  //个人中心所有的小的盒子 阴影都用这个 
+  --cg-box-shadow-containter: 0px 6px 12px var(--cg-color-grey4);
+
+  // 图片阴影
+  --cg-img-shadow: drop-shadow(var(--cg-color-grey4) 0px 6px 12px);
+  --cg-logo-shadow: drop-shadow(0px 3px 6px var(--cg-color-black3));
+
+
+  --cg-box-shadow-parent: 0px 12px 30px var(--cg-color-grey4);
+  --cg-login-shadow: 0px 4px 10px var(--cg-color-black2);
+  --cg-tab-shadow: 0px 1.5px 3px var(--cg-color-white), inset 0px 1.5px 3px var(--cg-color-white7);
+  --cg-register-shadow: 0px 4px 10px var(--cg-color-black2);
+  --cg-shadow-color1: var(--cg-color-grey4);
+  --cg-shadow-color2: rgba(27, 117, 240, 0.6);
+
+  // 圆角
+  --cg-border-input-radius: 4px;
+  --cg-border-button-radius: 8px;
+  --cg-border-outer-radius: 12px;
+  --cg-border-radius: 50%;
+
+
+  // 字体相关
+  --cg-font-text: 400 15px 'Arial';
+  --cg-font-text1: 700 15px 'Arial';
+  --cg-font-text2: 700 17px 'Arial';
+  --cg-font-text3: 700 20px 'Arial';
+  --cg-font-text4: 400 17px 'Arial';
+  --cg-font-text5: 700 13px 'Arial';
+  --cg-font-text6: 400 13px 'Arial';
+  --cg-font-text7: 700 18px 'Arial';
+  --cg-font-text8: 400 12px 'Arial';
+  --cg-font-text9: 700 12px 'Arial';
+  --cg-font-text10: 700 24px 'Arial';
+  --cg-font-text11: 700 32px 'Arial';
+  --cg-font-text12: 700 36px 'Arial';
+  --cg-font-text13: 400 20px 'Arial';
+  --cg-font-text14: 700 26px 'Arial';
+
+
+  --cg-max-width: 1200px;
+
+  @for $i from 1 through 750 {
+    --cg-px-#{$i}: #{$i}px;
+  }
+
+  @for $i from 1 through 50 {
+    --cg-font-#{$i}: #{$i}px;
+  }
+
+  --cg-datepop-left: 0px;
+  --cg-datepop-top: 0px;
+}

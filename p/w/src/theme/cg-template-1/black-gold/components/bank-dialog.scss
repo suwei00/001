@@ -1,0 +1,159 @@
+.submit {
+  margin-left: 149px;
+  margin-top: 20px;
+  &.big {
+    height: 60px;
+    width: 300px;
+  }
+  &.black {
+    color: #fff;
+  }
+}
+.index-modalShow-layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1299;
+  opacity: 0;
+  animation-fill-mode: forwards !important;
+  animation: index-fain 0.4s ease;
+  overflow: auto;
+  display: flex;
+
+  .index-modal-Box {
+    width: 700px;
+    padding: 0px 20px 0 30px;
+    margin: auto;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #d7bc6e;
+    background-color: #504439;
+    transform: scale(0);
+    animation-fill-mode: forwards !important;
+    animation: index-transin 0.4s ease;
+
+    .index-modal-title {
+      padding: 30px 30px 20px;
+
+      h3 {
+        height: 22px;
+        line-height: 22px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        overflow: hidden;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .index-subTitle-span {
+        color: white;
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+        font-weight: normal;
+        overflow: hidden;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+      }
+
+      .index-close {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 30px;
+        top: 33px;
+        display: block;
+        cursor: pointer;
+        @include webp($base-img-dir + 'common/close-d.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+    .index-modal-content {
+      min-height: 520px;
+      font-size: 14px;
+      line-height: 27px;
+      color: #fff;
+      overflow: hidden;
+      word-break: break-all;
+      overflow-y: auto;
+      margin: 0 25px;
+      text-align: justify;
+
+      .el-form-item {
+        margin-bottom: 0;
+
+        .next-tips {
+          color: #b4aba2;
+          font-size: 12px;
+          line-height: 1.2;
+          padding: 10px 0;
+        }
+      }
+
+      .code-text {
+        position: absolute;
+        right: 2px;
+        height: 35px;
+        border: 0;
+        outline: 0;
+        background: #e6c981;
+        color: #8b644e;
+        width: 125px;
+        top: 3px;
+      }
+
+      .ques-kefu {
+        text-align: center;
+        display: flex;
+        padding-top: 10px;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: #3a8ee6;
+        }
+      }
+    }
+  }
+}
+
+.bank_err {
+  line-height: 1;
+  padding-top: 2px;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+@keyframes index-fain {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes index-transin {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

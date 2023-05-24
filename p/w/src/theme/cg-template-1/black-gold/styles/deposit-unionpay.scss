@@ -1,0 +1,219 @@
+.union-pay-deposit-content {
+  position: relative;
+  height: 600px;
+}
+
+.union-pay-alipay {
+  .union-sweep-unionPay {
+    margin-top: 45px;
+
+    .union-sweep-bankInfo {
+      position: relative;
+    }
+  }
+}
+
+.union-sweep-bankmain {
+  float: left;
+}
+
+.union-sweep-bankmain p {
+  display: block;
+  color: #fff;
+  padding: 0 10px;
+  height: 26px;
+}
+
+.union-sweep-bankInfo {
+  box-sizing: border-box;
+
+  .union-sweep-bankdetail {
+    p {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+      margin-bottom: 3px;
+
+      span {
+        font-size: 12px;
+        width: 57px;
+        text-align: right;
+        margin-right: 10px;
+        padding: 0;
+      }
+
+      button {
+        height: 18px;
+        font-size: 12px;
+        border-radius: 9px;
+        padding: 1px 7px;
+      }
+    }
+  }
+}
+
+.union-sweep-helpDeposit {
+  width: 435px;
+  height: 464px;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  float: left;
+  position: relative;
+
+  .coachlogo {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: -30px;
+    display: inline-block;
+    margin-left: 190px;
+    background: #fff;
+    background-size: 50% 50%;
+    background-position: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.union-sweep-unionPay {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  width: 385px;
+  margin-right: 75px;
+
+  & > h3 {
+    color: #0096ff;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .union-sweep-kf {
+    cursor: pointer;
+    color: rgb(31, 131, 240);
+    padding: 0px 5px;
+    font-size: 14px;
+    display: inline-block;
+
+    & > span {
+      color: #1f83f0;
+      cursor: pointer;
+    }
+  }
+
+  & > span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+  }
+}
+
+.union-sweep-bankdetail {
+  background: linear-gradient(120deg, #62c5ff 2%, #3ca4fa 100%);
+  width: 385px;
+  height: 235px;
+  border-radius: 8px;
+
+  .union-sweep-banklg {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+
+    & > span {
+      width: 28px;
+      height: 28px;
+      margin: 0 13px 0 20px;
+      flex: 0 0 auto;
+    }
+
+    & > i {
+      font-style: normal;
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+
+  & > p {
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    display: flex;
+    min-height: 26px;
+    max-height: 28px;
+    height: auto;
+
+    & > span {
+      display: block;
+      color: #fff;
+      padding: 0 10px;
+    }
+
+    & > i {
+      flex: 1;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    & > button {
+      background: none;
+      padding: 0 4px;
+      height: 20px;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.union-sweep-remind {
+  line-height: 22px;
+  color: #333;
+  overflow: hidden;
+  float: left;
+
+  & > strong {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: block;
+    color: #666;
+  }
+
+  p {
+    font-size: 12px;
+
+    & > a {
+      text-decoration: none;
+      font-weight: normal;
+      color: #0096ff;
+    }
+  }
+}
+
+.union-sweep-blue {
+  color: #3a97e5 !important;
+}
+
+.union-sweep-yellow {
+  color: #ffa10e !important;
+}
+
+.union-sweep-timer {
+  position: absolute;
+  top: 46px;
+  left: 241px;
+  font-weight: bold;
+  font-size: 16px;
+}

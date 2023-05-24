@@ -1,0 +1,222 @@
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .45);
+  z-index: 1299;
+  opacity: 0;
+  animation: index-fain .4s ease;
+  animation-fill-mode: forwards;
+  overflow: auto;
+  display: flex;
+
+  .index-ModalBoxDom {
+    width: 500px;
+    margin: auto;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, .1);
+    background-color: #fff;
+    // transform: scale(0);
+    animation: index-transin .4s ease;
+
+    animation-fill-mode:forwards
+    & > span {
+      position: absolute;
+    }
+  }
+}
+
+.index-modalShadow {
+  .index-title {
+    color: #333;
+    position: relative;
+
+    user-select:none
+    & > h3 {
+      height: 20px;
+      line-height: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      overflow: hidden;
+      max-width: 450px;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .index-subTitle {
+      color: #94a6b7;
+      font-size: 12px;
+      position: relative;
+      top: 5px;
+      font-weight: normal;
+      overflow: hidden;
+      max-width: 450px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block
+    }
+  }
+}
+
+.index-modalShadow .index-titleLeft {
+  padding: 40px 50px 30px 50px;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.title-close {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  margin-top: 40px;
+  cursor: pointer;
+  background: url(link($base-img-dir + 'personal/close.svg'));
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  right: 50px;
+
+  &:hover {
+    background: url(link($base-img-dir + 'personal/closehover.svg')) background-size 100% 100%
+  }
+}
+
+.index-modalType {
+  padding: 0px 26px 40px;
+  flex-direction: column;
+
+  .content {
+    color: #333;
+    font-size: 12px;
+    position: relative;
+    padding: 0;
+    height: auto;
+    margin: 0 20px 20px;
+    line-height: 22px;
+
+    .code {
+      .deposit-code {
+        justify-content center
+        .deposit-item {
+          font-size: 24px;
+          line-height: 60px;
+          color: #333;
+          text-align: center;
+          margin: 0 10px;
+          font-weight: bold;
+          border-radius: 5px;
+          border: 1px solid #d8dce7;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+
+    & > div {
+      width: 100%;
+    }
+
+    & > img {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+      float: left;
+    }
+  }
+
+  & > div {
+    .index-Button {
+      transition: all .3s ease;
+      font-size: 16px;
+      border-radius: 6px;
+      border: solid 1px #d8dce7;
+      color: #333;
+      background-color: #fff;
+      outline: none;
+      cursor: pointer;
+      padding: 15px 60px;
+
+      &:not(.active) {
+        &:hover {
+          border: solid 1px #EDC875;
+        }
+      }
+
+      &.active {
+        border: none;
+        background-image: linear-gradient(to right, #F5E1AD 1%, #EDC875);
+        color: #fff;
+        box-shadow: 0 10px 20px 0 #FFF4D8;
+
+        &:hover {
+          box-shadow: 0 10px 20px 0 #FFF4D8;
+        }
+      }
+    }
+  }
+}
+
+.btnbox {
+  justify-content: space-around;
+}
+
+@keyframes index-fain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes index-transin {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// 第二套样式
+.dialog2 {
+  .index-title {
+    border-bottom: 1px solid #d8dce7;
+    padding: 15px 25px;
+    color: #333;
+
+    & > h3 {
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    .title-close {
+      display: none;
+    }
+  }
+
+  .index-modalType > p {
+    padding: 30px 26px 10px;
+    font-size: 14px;
+    word-break: break-all;
+    overflow-y: auto;
+    text-align: center;
+
+    & > img {
+      display: none;
+    }
+  }
+
+  .btnbox {
+    & > button {
+      width: 136px;
+      height: 38px;
+      border-radius: 20px;
+      padding: 0;
+    }
+  }
+}

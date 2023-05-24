@@ -1,0 +1,55 @@
+.personal-content {
+  background-color: #fff;
+  height: auto;
+  width: 960px;
+  min-height: 818px;
+  padding: 30px 30px 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  .rightarrow {
+    width: 18px;
+    height: 12px;
+  }
+
+  .index-Input {
+    &::-webkit-input-placeholder {
+      color: #94a6b7;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.personal-common-content {
+  height: auto;
+  width: 960px;
+  min-height: 818px;
+  padding: 24px 30px 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rightarrow {
+  width: 18px;
+  height: 12px;
+}
+
+.index-Input {
+  &::-webkit-input-placeholder {
+    color: #94a6b7;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}

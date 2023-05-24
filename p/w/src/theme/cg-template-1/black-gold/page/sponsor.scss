@@ -1,0 +1,603 @@
+.sponsor-view {
+  .swiper-wrapper,
+  .swiper-slide {
+    // height: 100vh !important;
+  }
+}
+.sponsor-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .banner-f {
+    left: calc(50% - 336px);
+    bottom: 0;
+    padding-top: 30px;
+    width: 730px;
+    z-index: 5;
+    .banner1-t {
+      height: 70px;
+      @include webp($base-img-dir + 'sponsor/madrid/banner1-t.png');
+      background-size: 100% 100%;
+    }
+    p {
+      line-height: 56px;
+      color: #5d5d5d;
+      font-size: 40px;
+    }
+    .banner1-f {
+      margin: 27px auto 60px;
+      width: 308px;
+      height: 58px;
+      @include webp($base-img-dir + 'sponsor/madrid/bannner-f.png');
+      background-size: 100% 100%;
+    }
+  }
+  &.madrid-banner1 {
+    .madrid-bg {
+      z-index: 1;
+    }
+  }
+}
+
+.sponsor-wrap {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  user-select: text;
+  font-style: normal;
+
+  .football {
+    position: relative;
+    width: 100%;
+    // height: 862px;
+    height: 100%;
+    // .hm-logo {
+    //   @include webp("/blue/kok/sponsor/page-4-left-bg.png");
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center;
+    //   width: 130px;
+    //   height: 182px;
+    //   position: absolute;
+    //   left: 54px;
+    //   top: 54px;
+    // }
+
+    .wrap {
+      width: 1400px;
+      margin: auto;
+      position: relative;
+      height: 100%;
+
+      .title {
+        width: 100%;
+        height: 50px;
+        font-family: MicrosoftYaHei;
+        font-size: 46px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #063782;
+        text-align: center;
+        padding-top: 53px;
+        box-sizing: content-box;
+      }
+      .ying-wen {
+        height: 59px;
+        margin: 0 auto;
+        padding: 34px 0 20px 0;
+        position: relative;
+      }
+      .atalanta-en {
+        height: 90px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .atalanta-t {
+        margin-top: -55px;
+        position: relative;
+        font-size: 46px;
+        color: #063782;
+        height: 65px;
+        line-height: 65px;
+        &::after {
+          position: absolute;
+          left: calc(50% - 25px);
+          bottom: -15px;
+          content: '';
+          width: 50px;
+          height: 4px;
+          background-color: #063782;
+        }
+        &.white-t {
+          color: #ffff;
+          &::after {
+            background-color: #fff;
+          }
+        }
+      }
+      .madrid-1 {
+        width: 498px;
+        @include webp($base-img-dir + 'sponsor/madrid/exciting-moment.png');
+        background-size: 100% 100%;
+      }
+      .madrid-2 {
+        width: 568px;
+        @include webp($base-img-dir + 'sponsor/madrid/about-realmadrid.png');
+        background-size: 100% 100%;
+      }
+      .madrid-3 {
+        width: 526px;
+        @include webp($base-img-dir + 'sponsor/madrid/historical-glory.png');
+        background-size: 100% 100%;
+      }
+      .madrid-4 {
+        width: 520px;
+        @include webp($base-img-dir + 'sponsor/madrid/create-drilliant.png');
+        background-size: 100% 100%;
+      }
+      .madrid-5 {
+        width: 757px;
+        @include webp($base-img-dir + 'sponsor/madrid/service-cooperation.png');
+        background-size: 100% 100%;
+      }
+      .atalanta-1 {
+        width: 802px;
+        @include webp($base-img-dir + 'sponsor/atalanta/signing-moment.png');
+        background-size: 100% 100%;
+      }
+      .atalanta-2 {
+        width: 818px;
+        @include webp($base-img-dir + 'sponsor/atalanta/banner-history.png');
+        background-size: 100% 100%;
+      }
+      .atalanta-3 {
+        width: 823px;
+        @include webp($base-img-dir + 'sponsor/atalanta/match.png');
+        background-size: 100% 100%;
+      }
+      .atalanta-4 {
+        width: 659px;
+        @include webp($base-img-dir + 'sponsor/atalanta/team-bg.png');
+        background-size: 100% 100%;
+      }
+      .atalanta-5 {
+        width: 1100px;
+        @include webp($base-img-dir + 'sponsor/atalanta/service-bg.png');
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+.swiper-container .main-pagination {
+  right: 50px;
+  .swiper-pagination-bullet {
+    margin: 20px 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(184, 184, 184, 0.96);
+  }
+  .swiper-pagination-active {
+    background: #fff;
+  }
+  .swiper-pagination-bullet-active {
+    background-image: linear-gradient(to left, #d7b06e, #bf954f);
+  }
+}
+.swiper-container .belgium-pagination {
+  .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.2;
+  }
+  .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+  }
+}
+
+.swiper-container .swiper-pagination .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-image: linear-gradient(to left, #d7b06e, #bf954f);
+}
+.belgium {
+  &-bg {
+    z-index: -1;
+  }
+  .ban-wp {
+    // @include webp($base-img-dir + "sponsor/belgium/belgium-bg1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &.ban-wp2 {
+      // @include webp($base-img-dir + "sponsor/belgium/belgium-bg2.png");
+    }
+  }
+  .ban-t {
+    width: 1250px;
+    height: 241px;
+    @include webp($base-img-dir + 'sponsor/belgium/banner1-t.png');
+    background-size: 100% 100%;
+  }
+  .ban-logo {
+    margin: 56px 0 80px 0;
+    width: 497px;
+    height: 88px;
+    @include webp($base-img-dir + 'sponsor/belgium/banner1-logo.png');
+    background-size: 100% 100%;
+  }
+  .cont-wp {
+    width: 1100px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px 20px 80px 0 rgb(0 0 0 / 20%);
+    background-image: linear-gradient(to bottom, #fbfbfb, #f5f0ee);
+    padding: 0 50px;
+    height: 698px;
+  }
+  .matchp-wp {
+    padding: 0 20px 0 50px;
+  }
+  .sponsor-wp {
+    padding: 40px 20px 0 50px;
+  }
+  .cont-t {
+    width: 604px;
+    height: 73px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -29px;
+    @include webp($base-img-dir + 'sponsor/belgium/title1.png');
+    background-size: 100% 100%;
+  }
+  .cont-t1 {
+    width: 354px;
+    @include webp($base-img-dir + 'sponsor/belgium/title2.png');
+    background-size: 100% 100%;
+  }
+  .cont-t2 {
+    width: 354px;
+    @include webp($base-img-dir + 'sponsor/belgium/title3.png');
+    background-size: 100% 100%;
+  }
+  .cont-t3 {
+    width: 354px;
+    @include webp($base-img-dir + 'sponsor/belgium/title4.png');
+    background-size: 100% 100%;
+  }
+  .team-wp {
+    margin: 83px 0 0 0;
+    .team-l {
+      width: 568px;
+      height: 336px;
+    }
+    .team-r {
+      img {
+        width: 144px;
+        height: 140px;
+      }
+      p {
+        text-indent: 2em;
+        line-height: 20px;
+        font-size: 12px;
+        text-align: left;
+        color: #000;
+        &:last-child {
+          margin: 10px auto 20px;
+        }
+      }
+    }
+  }
+  .team-ul {
+    li {
+      margin-right: 35px;
+      padding-left: 40px;
+      width: 310px;
+      height: 150px;
+      background: #eee6e0;
+      border-radius: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        width: 70px;
+        height: 150px;
+      }
+      .trophy-des {
+        .trophy-t {
+          padding-right: 66px;
+          color: #000;
+        }
+        .trophy-num {
+          span {
+            color: #c10102;
+          }
+        }
+      }
+      &:nth-child(2) {
+        img {
+          width: 65px;
+          height: 120px;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          width: 50px;
+          height: 120px;
+        }
+      }
+    }
+  }
+  .game-wp {
+    margin: 40px 0 0 0;
+    .team-l {
+      margin: 20px 20px 0 0;
+      width: 632px;
+      height: 377px;
+    }
+  }
+  .game-ul {
+    li {
+      margin: 0 10px;
+      width: 252px;
+      height: 170px;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+      filter: brightness(0.7);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      img {
+        height: 130px;
+      }
+      span {
+        display: block;
+        top: 50%;
+        left: 50%;
+        margin: -35px 0 0 -18px;
+        width: 39px;
+        height: 39px;
+        @include webp($base-img-dir + 'sponsor/belgium/icon-play.webp');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      P {
+        line-height: 40px;
+        color: #000;
+        text-align: center;
+      }
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+  }
+  .video-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+  }
+  .el-dialog__header {
+    display: none;
+  }
+  .el-dialog__body {
+    padding: 0;
+  }
+  .sponsor-h {
+    width: 500px;
+    margin: 20px auto 30px;
+    align-items: center;
+    img {
+      &:first-child {
+        width: 245px;
+        height: 60px;
+        margin-top: 7px;
+      }
+      &:last-child {
+        width: 183px;
+        height: 84px;
+      }
+    }
+  }
+  .sponsor-t {
+    width: 550px;
+    margin: 0 auto;
+    color: #000;
+  }
+  .sponsor-t1 {
+    margin: 20px auto;
+    width: 500px;
+    line-height: 25px;
+  }
+  .sponsor-ul {
+    li {
+      width: 176px;
+      height: 284px;
+      border-radius: 10px;
+      // box-shadow: 0 10px 30px 0 rgb(36 3 2 / 10%);
+      margin-right: 14px;
+      &:last-child {
+        margin-right: 0;
+      }
+      div {
+        width: 100%;
+        height: 237px;
+        background-color: rgba(36, 3, 2, 0.1);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .ft-wp {
+    padding: 60px 50px 0;
+    .ft-l {
+      width: 280px;
+      height: 580px;
+    }
+    .ft-r {
+      flex: 1;
+      margin-left: 30px;
+    }
+    .safety-list {
+      li {
+        flex: 1;
+        text-align: center;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        p {
+          padding: 0 20px;
+          color: #000;
+          &:first-child {
+            margin: 16px 0 20px 0;
+          }
+        }
+      }
+    }
+    .ft-logo {
+      padding: 0 20px;
+      img {
+        height: 70px;
+        &:first-child {
+          width: 163px;
+        }
+        &:nth-child(2) {
+          width: 148px;
+        }
+        &:last-child {
+          width: 135px;
+        }
+      }
+    }
+    .ft-pz {
+      height: 93px;
+      background: #e7e2da;
+      border-radius: 8px;
+      li {
+        text-align: center;
+        .pz1 {
+          width: 60px;
+          height: 20px;
+        }
+        .pz2 {
+          width: 105px;
+          height: 30px;
+        }
+        .pz3 {
+          width: 110px;
+          height: 30px;
+        }
+        .pz4 {
+          width: 30px;
+          height: 30px;
+        }
+        p {
+          transform: scale(0.8);
+          color: #333;
+        }
+      }
+    }
+  }
+}
+.atal {
+  &-bg {
+    z-index: -1;
+  }
+}
+.atal-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // @include webp($base-img-dir + "sponsor/atalanta/banner1.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  .banner-f {
+    left: calc(50% - 305px);
+    bottom: 150px;
+    padding-top: 30px;
+    width: 640px;
+    z-index: 5;
+    .banner1-t {
+      margin: 0 auto;
+      width: 367px;
+      height: 100px;
+      @include webp($base-img-dir + 'sponsor/atalanta/banner-t.png');
+      background-size: 100% 100%;
+    }
+    p {
+      color: #fff;
+      font-size: 40px;
+    }
+    .ban-t {
+      margin: 15px 0 0 0;
+      line-height: 60px;
+      font-size: 42px;
+    }
+    .ban-des {
+      margin-top: 10px;
+      line-height: 40px;
+      font-size: 26px;
+    }
+    .banner1-f {
+      margin: 27px auto 60px;
+      width: 308px;
+      height: 58px;
+      @include webp($base-img-dir + 'sponsor/madrid/bannner-f.png');
+      background-size: 100% 100%;
+    }
+  }
+}
+.license-box {
+  margin-top: 40px;
+  margin-left: 413px;
+  padding: 18px 10px 0 20px;
+  width: 770px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+  display: flex;
+  justify-content: space-between;
+  li {
+    text-align: center;
+    p {
+      font-size: 12px;
+      line-height: 16px;
+      color: #000;
+    }
+  }
+}
+.atalanta-pag {
+  .swiper-pagination-bullet {
+    margin: 20px 0px !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    opacity: 1;
+    background-color: #fff;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgb(22, 138, 254);
+  }
+}
+@media screen and (min-width: 1537px) and (max-width: 1919px) {
+  .sponsor-view {
+    // transform: scale(0.9) !important;
+  }
+}

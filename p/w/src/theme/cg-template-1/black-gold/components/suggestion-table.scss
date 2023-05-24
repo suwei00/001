@@ -1,0 +1,98 @@
+.sugg-table-layout {
+  width: 100%;
+  text-align: center;
+  color: #8590a6;
+
+  thead tr {
+    color: #000000;
+    background-color: rgba(243, 246, 249, 0.5);
+
+    th {
+      height: 56px;
+      line-height: 56px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    th:nth-child(1) {
+      border-top-left-radius: 6px;
+      width: 197px;
+      border-bottom-left-radius: 6px;
+      padding-left: 60px;
+    }
+
+    th:nth-child(2) {
+      width: 200px;
+      text-align: left;
+
+    }
+
+    th:nth-child(3) {
+      width: 124px;
+    }
+
+    th:nth-child(4) {
+      width: 200px;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+  }
+
+  tbody tr {
+    border-radius: 6px;
+    cursor: pointer;
+
+    td {
+      height: 56px;
+      line-height: 56px;
+      white-space: nowrap;
+      font-size: 14px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:nth-child(1) {
+        width: 197px;
+        padding-left: 12px;
+
+        span {
+          width: 200px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 200px;
+        padding-right: 30px;
+      }
+
+      &:nth-child(3) {
+        width: 124px;
+      }
+
+      &:nth-child(4) {
+        width: 200px;
+      }
+    }
+
+    .sugg-type-icon {
+      margin-right: 24px;
+      width: 26px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  tbody tr:nth-of-type(odd) {
+    background-color: white;
+  }
+
+  tbody tr:nth-of-type(even) td {
+    background-color: #f9fafc;
+  }
+}

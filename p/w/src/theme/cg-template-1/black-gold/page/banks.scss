@@ -1,0 +1,339 @@
+:deep(.app-prm-btn.search-btn) {
+  width: 180px !important;
+}
+
+.personal-common-content {
+  padding: 30px 30px 40px;
+
+  .b-card-list {
+    margin-top: 30px;
+
+    li {
+      width: 270px;
+      height: 130px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 10px;
+      padding: 20px 20px 0 20px;
+      position: relative;
+      margin-bottom: 20px;
+      box-shadow: #ffeebe 0 8px 12px 0;
+
+      &.b-ibc {
+        @include webp($base-img-dir + 'personal//with_bank_bg.png');
+        background-position: center;
+        &.black-card {
+          @include webp($base-img-dir + 'personal/blacklist-bg.png');
+          background-position: center;
+          box-shadow: #c0c0c0 0 8px 12px 0;
+        }
+        .b-type {
+          display: flex;
+          align-items: center;
+          width: 91px;
+          border-radius: 5px;
+          background: #fff;
+          em {
+            position: relative;
+            width: 91px;
+            height: 41px;
+
+            &::after {
+              content: '';
+              width: 100%;
+              height: 100%;
+              display: block;
+              top: 0;
+              left: 0;
+              border-radius: 50%;
+              position: absolute;
+            }
+          }
+
+          span {
+            color: white;
+            line-height: 29px;
+            font-size: 12px;
+            display: block;
+            word-break: break-all;
+            color: #fff;
+            text-align: left;
+          }
+        }
+
+        .b-card-number {
+          color: #fff;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          position: absolute;
+          bottom: 30px;
+          right: 30px;
+        }
+
+        .b-edit-btn {
+          color: #fff;
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          text-align: center;
+          width: 64px;
+          height: 32px;
+          line-height: 32px;
+          border-radius: 8px;
+          border: 1px solid #ffffff;
+          &:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border: solid 1px rgba(216, 220, 231, 0.2);
+            color: white;
+          }
+        }
+      }
+
+      &.b-card-add {
+        width: 297px;
+        height: 130px;
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+        border: solid 1px #e6c981;
+
+        .b-center-box {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          display: flex;
+
+          .b-tianjia {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: sub;
+            margin-right: 5px;
+            @include webp($base-img-dir + 'sprite2.png');
+            background-repeat: no-repeat;
+            background-position: 0px -529px;
+          }
+
+          .b-addBank {
+            color: $theme-txt-color6;
+            font-size: 14px;
+            white-space: nowrap;
+          }
+
+          &::after {
+            content: ' ';
+            display: table;
+            width: 210px;
+            height: 120px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background-image: url(link('/blue/kok/personal/banks/ka.svg'));
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          // &:hover .b-tianjia {
+          //   background-image: url(link($base-img-dir + 'personal/add-btn.png'));
+          // }
+
+          &:hover .b-addBank {
+            color: #dfa847;
+          }
+        }
+      }
+    }
+  }
+
+  .v-card-list {
+    margin-top: 30px;
+
+    li {
+      width: 280px;
+      height: 170px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 10px;
+      padding: 20px 20px 0 20px;
+      position: relative;
+      margin-bottom: 20px;
+
+      &.b-ibc {
+        background: linear-gradient(#06beae, #0196a9);
+        box-shadow: rgb(1 150 169 / 60%) 0px 8px 12px 0px;
+
+        .b-type {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: white;
+            line-height: 29px;
+            font-size: 12px;
+            display: block;
+            line-height: 1.5;
+            word-break: break-all;
+            color: #fff;
+            text-align: left;
+          }
+        }
+
+        .b-card-number {
+          color: white;
+          margin-top: 13px;
+          display: inline-block;
+          font-size: 20px;
+          height: 40px;
+        }
+
+        .b-edit-btn {
+          border: solid 1px rgba(216, 220, 231, 0.2);
+          color: white;
+          width: 60px;
+          height: 28px;
+          border-radius: 14px;
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          text-align: center;
+          line-height: 28px;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border: solid 1px rgba(216, 220, 231, 0.2);
+            color: white;
+          }
+        }
+      }
+
+      &.v-card-add {
+        width: 286px;
+        height: 170px;
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 10px 10px 0 rgb(208 217 225 / 30%);
+        border: solid 1px #cedcec;
+        background-image: linear-gradient(163deg, #ffffff 11%, #f6fafd 60%);
+
+        .b-center-box {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+
+          .b-tianjia {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            vertical-align: sub;
+            margin-right: 5px;
+
+            background-image: url(link($base-img-dir + 'common/index-close-default.svg'));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .b-addBank {
+            color: #4b5e6f;
+            font-size: 14px;
+          }
+
+          &::after {
+            content: ' ';
+            display: table;
+            width: 210px;
+            height: 120px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background-image: url(link('/blue/kok/personal/banks/ka.svg'));
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          &:hover .b-tianjia {
+            @include webp($base-img-dir + 'personal/add-btn.png');
+          }
+
+          &:hover .b-addBank {
+            color: #dfa847;
+          }
+        }
+      }
+    }
+  }
+
+  .personal-common-layout-title {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+
+    h3 {
+      margin-right: 10px;
+      color: #333;
+    }
+
+    span {
+      color: #94a6b7;
+      font-size: 14px;
+    }
+  }
+
+  .myCenterTheme-tab {
+    .style-head {
+      position: relative;
+      justify-content: flex-start;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        z-index: 1;
+        background: #d8dce7;
+        width: 100%;
+      }
+
+      & > li {
+        height: 60px;
+        line-height: 60px;
+        margin-right: 40px;
+        transition: all 0.3s ease;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        color: #333;
+        font-size: 14px;
+
+        &.style-active {
+          font-weight: bold;
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: #edc875;
+            z-index: 3;
+          }
+        }
+      }
+    }
+  }
+}

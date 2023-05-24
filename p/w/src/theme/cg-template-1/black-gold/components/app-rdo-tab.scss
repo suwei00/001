@@ -1,0 +1,116 @@
+.date-range {
+  display: flex;
+  height: 100%;
+  .item-label {
+    width: 146px;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .index-timePicer-title {
+    margin: 0 0 0 7px;
+    width: 80px;
+    padding: 0 7px;
+  }
+
+  & > ul {
+    border-radius: 6px;
+    display: flex;
+
+    .index-defaultSelected {
+      color: #d7bc6e;
+      border: solid 1px transparent;
+
+      &::after {
+        content: ' ';
+        display: block;
+        border: solid 1px #d7bc6e;
+        background-color: transparent;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        bottom: -1px;
+        right: -1px;
+        pointer-events: none;
+      }
+    }
+
+    & > li {
+      font-size: 12px;
+      width: 80px;
+      text-align: center;
+      box-sizing: border-box;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      color: white;
+      border: solid 1px #d8dce7;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        color: #d7bc6e;
+        border: solid 1px transparent;
+      }
+
+      &:hover::after {
+        content: ' ';
+        display: block;
+        border: solid 1px #d7bc6e;
+        background-color: transparent;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        bottom: -1px;
+        right: -1px;
+        pointer-events: none;
+      }
+
+      &:last-of-type {
+        border-radius: 0 6px 6px 0;
+
+        &::after {
+          border-radius: 0 6px 6px 0;
+        }
+      }
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        padding: 0 15px;
+        line-height: 15px;
+        border-left: none;
+        *:hover {
+          border-left: none;
+        }
+      }
+
+      &:nth-of-type(1) {
+        border-radius: 6px 0 0 6px;
+
+        &::after {
+          border-radius: 6px 0 0 6px;
+        }
+      }
+    }
+  }
+}
+.recommed-tab {
+  .label-l {
+    width: 65px;
+    margin-right: 5px;
+  }
+  & > ul {
+    & > li {
+      width: 70px;
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        width: 65px;
+      }
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        padding: 0px 8px;
+      }
+    }
+  }
+}

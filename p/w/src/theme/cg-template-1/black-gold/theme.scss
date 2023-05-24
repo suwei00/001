@@ -1,0 +1,64 @@
+@use "sass:map";
+
+$colors: (
+        white: #ffffff
+);
+$color-white: linear-gradient(180deg, #FFF9E9 0%, #FFEEBE 100%);
+$font-size-24: 24px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-12: 12px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+
+/*圆角大小*/
+$border-radius-6: 6px;
+$border-radius-15: 15px;
+
+/*边框颜色*/
+$theme-bd-color: rgba(210, 214, 226, 0.5);
+$theme-bd-color1: #d8dce7;
+$theme-bd-color2: #f0f0f0;
+$theme-bd-color6: #dae8f2;
+$theme-bd-color7: #FFF4D8;
+$theme-bd-color8: #FFF4D8;
+$theme-bd-color9: #f0f3f7;
+$theme-bd-color10: #f2f6fc;
+$theme-bd-color11: #999;
+
+/* 公共文字颜色 */
+$theme-txt-color: map.get($colors, white);
+$theme-txt-color1: #1a3468;
+$theme-txt-color2: #728099;
+$theme-txt-color3: #333;
+$theme-txt-color4: #94a6b7;
+$theme-txt-color5: #4b5e6f;
+$theme-txt-color6: #D7B95E;
+$theme-txt-color7: #D7B95E;
+$theme-txt-color8: #999;
+$theme-txt-color9: #db6372;
+
+/* 公共背景颜色 */
+$theme-bg-color: map.get($colors, white);
+$theme-bg-color1: #f5f5f9;
+$theme-bg-color2: #7b9bb2;
+$theme-bg-color3: #343e4a;
+$theme-bg-color4: #eff7ff;
+$theme-bg-color5: #DFA847;
+$theme-bg-color8: #DFA847;
+$theme-bg-color11: rgba(243, 246, 249, .5);
+$theme-bg-color12: #f8f8f8;
+
+
+$theme-button-bg-color: linear-gradient(to right, #FFF4D8 1%, #EDC875);
+$theme-button-hover-bg-color: linear-gradient(to right, #FFF4D8 1%, #EDC875);
+$theme-app-header-bg: linear-gradient(to bottom, #010202, #abc8e3 100%);
+//$theme-app-center-bg: url('assets/common/center_bg.png');
+
+/* 公共边框颜色 */
+$theme-bd-color: #EEEEEE;
+$theme-shadow-color: 0 10px 20px 0 rgba(207, 146, 54, 0.2);
+$theme-bd-color1: #efeff4;
+/* component/app-header */
+$theme-app-header-icon-vip: 'icon-vip.svg';
+$theme-app-header-icon-notice: 'icon-notice.svg';

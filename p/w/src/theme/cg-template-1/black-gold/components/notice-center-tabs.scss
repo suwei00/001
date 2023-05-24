@@ -1,0 +1,39 @@
+
+.userinfo-notice-tabs {
+  .userinfo-notice-title {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #d8dce7;
+
+    a {
+      width: 150px;
+      height: 50px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      border: solid 1px #d8dce7;
+      color: #4b5e6f;
+      font-size: 14px;
+      transition: all .3s ease;
+      &:nth-child(4){
+        border-left: none;
+      }
+      &.notice-active {
+        color: #d37864;
+        font-weight: bold;
+        border-bottom: 2px solid #d37864;
+      }
+
+      &:nth-child(2) {
+        border-left: none;
+      }
+
+      &:nth-child(3) {
+        border-left: none;
+      }
+    }
+  }
+}

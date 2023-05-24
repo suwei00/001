@@ -1,0 +1,44 @@
+li {
+  width: 185px;
+  height: 82px;
+  border-radius: 15px;
+  border: 1px solid #f5e8c4;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  overflow: hidden;
+
+  .name {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 38px;
+    height: 38px;
+    background: transparent linear-gradient(90deg, #472f22 0%, #674837 100%) 0% 0% no-repeat padding-box;
+  }
+
+  .plat-amount {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #faeca2;
+    background: transparent linear-gradient(270deg, #2e1d15 0%, #38312d 100%) 0% 0% no-repeat padding-box;
+  }
+}
+.send-box {
+  .code-box {
+    display: flex;
+    justify-content: space-between;
+    .sendCode {
+      p {
+        line-height: 16px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .tip {
+    margin-top: 10px;
+    color: #f0f0f0;
+    font-size: 12px;
+  }
+}

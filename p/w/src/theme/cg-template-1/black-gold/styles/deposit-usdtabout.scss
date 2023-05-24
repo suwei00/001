@@ -1,0 +1,190 @@
+
+.usdt-card-wrapper, .usdt-odds-wrapper, .usdt-trade-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .usdt-card {
+    width: 287px;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px 0 rgba(247, 249, 251, 0.5);
+    border: solid 1px #dfeaf6;
+    background-color: #fff;
+    padding: 30px 0 20px 29px;
+    line-height: 1;
+
+    &.usdt-mid {
+      width: 440px;
+      height: 140px;
+      border-radius: 6px;
+      box-shadow: 0 10px 10px 0 rgba(208, 217, 225, 0.22);
+      border: solid 1px #dfeaf6;
+      background-image: linear-gradient(to bottom, #ffffff, #f9fcff 100%);
+      padding-top: 20px;
+      padding-right: 31px;
+    }
+
+    &.usdt-small {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+    }
+
+    &.usdt-small h5 {
+      margin-bottom: 8px;
+    }
+
+    &.usdt-small p {
+      width: auto;
+      text-align: justify;
+    }
+
+    &.usdt-xieyi {
+      flex-direction: column;
+
+      h4 {
+        font-weight: 500;
+      }
+
+      .usdt-tip {
+        color: #94a6b7;
+        font-size: 12px;
+      }
+    }
+
+    &.usdt-odds {
+      width: 287px;
+      height: 186px;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px 0 rgba(247, 249, 251, 0.5);
+      border: solid 1px #dfeaf6;
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-start;
+
+      & > div h5 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .usdt-icon {
+        width: 60px;
+        height: 60px;
+        overflow: visible;
+        margin-right: 15px;
+        display: block;
+        border-radius: 30px;
+
+        &.usdt-icon1 {
+          box-shadow: 0 5px 10px 0 rgba(60, 142, 254, 0.45);
+        }
+
+        &.usdt-icon2 {
+          box-shadow: 0 5px 10px 0 rgba(225, 135, 100, 0.77);
+        }
+
+        &.usdt-icon3 {
+          box-shadow: 0 5px 10px 0 #98f2ff;
+        }
+      }
+    }
+  }
+}
+
+.usdt-card.usdt-odds {
+  .usdt-text {
+    width: 151px;
+    line-height: 1.9;
+  }
+}
+
+.usdt-card {
+  h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  h5 {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  p {
+    width: 226px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #4b5e6f;
+    line-height: 1.7;
+  }
+}
+
+.usdt-title {
+  margin-bottom: 30px;
+  margin-top: 40px;
+  width: auto;;
+  height: 60px;;
+  margin-right: 15px;;
+  display: block;;
+  border-radius: 30px;;
+
+  &.usdt-title1 {
+    margin: auto auto;
+    height: 24px;;
+    margin-top: 40px;;
+    margin-bottom: 32px;;
+  }
+}
+
+.usdt-mid.usdt-trade {
+  display: flex;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  height: 132px;
+  background-image: unset;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 10px 10px 0 #e7eef5;
+  }
+
+  & > div {
+    flex: 1;
+  }
+
+  .type {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    width: auto;
+  }
+}
+
+.usdt-p {
+  color: #4b5e6f;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.usdt-trade-wrapper,
+.usdt-odds-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

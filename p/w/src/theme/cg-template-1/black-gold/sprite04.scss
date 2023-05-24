@@ -1,0 +1,52 @@
+.icon-vip-cunk,
+.icon-vip-d-bg,
+.icon-vip-lius,
+.icon-vip-naoj,
+.icon-vip01,
+.icon-vip02,
+.icon-vip03,
+.icon-vip04 {
+  display: inline-block;
+  @include webp($base-img-dir + 'sprite/sprite04.png');
+  background-size: 134px 193px;
+}
+.icon-vip-cunk {
+  width: 38px;
+  height: 38px;
+  background-position: -64.5px 0px;
+}
+.icon-vip-d-bg {
+  width: 64px;
+  height: 193px;
+  background-position: 0px 0px;
+}
+.icon-vip-lius {
+  width: 38px;
+  height: 38px;
+  background-position: -64.5px -38.5px;
+}
+.icon-vip-naoj {
+  width: 38px;
+  height: 38px;
+  background-position: -64.5px -77px;
+}
+.icon-vip01 {
+  width: 31px;
+  height: 31px;
+  background-position: -64.5px -115.5px;
+}
+.icon-vip02 {
+  width: 31px;
+  height: 31px;
+  background-position: -64.5px -147px;
+}
+.icon-vip03 {
+  width: 31px;
+  height: 31px;
+  background-position: -103px 0px;
+}
+.icon-vip04 {
+  width: 31px;
+  height: 31px;
+  background-position: -103px -31.5px;
+}

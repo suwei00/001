@@ -1,0 +1,267 @@
+.transfer {
+  padding: 25px;
+  min-height: 100%;
+  color: #000000;
+  .txt-c1 {
+    color: #8590a6;
+  }
+  &-title {
+    user-select: none;
+  }
+  &-type {
+    width: 239px;
+    height: 41px;
+    background: #ffffff;
+    box-shadow: 0px 1px 18px 0px rgba(211, 211, 211, 0.5);
+    border-radius: 8px;
+    top: 36px;
+    right: 29px;
+    overflow: hidden;
+    user-select: none;
+    div {
+      line-height: 15px;
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &.active {
+        background: linear-gradient(145deg, #f5e1ad 0%, #edc875 100%);
+        color: #ffffff;
+      }
+    }
+  }
+  .wallet-center {
+    margin-top: 35px;
+  }
+  h3 {
+    font-weight: 400;
+    padding-left: 3px;
+    user-select: none;
+  }
+  &-form {
+    user-select: none;
+    margin-top: 27px;
+    :deep(.el-select) {
+      width: 244px;
+    }
+    :deep(.el-input__inner) {
+      border-radius: 8px;
+      border: 1px solid #d8dce7;
+      padding-left: 22px;
+      color: #000;
+      user-select: none;
+    }
+    .promo-tip {
+      width: 635px;
+      white-space: normal;
+      color: #f35c5c;
+      padding-left: 4px;
+    }
+  }
+  &-select {
+    margin-top: 7px;
+    i.tips {
+      margin-right: 7px;
+      margin-left: 23px;
+    }
+    .icon-transfer {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .promo-transfer{
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+  &-input {
+    margin-top: 15px;
+    .input-wrap {
+      width: 527px;
+      height: 39px;
+      overflow: hidden;
+    }
+    input {
+      border-radius: 8px;
+      border: 1px solid #d8dce7;
+      padding: 0 22px;
+      background: transparent;
+      &:focus {
+        border-color: #f5e1ad;
+      }
+    }
+    .max-amount {
+      font-size: 14px;
+      background-color: transparent;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .submit {
+      width: 196px;
+      height: 37px;
+      background: linear-gradient(145deg, #f5e1ad 0%, #edc875 100%);
+      box-shadow: 0px 16px 6px -8px rgba(255, 244, 216, 1);
+      border-radius: 8px;
+      margin-left: 18px;
+      color: #ffffff;
+      transition: all 0.1s;
+      opacity: 1;
+      &:not([disabled]):hover {
+        transform: scale(1.05);
+      }
+      &[disabled] {
+        opacity: 0.5;
+      }
+    }
+  }
+  &-plat-list {
+    margin-top: 21px;
+    .plat-list {
+      margin-top: 14px;
+      flex-wrap: wrap;
+      user-select: none;
+      color: #8290a8;
+      transition: all 0.3s ease-out;
+      li {
+        width: 208px;
+        height: 119px;
+        background: #ffffff;
+        box-shadow: 0px 1px 18px 0px rgba(211, 211, 211, 0.5);
+        border-radius: 12px;
+        border: 1px solid #d8dce7;
+        margin-right: 25px;
+        margin-bottom: 15px;
+        padding-top: 19px;
+        padding-left: 13px;
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+        .amount {
+          margin-top: 4px;
+        }
+      }
+      .bottom-button {
+        bottom: 15px;
+        right: 11px;
+        button {
+          background: transparent;
+          width: 45px;
+          height: 26px;
+          border-radius: 5px;
+          margin: 0 3px;
+          line-height: 10px;
+          transition: all 0.1s;
+          &:not([disabled]):hover {
+            background: linear-gradient(145deg, #f5e1ad 0%, #edc875 100%);
+            box-shadow: 0px 16px 6px -8px rgba(255, 244, 216, 1);
+            color: #fff;
+          }
+          &[disabled] {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+        }
+      }
+      .to-c-wallet {
+        width: 88px;
+        height: 33px;
+        background: transparent;
+        top: 12px;
+        right: 8px;
+        line-height: 12px;
+        border-radius: 8px;
+        transition: all 0.1s;
+        &:not([disabled]):hover {
+          background: linear-gradient(145deg, #f5e1ad 0%, #edc875 100%);
+          box-shadow: 0px 16px 6px -8px rgba(255, 244, 216, 1);
+          color: #fff;
+        }
+        &[disabled] {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  .more {
+    color: #d7b95e;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 29px;
+    i.icon-more {
+      margin-left: 7px;
+    }
+  }
+  .tranfer-type-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.5);
+    z-index: 2021;
+    user-select: none;
+    .wrapper {
+      width: 522px;
+      height: 258px;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 0 55px;
+    }
+    .title-wrap {
+      margin-top: 39px;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 19px;
+    }
+    .red-tip {
+      width: 14px;
+      height: 14px;
+      background: url(link($base-img-dir + 'personal/icon-red-tip.svg')) no-repeat;
+      background-size: contain;
+      flex-shrink: 0;
+      margin-right: 7px;
+      position: relative;
+      top: 2px;
+    }
+    .icon-close {
+      width: 16px;
+      height: 16px;
+      background: url(link($base-img-dir + 'personal/icon-close.svg')) no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
+    .button-wrap {
+      margin-top: 16px;
+      button {
+        width: 196px;
+        height: 48px;
+        border-radius: 8px;
+        background: #ffffff;
+        font-size: 16px;
+        &.cancel {
+          border: 1px solid #d8dce7;
+          margin-right: 10px;
+        }
+        &.submit {
+          background: linear-gradient(145deg, #f5e1ad 0%, #edc875 100%);
+          box-shadow: 0px 16px 6px -8px rgba(255, 244, 216, 1);
+          color: #ffffff;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .fadeIn-enter-active,
+  .fadeIn-leave-active {
+    transition: opacity 0.3s;
+    opacity: 1;
+  }
+  .fadeIn-enter, .fadeIn-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+}

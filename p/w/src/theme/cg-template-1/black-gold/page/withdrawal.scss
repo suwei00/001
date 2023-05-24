@@ -1,0 +1,232 @@
+.wd {
+  &-wp {
+    padding: 24px 29px 33px 27px;
+  }
+  &-title {
+    color: #000;
+    h3 {
+      width: 125px;
+    }
+    span {
+      margin-left: 20px;
+    }
+  }
+  &-plat {
+    .plat-title {
+      margin-bottom: 14px;
+      color: #000;
+    }
+    .plat-list {
+      margin-bottom: 44px;
+      height: 207px;
+      li {
+        width: 208px;
+        height: 90px;
+        padding: 20px 0 0 30px;
+        margin-bottom: 14px;
+        color: #8290a8;
+        background: #ffffff;
+        box-shadow: 0px 1px 16px 0px rgba(211, 211, 211, 0.3);
+        border-radius: 12px;
+        border: 1px solid #d8dce7;
+        .plat-amount {
+          margin-top: 5px;
+          line-height: 33px;
+        }
+      }
+      &-up {
+        height: initial;
+      }
+    }
+  }
+  &-dropdown {
+    width: 75px;
+    cursor: pointer;
+    color: #d7b95e;
+    img {
+      margin-left: 7px;
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      &.drop-up {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &-tab {
+    border-bottom: 1px solid #d8dce7;
+    li {
+      position: relative;
+      padding: 9px 0;
+      color: #000;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 20px;
+      }
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+  &-card-list {
+    margin: 8px 0 0 0;
+    li {
+      position: relative;
+      width: 297px;
+      height: 155px;
+      padding: 25px 20px 28px 32px;
+      margin-right: 16px;
+      cursor: pointer;
+      @include webp($base-img-dir + 'personal/with_bank_bg.png');
+      background-size: 100% 100%;
+      &.active {
+        @include webp($base-img-dir + 'personal/active_bank_bg.png');
+        background-size: 100% 100%;
+      }
+      &:last-child {
+        width: 280px;
+        height: 39px;
+        padding: 0;
+        line-height: 39px;
+        border-radius: 8px;
+        border: 1px solid #d8dce7;
+        color: #d7b95e;
+        margin-right: 0;
+        background-image: none;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 20px;
+          vertical-align: sub;
+        }
+      }
+      .icon-bank {
+        width: 91px;
+        height: 41px;
+      }
+      .card-del {
+        width: 64px;
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+      }
+      .card-num {
+        margin-top: 40px;
+        color: #fff;
+      }
+      .check-card {
+        left: 9px;
+        bottom: 9px;
+        width: 39px;
+        height: 39px;
+        @include webp($base-img-dir + 'personal/icon-check-white.png');
+        background-size: 100% 100%;
+        span {
+          display: block;
+          margin: 20px 0 0 4px;
+          width: 10px;
+          height: 10px;
+          @include webp($base-img-dir + 'personal/icon-check-center.png');
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  &-ipt {
+    margin-top: 15px;
+    padding-left: 15px;
+    height: 39px;
+    border-radius: 8px;
+    border: 1px solid #d8dce7;
+  }
+  &-banktip {
+    color: #8590a6;
+    width: 784px;
+  }
+  &-btn {
+    margin: 36px auto 0;
+    width: 285px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background: linear-gradient(145deg, #f5e1ad 0%, #edc875 100%);
+    box-shadow: 0px 16px 6px -8px rgba(255, 244, 216, 1);
+    border-radius: 8px;
+    opacity: 0.5;
+    cursor: not-allowed;
+    &.active {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  &-nocard {
+    margin-top: 30px;
+    color: #8590a6;
+    img {
+      vertical-align: bottom;
+    }
+  }
+  &-ipt-wp {
+    span {
+      right: 14px;
+      top: 25px;
+    }
+  }
+}
+.bottom-finish-order {
+  h4 {
+    font-size: 24px;
+    padding: 13px 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 1px;
+      background: #d3d3d3;
+      left: 13px;
+      right: 13px;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  .order-title {
+    height: 40px;
+    width: 432px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 5px;
+    color: #d6aa59;
+    font-size: 16px;
+  }
+
+  .order-info {
+    li {
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      justify-content: space-between;
+      font-size: 16px;
+
+      span:nth-child(1) {
+        color: #afb0ba;
+      }
+
+      span:nth-child(2) {
+        color: #000000;
+        &.light-color {
+          color: #fdc400;
+        }
+        em {
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+//noinspection CssUnknownTarget
+.userinfo-layout {
+  padding: 24px 30px 40px;
+
+  .personal-btn {
+    width: 110px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 0px 3px 6px #472f2280;
+  }
+
+  .app-dft-btn {
+    width: 110px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #674837;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: transparent;
+    text-shadow: 0px 3px 6px #472f2280;
+    background: linear-gradient(90deg, #f5e8c4 0%, #e3bb83 100%);
+
+    &:hover {
+      background: linear-gradient(135deg, #e1d5b0 0%, #d7bc6e 100%);
+
+      &[disabled] {
+        background: linear-gradient(135deg, #e1d5b0 0%, #d7bc6e 100%);
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+  }
+
+  .span-font {
+    font-size: 14px;
+    color: white;
+  }
+
+  .el-form-item__label {
+    padding-right: 0;
+  }
+
+  .user-common-title {
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 10px;
+      color: white;
+    }
+
+    span {
+      color: white;
+      font-size: 14px;
+      line-height: 27px;
+    }
+  }
+
+  .userinfo-infotitle {
+    font-size: 13px;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+
+    &:nth-child(1) {
+      padding-left: 10px;
+    }
+
+    .userinfo-tips {
+      color: #fff;
+      font-size: 13px;
+      font-weight: normal;
+
+      .userinfo-call {
+        color: #fcde9e;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .userinfo-base-layout {
+    .ant-form-item label {
+      color: white;
+    }
+
+    .userinfo-picker-input {
+      width: 565px;
+
+      .ant-calendar-picker-input.ant-input {
+        padding: 20px 15px;
+      }
+    }
+
+    .userinfo-name-input {
+      padding: 20px 15px;
+    }
+
+    .userinfo-form-sex {
+      width: 180px;
+      height: 40px;
+      text-align: center;
+
+      li.userinfo-form-checkbox {
+        width: 80px;
+        height: 40px;
+        margin: 0;
+        border-radius: 6px;
+        border: solid 2px transparent;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          left: -3px;
+          right: -3px;
+          bottom: -3px;
+          top: -3px;
+          display: block;
+          border-radius: 6px;
+          cursor: pointer;
+          pointer-events: none !important;
+          content: ' ';
+          border-style: solid;
+          border-color: #b9aea5;
+          border-width: 1px;
+          color: white;
+        }
+
+        &.actived,
+        &:hover {
+          border-width: 2px;
+          border-color: #b9aea5;
+        }
+
+        &.actived::after {
+          position: absolute;
+          right: -2px;
+          bottom: -1px;
+          content: '';
+          display: block;
+          @include webp($base-img-dir + 'personal/checkboxBg.png');
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 100% 100%;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .save-btn {
+      width: 190px;
+      height: 40px;
+      margin: 0 0 20px 72px;
+      background-image: linear-gradient(to right, #f5e1ad 1%, #edc875);
+      font-size: 16px;
+    }
+  }
+
+  .userinfo-phone-lable {
+    width: 180px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .userinfo-span {
+    color: #b9b8b8;
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  .userinfo-account-safe {
+    margin-top: 20px;
+    position: relative;
+
+    .userinfo-infotitle {
+      margin-bottom: 20px;
+      padding-left: 0;
+
+      > div {
+        width: 180px;
+      }
+    }
+
+    .userinfo-phone-safe-item {
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 9px;
+      position: relative;
+
+      .index-button {
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+      }
+
+      .ym-button {
+        width: 110px;
+        height: 40px;
+        font-size: 13px;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+    }
+
+    .index-button {
+      width: 120px;
+      height: 40px;
+    }
+  }
+}

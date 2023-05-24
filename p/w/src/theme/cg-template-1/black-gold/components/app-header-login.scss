@@ -1,0 +1,55 @@
+.app-header-login-view {
+  .ym-button {
+    width: 60px !important;
+    height: 28px;
+    border-radius: 14px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 14px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  input {
+    width: 130px;
+    height: 28px;
+    background-color: #7a7c80;
+    box-shadow: 0 0 0px 100px rgba(0, 0, 0, .18) inset;
+    outline: none;
+    border-radius: 14px;
+    padding: 0 12px;
+    transition-delay: 99999s;
+    transition: color 99999s ease-out, background-color 99999s ease-out;
+  }
+  input[type="password"] {
+    padding-right: 46px;
+  }
+  .ipt-pwd-wp {
+    width: 130px;
+    position: relative;
+    span {
+      font-size: 13px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, .8);
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  .btn-login {
+    background-image: linear-gradient(to left,#6bb9ff,#2095fd);
+    &:hover {
+      background-image: linear-gradient(to left,#88c7ff,#3ea4ff);
+      transition: all .8s;
+    }
+  }
+  .btn-register {
+    background-image: linear-gradient(to left,#ffd86a,#eba81e);
+    &:hover {
+      background-image: linear-gradient(to left,#ffe28f,#ffc141);
+      transition: all .8s;
+    }
+  }
+}

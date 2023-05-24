@@ -1,0 +1,102 @@
+.usdt-content {
+  width: 960px;
+  margin: 0 0 20px 20px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  min-height: 818px;
+  box-shadow: 0 1px 18px 0 rgb(211 211 211 / 50%);
+  .usdt-nav {
+    padding: 24px 0 0 23px;
+    margin-bottom: 52px;
+    .usdt-back {
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+      @include webp($base-img-dir + 'deposit/usdt_back.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    p {
+      font-weight: bold;
+    }
+  }
+  .usdt-title-bg {
+    margin: 20px auto 40px;
+    height: 36px;
+  }
+  .tab-card {
+    li {
+      width: 390px;
+      height: 234px;
+      border-radius: 12px;
+      box-shadow: 0 10px 10px 0 rgb(247 249 251 / 50%);
+      border: solid 1px#dfeaf6;
+      background-color: #fff;
+      padding: 25px 23px 17px 32px;
+      line-height: 1;
+      font-size: 14px;
+      color: #8290a8;
+      p {
+        line-height: 20px;
+      }
+      h4 {
+        color: #000;
+        line-height: 33px;
+      }
+      .p-des {
+        margin: 3px 0 16px;
+      }
+    }
+  }
+  .bottom-card {
+    li {
+      height: 137px;
+    }
+  }
+}
+.usdt-row {
+  display: flex;
+  justify-content: center;
+
+  &.usdt-header {
+    & > li {
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      background: #ffe3d9;
+    }
+  }
+
+  &.usdt-odd {
+    & > li {
+      background: #ffe3d9;
+    }
+  }
+
+  & > li {
+    font-size: 12px;
+    color: #8290a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 222px;
+    height: 50px;
+    margin-right: 4px;
+
+    &:first-child {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}
+
+.usdt-p {
+  text-align: center;
+}

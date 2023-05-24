@@ -1,0 +1,200 @@
+.index-modalShow-layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1299;
+  opacity: 0;
+  animation-fill-mode: forwards !important;
+  animation: index-fain 0.4s ease;
+  overflow: auto;
+  display: flex;
+
+  .index-modal-Box {
+    width: 680px;
+    height: auto;
+    padding: 0px 30px 0 30px;
+    margin: auto;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 80px 0 rgba(210, 214, 226, 0.5);
+    background-color: #fff;
+    transform: scale(0);
+    animation-fill-mode: forwards !important;
+    animation: index-transin 0.4s ease;
+
+    .index-modal-title {
+      padding: 30px 0 20px;
+
+      h3 {
+        height: 20px;
+        line-height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        overflow: hidden;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .index-subTitle-span {
+        color: #94a6b7;
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+        font-weight: normal;
+        overflow: hidden;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+      }
+
+      .index-close {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 30px;
+        top: 33px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include webp($base-img-dir + 'common/close-d.png');
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .index-modal-content {
+      min-height: 100px;
+      padding: 0 0 30px 0;
+      font-size: 14px;
+      line-height: 27px;
+      color: #333;
+      overflow: hidden;
+      word-break: break-all;
+      overflow-y: auto;
+      margin: 0 25px;
+      text-align: justify;
+
+      .el-form-item {
+        margin-bottom: 0;
+
+        .next-tips {
+          color: #94a6b7;
+          font-size: 12px;
+        }
+      }
+
+      .dress-name-btns {
+        width: 400px;
+        display: flex;
+
+        a {
+          height: 40px;
+          width: 120px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 14px;
+          color: #333;
+          border-radius: 6px;
+          border: 2px solid transparent;
+          position: relative;
+
+          &.btn-actived::before {
+            border: 2px solid #edc875;
+            box-shadow: 0 10px 20px 0 #fff4d8;
+            background: url(link($base-img-dir + 'personal/checkboxBg.png')) 90px 10px no-repeat;
+            background-size: 30px;
+          }
+
+          &::before {
+            position: absolute;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            top: -2px;
+            display: block;
+            content: '';
+            border: 1px solid #fff4d8;
+            border-radius: 6px;
+          }
+
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+
+          &:hover::before {
+            border: 2px solid #edc875;
+            box-shadow: 0 10px 20px 0 #fff4d8;
+          }
+        }
+      }
+
+      .code-text {
+        position: absolute;
+        right: 10px;
+        line-height: 40px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: #94a6b7;
+      }
+
+      .ques-kefu {
+        text-align: center;
+        display: flex;
+        padding-top: 25px;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+        color: 12px;
+
+        img {
+          vertical-align: middle;
+        }
+
+        span {
+          padding-left: 5px;
+        }
+
+        a {
+          color: #edc875;
+          padding-left: 5px;
+        }
+      }
+
+      .app-prm-btn,
+      .app-dsb-btn {
+        margin: 0px 0 0px 130px;
+        height: 60px;
+        width: 300px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@keyframes index-fain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes index-transin {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

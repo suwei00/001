@@ -1,0 +1,400 @@
+.login-container {
+  input::-webkit-input-placeholder {
+    // color: #fff !important;
+    color: #000 !important;
+  }
+
+  // background: url(webp('register/bg.jpg')) no-repeat right bottom;
+  // background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: auto;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  overflow: hidden;
+
+  .el-checkbox__label,
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: $theme-txt-color;
+  }
+}
+
+.register-login-box {
+  text-align: center;
+  overflow: auto;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+
+  .register-contentBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(50vh - 350px);
+
+    &.register-bindContentBox-1eyLv {
+      top: calc(50vh - 200px);
+    }
+  }
+}
+
+.login-icon {
+  width: 50px;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &.register-user {
+    background-image: url(link($base-img-dir + 'register/icon_user.svg'));
+  }
+
+  &.register-iconCode {
+    background-image: url(link($base-img-dir + 'register/icon_password.svg'));
+  }
+
+  &.login-password {
+    background-image: url(link($base-img-dir + 'register/icon_password.svg'));
+  }
+
+  &.register-entryCode {
+    background-image: url(link($base-img-dir + 'register/sign-icon-dun@2x.svg'));
+  }
+}
+
+.login-input {
+  margin: 28px auto;
+  width: 390px;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 21px 0;
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    input {
+      flex: 1;
+      width: 390px;
+      height: 100%;
+      line-height: 100%;
+      border: none;
+      outline: none;
+      padding: 10px 55px 10px 15px;
+      border: 1px solid rgba(255, 255, 255, 0);
+      background-color: rgba(255, 255, 255, 0.25);
+      font-size: 14px;
+      caret-color: #fff;
+      color: #fff;
+    }
+  }
+}
+
+.register-logo {
+  margin: 0 auto 23px;
+}
+
+.styles-sponsor {
+  color: #fff;
+  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -20px auto 30px auto;
+
+  .styles-title {
+    font-size: 12px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 0px 12px;
+
+    &::before {
+      content: '';
+      color: #fff;
+      margin-right: 12px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+      display: inline-block;
+      height: 1px;
+      width: 132px;
+    }
+
+    &::after {
+      content: '';
+      color: #fff;
+      margin-left: 12px;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+      display: inline-block;
+      height: 1px;
+      width: 132px;
+    }
+  }
+
+  .styles-sponsorBox {
+    margin-top: 15px;
+    height: 45px;
+    display: flex;
+
+    .styles-sponsorItem {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      text-align: left;
+
+      img {
+        height: 45px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.login-input {
+  margin: 0px auto;
+  width: 298px;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+
+    i.login-icon {
+      display: block;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      left: 10px;
+      top: 7px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    input {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      width: 390px;
+      height: 100%;
+      line-height: 100%;
+      border: none;
+      outline: none;
+      padding: 10px 55px 10px 0;
+      background-color: transparent;
+      margin-left: 18px;
+      font-size: 14px;
+      color: #3e4a70;
+      opacity: 0.9;
+      font-family: DinProMedium !important;
+    }
+  }
+}
+
+.login-row {
+  flex-direction: column;
+  width: 100%;
+  height: auto !important;
+  margin: 13px 0;
+  border-radius: 5px;
+  overflow: none;
+
+  .login-user-wrap {
+    height: 40px;
+    line-height: 44px;
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 15px 0 #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1px solid transparent;
+
+    .login-user-wrap-box {
+      position: relative;
+      display: inherit;
+      width: 100%;
+    }
+
+    .icon-box {
+      position: absolute;
+      top: 3px;
+      right: 12px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+
+      .icon-box-item {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .styles-input-error {
+    color: #fc5a5a;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 41px;
+    left: 4px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+    .error-icon {
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+    }
+  }
+
+  .right-icon {
+    position: absolute;
+    right: -25px;
+    bottom: 13px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.register-disable {
+  cursor: not-allowed !important;
+  opacity: 0.4;
+}
+
+.login-forget-password {
+  line-height: 20px;
+  height: 20px;
+  margin: 20px 0px 0px;
+
+  .login-item {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+
+    &.login-forget {
+      margin-left: auto;
+    }
+  }
+
+  .login-checkBox {
+    display: flex;
+    justify-content: flex-start;
+
+    .checkbox {
+      width: 15px;
+      height: 15px;
+      position: relative;
+      background: url(webp('register/icon_uncheck.webp'));
+      background-position: center;
+      background-size: contain;
+      top: 3px;
+      left: 0;
+      margin-right: 5px;
+      cursor: pointer;
+
+      &.active {
+        background: url(link('register/svgexport-2.svg'));
+      }
+    }
+  }
+}
+
+.register-submit {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #4080ff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 4px rgba(64, 128, 255, 0.2);
+
+  &.disable {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+.register-linkGroup {
+  justify-content: space-between;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+
+  .link {
+    color: #4080ff;
+  }
+}
+
+.register-service {
+  color: #fff;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+.register-validImg {
+  position: absolute;
+  top: 5px;
+  right: 18px;
+  width: 110px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.styles-sponsorBox {
+  .styles-sponsorItem {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  img {
+    margin-right: 5px;
+  }
+
+  .styles-sponsorInfoTop {
+    font-size: 12px;
+  }
+
+  .styles-sponsorInfoBtm {
+    transform: scale(0.75) translateX(-12px);
+  }
+}

@@ -1,0 +1,128 @@
+.notice-mail-content {
+  height: auto;
+  margin-top: 20px;
+  position: relative;
+  width: 900px;
+  padding-bottom: 50px;
+  .notice-table tbody tr:nth-of-type(even) {
+    background-color: $theme-bg-color11;
+  }
+
+  & tbody tr:nth-of-type(even) td:nth-child(1) {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  & tbody tr:nth-of-type(even) td:last-of-type {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  & tbody tr:nth-last-child {
+    background-color: $color-white;
+  }
+  .icon-feed-uncheck {
+    width: 20px;
+    height: 21px;
+    border-radius: 50%;
+    border: 2px solid #D8DCE7;
+  }
+  .notice-table {
+    border-top: none;
+    width: 100%;
+
+    .notice-quanquan {
+      margin-right: 15px;
+    }
+
+    .notice-flex-type {
+      .notice-type-icon {
+        position: relative;
+        margin-right: 12px;
+        width: 32px;
+        height: 32px;
+
+        &.active::after {
+          content: " ";
+          display: table;
+          width: 6px;
+          height: 6px;
+          background-color: red;
+          position: absolute;
+          right: -3px;
+          top: 1px;
+          border-radius: 50%;
+        }
+      }
+    }
+    tbody tr {
+      height: 56px;
+
+      td {
+        font-size: 14px;
+        padding: 0;
+        line-height: 56px;
+        cursor: pointer;
+
+        .notice-bottom-box {
+          position: relative;
+          height: 56px;
+          width: 100%;
+          top:10px;
+          // padding-top: 20px;
+          .pagination-box {
+            .notice-header-box {
+              display: flex;
+              align-items: center;
+              a {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                text-align: center;
+                transition: all .3s ease;
+                .n-icon {
+                  margin-right: 5px;
+                  position: relative;
+                  top: -2px;
+                }
+                .icon-check-center,.icon-feed-uncheck {
+                  margin-right: 5px;
+                  position: relative;
+                  top: -2px;
+                }
+                span {
+                  color: #4b5e6f;
+                  line-height: 1.2;
+                  &.notice-biaoji {
+                    color: #94a6b7;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          width:320px;
+          padding-left: 20px;
+          margin-right: 40px;
+        }
+
+        &:nth-child(2) {
+          width: 260px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 346px;
+          color: #94a6b7;
+        }
+
+        &:nth-child(3) {
+          color: #94a6b7;
+          text-align: right;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

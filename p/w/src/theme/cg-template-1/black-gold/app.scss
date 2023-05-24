@@ -1,0 +1,274 @@
+@import './common.scss';
+
+.el-input.is-disabled .el-input__inner {
+  color: #b4aba2 !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 0.5 !important;
+}
+
+.el-form-item__label {
+  color: #fff !important;
+}
+
+.el-date-table td span {
+  border-radius: 0 !important;
+}
+
+.el-date-table td.start-date div,
+.el-date-table td.end-date div {
+  border-radius: 0 !important;
+}
+
+.b-shadow {
+  transform-style: preserve-3d;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 70px;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    transform: translateZ(-1px);
+    @include webp($base-img-dir + 'shadow.png');
+    background-position: center top;
+    background-size: 100% 100%;
+  }
+}
+
+.out-shadow {
+  box-shadow: 0 8px 20px 0 rgba(197, 155, 98, 0.28);
+}
+
+.ym-btn {
+  background: linear-gradient(135deg, #ffe3d9 0%, #fcb4a3 100%);
+  border-radius: 20px;
+  box-shadow: 0 3px 0 0 #e1be6c;
+}
+
+.p-dialog.el-dialog {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #504439;
+  border: 1px solid #fcefd5;
+
+  .el-dialog__header {
+    position: relative;
+    padding: 10px 40px 11px 28px;
+    background: #e1be6c;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffffff;
+
+    .el-dialog__close {
+      color: #fff;
+
+      &:hover {
+        color: #e1be6c;
+      }
+    }
+  }
+
+  .el-dialog__headerbtn {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+  }
+
+  .el-dialog__title {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .el-dialog__body {
+    padding: 0;
+    color: #e1be6c;
+    position: relative;
+  }
+
+  .el-scrollbar__view {
+    padding: 30px;
+  }
+}
+
+.default-message {
+  .el-button {
+    margin-top: 30px;
+    width: 146px;
+    height: 40px;
+    background: linear-gradient(180deg, #fcde9e 0%, #e3bb83 100%) !important;
+    color: #674837 !important;
+    border: none;
+    outline: none;
+    text-shadow: 0px 3px 6px #472f2280;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+}
+
+.el-scrollbar__wrap {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 6px;
+    border: solid 1px #cdcaca;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    // background: url(link($base-img-dir + 'deposit/title-bg.webp')) no-repeat;
+    // background: url(link($base-img-dir + 'sponsor/scroll-top.png')) 0 0/100% 5px no-repeat, url(link($base-img-dir + 'sponsor/scroll-mid.png')) 0 5px/100% calc(100% - 10px) no-repeat,
+    //   url(link($base-img-dir + 'sponsor/scroll-bot.png')) 0 bottom/100% 5px no-repeat;
+  }
+}
+
+.atalanta-img-list {
+  .el-scrollbar__bar.is-vertical {
+    right: 0px;
+  }
+
+  .el-scrollbar__thumb,
+  .el-scrollbar__thumb:hover {
+    background-color: #077ed4 !important;
+  }
+}
+
+.madrid-scroll {
+
+  .el-scrollbar__thumb,
+  .el-scrollbar__thumb:hover {
+    background-color: #e1be6c !important;
+  }
+}
+
+.img-holder {
+  // @include webp($base-img-dir + '/default.jpg');
+  background-size: contain;
+  background-color: #ffffff;
+}
+
+.el-loading-spinner .path {
+  stroke: #444 !important;
+}
+
+.bank_list_wrap,
+.index-modal-content {
+  .hadbank {
+    .el-input__inner {
+      padding-left: 75px;
+      font-size: 12px;
+    }
+  }
+
+  div {
+    $icons: '801',
+    '802',
+    '803',
+    '804',
+    '805',
+    '806',
+    '807',
+    '808',
+    '809',
+    '810',
+    '811',
+    '812',
+    '813',
+    '814',
+    '815',
+    '816',
+    '817',
+    '818',
+    '819',
+    '820',
+    '821',
+    '822',
+    '823',
+    '824',
+    '825',
+    '826',
+    '827',
+    '828',
+    '829',
+    '830',
+    '831',
+    '832',
+    '833',
+    '834',
+    '835',
+    '836';
+
+    @each $i in $icons {
+      &.icon-#{$i} {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+          cursor: pointer;
+          top: 3px;
+          left: 5px;
+          display: inline-block;
+          width: 64px;
+          height: 32px;
+          @include webp($base-img-dir + 'deposit/icon-' + $i + '.png');
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+.el-select-dropdown__item {
+  font-size: 12px !important;
+}
+
+body {
+
+  // 隐藏滚动条
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.warning-notice {
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+
+  i {
+    display: block;
+    width: 35px;
+    height: 26px;
+    @include webp($base-img-dir + 'common/warning-notice.png');
+    background-size: 29px 26px;
+  }
+
+  .title {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    max-width: calc(100% - 40px);
+  }
+}

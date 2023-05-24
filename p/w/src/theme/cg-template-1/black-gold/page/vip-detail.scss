@@ -1,0 +1,526 @@
+.common-pageContainer {
+  min-height: calc(100vh - 115px);
+  display: flex;
+  flex-direction: column;
+  .next_title {
+    height: 40px !important;
+    position: absolute;
+    margin-top: 8px !important;
+    .up {
+      font-size: 20px;
+    }
+    .down {
+      font-size: 12px;
+      transform: scale(calc(10 / 12));
+    }
+    span {
+      display: block;
+      color: #fff;
+    }
+  }
+  .common-pageBody {
+    flex: 1;
+
+    .vipStyle-vip-headerImg {
+      width: 100%;
+      // background-size: cover;
+      position: relative;
+      // background-repeat: no-repeat;
+      height: 600px;
+      // flex: 1;
+      // @include webp($base-img-dir + 'personal/vipBanner.png');
+    }
+    .vip-banner {
+      position: absolute;
+      // width: 100%;
+      width: auto;
+      // height: 600px;
+      height: 600px;
+      max-width: none;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .vipStyle-vip-childone {
+      @include webp($base-img-dir + 'personal/pageBg.png');
+      height: 462px;
+      width: 100%;
+      background-position: center;
+      background-size: 100% 462px;
+      position: absolute;
+      top: 421px;
+      div {
+        margin: auto;
+        height: 180px;
+        text-align: center;
+        margin-top: 30px;
+
+        & > p {
+          height: 64px;
+          color: #fff;
+          font-size: 50px;
+          font-weight: normal;
+          text-align: center;
+          letter-spacing: 2px;
+          text-shadow: 0px 3px 5px #cebe93;
+
+          & > img {
+            width: 439px;
+          }
+        }
+
+        & > div {
+          margin-top: 45px;
+          position: relative;
+          letter-spacing: 0;
+
+          p {
+            letter-spacing: normal;
+            font-size: 50px;
+            font-weight: normal;
+            font-stretch: normal;
+            color: #fff;
+            text-align: center;
+
+            &:nth-child(2) {
+              font-size: 12px;
+              margin-top: 6px;
+              margin-left: 0;
+              font-weight: normal;
+              color: #fff;
+              text-align: center;
+              letter-spacing: 0.3px;
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vipStyle-box-vip {
+  @include webp($base-img-dir + 'home/background.png');
+  border-radius: 6px;
+  z-index: 0;
+  margin-top: 283px;
+  padding: 23px 0 45px;
+  background-size: cover;
+
+  .vipStyle-vip-box {
+    width: 1274px;
+    margin: 0 auto 45px;
+    position: relative;
+    border-radius: 6px;
+    padding-bottom: 78px;
+    background-image: linear-gradient(to top, #fff9e8, #ffeebe);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    & > .vip-d-bg {
+      position: absolute;
+      top: -58px;
+    }
+
+    .vipStyle-bLeft {
+      left: 37px;
+    }
+
+    .vipStyle-bRight {
+      right: 37px;
+    }
+
+    .vipStyle-list-top {
+      position: absolute;
+      top: -285px;
+      width: 1274px;
+      z-index: 1;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      & > li {
+        cursor: pointer;
+        position: relative;
+        width: 217px;
+        height: 60px;
+        text-align: center;
+        border-radius: 30px;
+        margin-top: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 2px 13px 3px rgba(200, 200, 200, 0.3);
+
+        .vipStyle-black {
+          width: 48px;
+          height: 53px;
+        }
+
+        & > div {
+          display: flex;
+          align-items: center;
+        }
+
+        & > img {
+          width: 45px;
+          height: 48px;
+        }
+
+        i {
+          font-size: 22px;
+          color: #41475a;
+        }
+      }
+
+      .vipStyle-level-un-select {
+        // background: url(link($base-img-dir + 'personal/btn-bg.png'));
+        @include webp($base-img-dir + 'personal/btn-bg.png');
+        background-size: 100% 100%;
+        box-shadow: 0 2px 13px 0 rgba(230, 162, 60, 0.3), inset 1px 2px 16px 0 rgba(230, 162, 60, 0.3);
+        background-color: inherit;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.vipStyle-vip-detail-box {
+  width: 1200px;
+  height: 543px;
+  margin: 0 auto;
+  position: relative;
+  top: 62px;
+
+  & > li {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 78px;
+    position: relative;
+
+    .vipStyle-rigght {
+      @include webp($base-img-dir + 'personal/rightBg.png');
+      width: 634px;
+      height: 498px;
+      position: absolute;
+      top: 0;
+      right: 33px;
+      margin-bottom: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .vipStyle-vipMoneyOne {
+        width: 612px;
+        height: 254px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 48px 30px 0;
+        flex-wrap: wrap;
+        display: flex;
+
+        .vipStyle-moneyItem {
+          width: 272px;
+          height: 180px;
+          text-align: center;
+          padding: 0;
+          margin-bottom: 10px;
+          position: relative;
+
+          .vipStyle-imgBox {
+            width: 100%;
+            @include webp($base-img-dir + 'personal/boxTop.webp');
+            height: 80px;
+            position: absolute;
+            border-radius: 15px 0 0 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            left: 0;
+            top: 0;
+            margin: auto;
+            padding-top: 15px;
+
+            & > img {
+              width: 36px;
+              height: 33px;
+            }
+
+            & > p {
+              font-size: 14px;
+              text-align: center;
+              color: #fff;
+              margin-top: 6px;
+            }
+          }
+
+          .vipStyle-textBox {
+            width: 100%;
+            @include webp($base-img-dir + 'vip/boxBottom.png');
+            height: 100px;
+            position: absolute;
+            border-radius: 0 0 15px 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            top: 80px;
+            margin: auto;
+            padding-top: 10px;
+            color: #464851;
+
+            .p1 {
+              text-align: center;
+              font-size: 22px;
+              font-weight: bold;
+            }
+
+            .p2 {
+              font-size: 16px;
+              font-weight: bold;
+              margin: 2px 0 2px;
+            }
+
+            .p3 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              & > span {
+                color: #999;
+                font-size: 16px;
+                margin: 0 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .vipStyle-vip {
+      position: absolute;
+      left: 40px;
+      top: 0;
+      width: 480px;
+      height: 498px;
+      margin: auto;
+      text-align: center;
+      z-index: 2;
+
+      .vipStyle-vipCardBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .vipStyle-vipCardBg {
+          @include webp($base-img-dir + 'personal/vip-card.png');
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+          text-align: left;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+
+          .vipStyle-vipCardContent {
+            width: 100%;
+            padding: 0 38px;
+            position: relative;
+            overflow: hidden;
+
+            .vipStyle-vipLevel {
+              width: 94px;
+              height: 104px;
+              position: absolute;
+              right: 56px;
+              top: 23px;
+            }
+
+            .vipStyle-vipLevelTtitle {
+              color: #fff;
+              margin: 30px 0 0 30px;
+              font-size: 14px;
+
+              & > div {
+                font-size: 48px;
+              }
+            }
+
+            .vipStyle-itemWrapper {
+              width: 420px;
+              margin: 90px auto 0;
+              position: relative;
+              left: -8px;
+
+              .vipStyle-cardItem {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 10px;
+                height: 90px;
+
+                &:hover {
+                  background-image: linear-gradient(to bottom, #fff -86%, rgba(255, 255, 255, 0.19) 99%);
+                }
+
+                & > div {
+                  margin-right: 23px;
+                  object-fit: contain;
+                }
+
+                & > div {
+                  .p1 {
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #444752;
+                  }
+
+                  .p2 {
+                    font-family: DINPro;
+                    font-size: 20px;
+                    font-weight: 550;
+                    margin-top: 6px;
+                    color: #444853;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vipStyle-tabsss {
+  width: 1274px;
+  border-radius: 10px;
+  margin: 77px auto 0;
+
+  .vipStyle-tabnav {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    padding: 0 70px;
+
+    .vipStyle-navTit {
+      @include webp($base-img-dir + 'personal/butn.png');
+      width: 170px;
+      height: 80px;
+      line-height: 64px;
+      background-size: cover;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      filter: drop-shadow(0 5px 30px rgba(79, 107, 139, 0.1));
+
+      &.vipStyle-navActive {
+        @include webp($base-img-dir + 'personal/buta.png');
+        color: #fff;
+        background-size: 100% 100%;
+      }
+    }
+  }
+
+  .vipStyle-tab {
+    width: 1200px;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 35px;
+
+    .vipStyle-level,
+    .vipStyle-tableContent .vipStyle-fscent {
+      width: 1200px;
+      display: flex;
+
+      & > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 72px;
+        border-right: solid 0.5px #fffcf2;
+        font-size: 14px;
+      }
+    }
+
+    .vipStyle-level {
+      background: #fffcf2;
+
+      & > li {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+      }
+    }
+
+    .vipStyle-tableContent .vipStyle-fscent {
+      border-bottom: solid 1px rgba(163, 181, 195, 0.23);
+      background-color: #fcfdff;
+
+      .vipStyle-name {
+        font-weight: 500;
+        color: #394857;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .vipStyle-fontTip {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #444752;
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+.vipStyle-xian {
+  width: 1200px;
+  background-color: #fff;
+  margin: 65px auto 0;
+  position: relative;
+  padding: 30px 26px;
+
+  h3 {
+    font-size: 20px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #464851;
+  }
+
+  p {
+    line-height: 2.14;
+    margin-top: 18px;
+    color: #464851;
+    font-size: 14px;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+
+    .vipStyle-serialNumber {
+      background-image: linear-gradient(to right, #ffeebe, #fff9e8);
+      align-self: flex-start;
+      margin-top: 10px;
+      margin-right: 17px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.vipStyle-blue-1CA-A {
+  float: left;
+  width: 100px;
+  height: 72px;
+  text-align: center;
+  background-color: #d1e9ff;
+  border-top: solid 1px #cfe5f9;
+  box-shadow: 0 10px 20px 0 rgb(156 193 232 / 40%);
+  font-size: 14px;
+}

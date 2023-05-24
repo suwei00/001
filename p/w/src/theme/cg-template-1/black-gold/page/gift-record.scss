@@ -1,0 +1,35 @@
+.userinfo-commons-layout {
+  padding: 30px 30px 40px;
+
+  .userinfo-common-params {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    margin-bottom: 20px;
+
+    .userinfo-common-checkwrap {
+      position: relative;
+      height: 40px;
+      width: 900px;
+      clear: both;
+
+      .index-datePickers {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #4b5e6f;
+
+        :deep(.el-range-editor.el-input__inner) {
+          width: 270px;
+        }
+      }
+
+      .search-btn {
+        height: 40px;
+        margin: 0 0 0 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+.userinfo-layout {
+  padding: 30px 30px 40px;
+
+  :deep(.el-range-editor.el-input__inner) {
+    width: 270px;
+  }
+
+  .user-common-title {
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 10px;
+      color: #333;
+      width: 255px;
+    }
+
+    span {
+      color: #94a6b7;
+      font-size: 14px;
+      line-height: 27px;
+    }
+  }
+
+  .userinfo-select-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #4b5e6f;
+    font-size: 14px;
+  }
+
+  .userinfo-common-params {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    margin-bottom: 20px;
+
+    .userinfo-common-checkwrap {
+      position: relative;
+      height: 40px;
+      width: 900px;
+      clear: both;
+
+      .index-datePickers {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #4b5e6f;
+      }
+
+      .search-btn {
+        margin: 0 0 0 22px;
+        height: 38px;
+        font-size: 14px;
+      }
+    }
+  }
+}

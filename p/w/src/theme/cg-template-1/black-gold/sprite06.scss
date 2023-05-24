@@ -1,0 +1,46 @@
+.icon-d,
+.icon-gou,
+.icon-help,
+.icon-shuax,
+.icon-wallent,
+.icon-wallent2 {
+  display: inline-block;
+  @include webp($base-img-dir + 'sprite/sprite06.png');
+  background-size: 131px 88.5px;
+}
+
+.icon-d {
+  width: 30px;
+  height: 30px;
+  background-position: -101px 0px;
+}
+
+.icon-gou {
+  width: 28.5px;
+  height: 28.5px;
+  background-position: -101px -30.5px;
+}
+
+.icon-help {
+  width: 38px;
+  height: 38px;
+  background-position: 0px -50.5px;
+}
+
+.icon-shuax {
+  width: 38px;
+  height: 38px;
+  background-position: -38.5px -50.5px;
+}
+
+.icon-wallent {
+  width: 50px;
+  height: 50px;
+  background-position: 0px 0px;
+}
+
+.icon-wallent2 {
+  width: 50px;
+  height: 50px;
+  background-position: -50.5px 0px;
+}

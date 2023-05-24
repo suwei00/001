@@ -1,0 +1,92 @@
+.userinfo-common-tablelayout thead tr {
+  background-color: rgba(243, 246, 249, 0.5);
+  color: #333;
+
+  td {
+    font-weight: 700;
+    height: 56px;
+    //line-height: 56px;
+    position: relative;
+    //white-space: nowrap;
+    font-size: 14px;
+    text-align: center;
+    width: 97px;
+  }
+}
+
+.userinfo-common-tablelayout thead tr td {
+  &:nth-child(1) {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 75px;
+  }
+
+  &:nth-child(2) {
+    width: 130px;
+  }
+
+  &:nth-child(3) {
+    width: 120px;
+  }
+
+  &:nth-child(4) {
+    width: 100px;
+  }
+
+  &:nth-child(6) {
+    width: 100px;
+  }
+
+  &:nth-child(7) {
+    width: 100px;
+  }
+}
+
+.userinfo-common-tablelayout thead tr td:last-of-type {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.userinfo-common-tablelayout tbody {
+  tr {
+    color: #727679;
+    border-radius: 6px;
+    &:nth-of-type(even) td:nth-child(1) {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    &:nth-of-type(even) td {
+      background-color: rgba(243, 246, 249, 0.5);
+    }
+
+    td {
+      height: 56px;
+      //line-height: 56px;
+      position: relative;
+      //white-space: nowrap;
+      text-align: center;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:nth-child(3) {
+        line-height: 22px;
+      }
+      .edit {
+        display: inline-block;
+        width: 68px;
+        height: 24px;
+        line-height: 24px;
+        color: #e6c981;
+        cursor: pointer;
+        box-shadow: 0px 21px 8px -11px rgba(255, 244, 216, 1);
+        border-radius: 20px;
+        border: 1px solid #e6c981;
+      }
+    }
+
+    &:nth-of-type(odd) {
+      background-color: white;
+    }
+  }
+}

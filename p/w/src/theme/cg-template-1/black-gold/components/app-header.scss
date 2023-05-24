@@ -1,0 +1,189 @@
+.app-header-view {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  color: $theme-txt-color;
+  background-image: linear-gradient(to bottom, #8d9ea9 0%, rgba(192, 208, 219, 0) 80%);
+  &.no-transp {
+    background-image: linear-gradient(to bottom,#85add2,#abc8e3 100%);
+  }
+  .inner-wp {
+    // margin-top: 18px;
+    align-items: center;
+    height: 100%;
+  }
+
+  & > div {
+    min-width: 1400px;
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+
+  .logo-wp {
+    width: 170px;
+  }
+
+  .g-type-item {
+    padding: 0 13px;
+  }
+
+  .menu-item {
+    padding: 0 10px;
+  }
+
+  .avator-wp {
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .balance {
+    color: $theme-txt-color1;
+  }
+
+  @mixin icon($name) {
+    background: url(link($base-img-dir + $name)) no-repeat;
+  }
+  @mixin routerlink() {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon-vip {
+    @include icon($theme-app-header-icon-vip);
+
+    & > a {
+      @include routerlink();
+    }
+  }
+
+  .icon-notice {
+    @include icon($theme-app-header-icon-notice);
+
+    & > a {
+      @include routerlink();
+    }
+  }
+
+  .logout-line {
+    width: 128px;
+    height: 24px;
+
+    & > span {
+      min-width: 30px;
+      text-align: center;
+    }
+  }
+
+  .money-op {
+    width: 128px;
+    height: 24px;
+    background-color: $theme-bg-color2;
+    border-radius: 12px;
+
+    & > div {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .venue-game-ls {
+    height: 150px;
+
+    & > li {
+      margin: 0 50px;
+    }
+  }
+
+  .g-type-list {
+    & > li {
+      position: relative;
+      height: 90px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        // bottom: 10px;
+        // bottom: -4px;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -8px;
+        background-color: #fff;
+        transform: scaleX(0);
+        margin-left: -25%;
+        border-radius: 30px;
+        transition: all 0.3s ease 0s;
+      }
+
+      &.active,
+      &:hover {
+        &::after {
+          transform: scaleX(0.5);
+        }
+      }
+    }
+
+    &.active,
+    &:hover {
+      &::after {
+        transform: scaleX(0.5);
+      }
+    }
+  }
+  .menu-item,
+  .g-type-item {
+    &:hover {
+      .dropdown {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  .welcome-txt {
+    @include webp($base-img-dir + '/head/icon-user.png');
+    background-size: 18px 18px;
+    background-position: right center;
+    padding-right: 25px;
+  }
+
+  .icon-eye {
+    @include webp($base-img-dir + '/head/icon-eye.png');
+    &.icon-eye-close {
+      @include webp($base-img-dir + '/head/icon-eye-close.png');
+    }
+    padding-right: 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+  }
+
+  .i-num-input {
+    border: solid 1px #ccc;
+  }
+
+  .d-l-item {
+    // font-size: 30px;
+    &>div {
+      height: 290px;
+    }
+  }
+  .a-h-d-d-h {
+    height: 290px;
+  }
+  .a-h-d-d-app {
+    &>li {
+      height: 280px;
+      &>img {
+        width: 200px;
+        height: 100%;
+      }
+    }
+  }
+}

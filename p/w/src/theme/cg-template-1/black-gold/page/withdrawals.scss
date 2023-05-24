@@ -1,0 +1,90 @@
+.withdrawal-content {
+  padding: 24px 30px 30px 30px;
+
+  .title2 {
+    color: #faeca2;
+    line-height: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f5e8c4;
+
+    > p:nth-of-type(2) {
+      color: #fff;
+      padding-top: 6px;
+    }
+  }
+
+  .wallent-container {
+    margin-top: 28px;
+  }
+
+  .my-center-common-h {
+    display: flex;
+    align-items: flex-end;
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 10px;
+      color: white;
+    }
+
+    span {
+      color: white;
+      font-size: 14px;
+    }
+  }
+
+  .amountList-box {
+    margin-top: 30px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .withdrawal-t-eMoney {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .game-balance-m {
+    background: transparent linear-gradient(90deg, #3b2d2d 0%, #291717 100%) 0% 0% no-repeat padding-box;
+    border: 2px solid #674837;
+    border-radius: 10px;
+    padding: 24px;
+    ul {
+      margin-left: -20px;
+      margin-top: -20px;
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+
+      &.active-height {
+        max-height: 1000px;
+      }
+    }
+  }
+
+  .game-down-wp {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #d7bc6e;
+    width: 65px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 14px;
+
+    div {
+      margin-left: 5px;
+    }
+  }
+
+  .game-up {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,19 @@
+.app-prm-btn {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px 88px;
+    background-image: linear-gradient(145deg, #F5E1AD 0%, #EDC875 100%);
+    ;
+    color: #ffffff;
+    transition: all .3s ease;
+    border: none;
+    box-shadow: 0 10px 20px 0 #FFF4D8;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  
+    &:hover {
+      background-image: linear-gradient(to right, #EDC875 1%, #F5E1AD);
+      box-shadow: 0 10px 20px 0 rgb(230 162 60 / 34%);
+    }
+  }

@@ -1,0 +1,29 @@
+.my-center-suggestion {
+  height: auto;
+  width: 960px;
+  padding: 30px 30px 40px;
+
+  .suggestion-head-top {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+    .sugg-title {
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 10px;
+        color: #333333;
+      }
+    }
+
+    .index-btn {
+      width: 150px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

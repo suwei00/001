@@ -1,0 +1,256 @@
+.index-modalShow-layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1299;
+  opacity: 0;
+  animation-fill-mode: forwards !important;
+  animation: index-fain 0.4s ease;
+  overflow: auto;
+  display: flex;
+
+  .index-modal-Box {
+    width: 800px;
+    padding: 0px 20px 30px 30px;
+    margin: auto;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 80px 0 rgba(210, 214, 226, 0.5);
+    background-color: #fff;
+    transform: scale(0);
+    animation-fill-mode: forwards !important;
+    animation: index-transin 0.4s ease;
+
+    .index-modal-title {
+      padding: 30px 30px 30px 20px;
+
+      h3 {
+        height: 20px;
+        line-height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        overflow: hidden;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .index-subTitle-span {
+        color: #94a6b7;
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+        font-weight: normal;
+        overflow: hidden;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+      }
+
+      .index-close {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 30px;
+        top: 33px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include webp($base-img-dir + 'common/close-d.png');
+        display: block;
+        cursor: pointer;
+
+        // &:hover {
+        //   background-image: url(link('/blue/kok/common/index-close-hover.svg'))
+        // }
+      }
+    }
+
+    .index-modal-content {
+      padding-left: 20px;
+
+      .index-checked-list {
+        .index-checkbox-form {
+          width: 700px;
+          height: 100px;
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          li {
+            width: 160px;
+            height: 40px;
+            position: relative;
+            margin-bottom: 20px;
+
+            &:hover::before,
+            &.active::before {
+              border-color: #edc875;
+              border-width: 2px;
+              box-shadow: 0 10px 20px 0 #fff4d8;
+            }
+
+            &.active::after {
+              position: absolute;
+              right: -2px;
+              bottom: -1px;
+              content: '';
+              display: block;
+              @include webp($base-img-dir + 'sprite2.png');
+              background-position: 0px -1303px;
+              width: 24px;
+              height: 24px;
+            }
+
+            & > div {
+              width: 100%;
+              line-height: 15px;
+              font-size: 14px;
+              color: #4b5e6f;
+            }
+
+            &::before {
+              position: absolute;
+              left: -2px;
+              right: -2px;
+              bottom: -2px;
+              top: -2px;
+              display: block;
+              border-radius: 6px;
+              cursor: pointer;
+              content: ' ';
+              border-style: solid;
+              border-color: #d8dce7;
+              border-width: 1px;
+              color: #333;
+            }
+          }
+        }
+      }
+
+      .input-tera {
+        margin-top: 20px;
+
+        :deep(.el-textarea__inner) {
+          height: 180px;
+          outline: none;
+          padding: 20px 30px 30px 30px;
+          width: 100%;
+          transition: all 0.3s ease;
+          resize: none;
+          word-break: break-all;
+          color: #333;
+          margin-top: 20px;
+          border-radius: 5px;
+          line-height: 28px;
+          letter-spacing: 1px;
+          border: solid 1px #d8dce7;
+        }
+      }
+
+      .suggestion-up-title {
+        font-size: 12px;
+        color: #94a6b7;
+        line-height: 28px;
+        margin-bottom: 10px;
+
+        span {
+          color: #4b5e6f;
+          margin-right: 20px;
+          font-size: 14px;
+        }
+      }
+
+      .question-image-and-file {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .suggestion-upload-wrap {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          border: dashed 1px #d8dce7;
+          background-color: #fcfcfd;
+          cursor: pointer;
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 62px;
+            height: 64px;
+            display: block;
+          }
+        }
+
+        .suggestion-upload-list {
+          width: 100px;
+          height: 100px;
+          border-radius: 6px;
+          position: relative;
+          border: dashed 1px #d8dce7;
+          background-color: #fcfcfd;
+          cursor: pointer;
+          margin-bottom: 10px;
+          margin-left: 20px;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          em {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: -7px;
+            right: -11px;
+          }
+        }
+      }
+
+      .btn-box {
+        width: 700px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+
+        .index-btn {
+          width: 250px;
+          height: 50px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes index-fain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes index-transin {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
